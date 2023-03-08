@@ -104,7 +104,8 @@ responses:
       Obrigada! É sempre bom dar e receber elogios :P
   utter_cumprimentar:
   - text: |
-      Significado épico e chamado!
+      Olá sou o Latte, e estou aqui para te ajudar a conquistar a arma mais poderosa do mundo, o conhecimento. Posso te ajudar realizando pesquisas em minhas bases de dados, tirando suas dúvidas sobre o mundo das pesquisas acadêmicas ou, minha funcionalidade especial, te auxiliar a desenvolver um artigo científico! Ao decorrer de sua jornada, você irá acumular pontos e níveis, e ganhar prêmios durante o processo. Então, sem mais delongas, vamos embarcar  nessa jornada?
+      Mas antes de mais nada gostaria de te conhecer um pouco mais, poderia me informar seu nome?
   utter_despedir:
   - text: |
       Foi um prazer te ajudar!
