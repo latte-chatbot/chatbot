@@ -14,3 +14,8 @@ stories:
   steps:
   - intent: despedir
   - action: utter_despedir
+
+- story: criadores
+  steps:
+  - intent: criadores
+  - action: utter_criadores

@@ -9,11 +9,16 @@ intents:
 responses:
   utter_cumprimentar:
   - text: |
-      Olá sou o Latte, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Então, vamos embarcar nessa jornada?   
-      E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só falar!
+      Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar conhecimento.
+      
+      Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada? No que posso te ajudar?
+      
+      E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só perguntar!
+
   utter_saiba_mais:
   - text: |
-      Fui criado para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes aleatórios ou caso você me peça para fazê-los, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha
+     Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
+  
   utter_despedir:
   - text: |
       Foi um prazer te ajudar!
@@ -27,7 +32,20 @@ responses:
       Foi um prazer te ajudar!
       Quando surgir alguma dúvida, volte aqui!
       Até mais!
+  - text: |
+      Foi um grande prazer ajudar!
+      Sempre há algo novo a aprender, te espero em breve!
+      Estou a disposição!
 
+  utter_criadores:
+  - text: |
+      Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
+      
+      Orientador: Sergio Antonio Andrade de Freitas
+      Consultor: Arthur Rocha Temporim De Lacerda
+      Desenvolvedor: Luiz Henrique Fernandes Zamprogno
+      Desenvolvedor: Victor Eduardo Araujo Ribeiro
+    
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

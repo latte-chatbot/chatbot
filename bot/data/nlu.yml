@@ -6,6 +6,7 @@ nlu:
     - Ola
     - Oi
     - Iae
+    - I aí
     - Olá
     - bom dia
     - boa tarde
@@ -39,3 +40,21 @@ nlu:
     - adeus
     - flw
     - Até mais, bot
+- intent: criadores
+  examples: |
+    - Quem te criou?
+    - Quem te inventou?
+    - Qm te criou?
+    - Qm te inventou?
+    - Quem criou você?
+    - Quem inventou você?
+    - Qm criou vc?
+    - Qm inventou vc?
+    - Quem inventou vc?
+    - Quem criou vc?
+    - Você foi criado por quem?
+    - Você foi inventado por quem?
+    - Vc foi criado por quem?
+    - Vc foi inventado por quem?
+    - Vc foi criado por qm?
+    - Vc foi inventado por qm?
