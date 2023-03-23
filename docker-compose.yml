@@ -8,14 +8,30 @@ services:
       context: .
       dockerfile: ./docker/bot.Dockerfile
     container_name: bot
+    env_file:
+      - ./env/bot.env
     volumes:
       - ./bot/:/bot/
     ports:
       - 5005:5005
     depends_on:
       - actions
+      - mongo
     networks:
       - bot
+
+  mongo:
+    container_name: mongo
+    image: mongo:6.0
+    restart: unless-stopped
+    env_file:
+      - env/bot.env
+    ports:
+      - 27017:27017
+    networks:
+      - bot
+    volumes:
+      - ./data/db:/data/db
 
   # ================================= Actions =================================
   # Rasa middleware used to connect with external APIs.
@@ -24,6 +40,8 @@ services:
       context: .
       dockerfile: ./docker/actions.Dockerfile
     container_name: actions
+    env_file:
+      - ./env/bot.env
     ports:
       - 5055:5055
     volumes:
@@ -52,7 +70,8 @@ services:
       volumes:
         - ./bot/:/bot/
       env_file:
-        - env/bot-telegram.env
+        - ./env/bot-telegram.env
+        - ./env/bot.env
       ports:
         - 5005:5005
       command: sh -c "make telegram"
