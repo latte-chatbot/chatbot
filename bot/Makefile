@@ -53,8 +53,9 @@ telegram:
 		-m models/ \
 		$(LOG_LEVEL) \
 		$(RASA_ENDPOINTS) $(ENDPOINTS) \
-		$(RASA_CREDENTIALS)	credentials/telegram-credentials.yml \
-		--port 5005 \
+		$(RASA_CREDENTIALS) $(CREDENTIALS) \
+		--cors '*' \
+		--port 80
 
 # ACTIONS
 actions:

@@ -9,3 +9,4 @@ tracker_store:
   username: ${MONGO_USERNAME}
   password: ${MONGO_PASSWORD}
   auth_source: "bot"
+  

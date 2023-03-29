@@ -73,7 +73,12 @@ services:
         - ./env/bot-telegram.env
         - ./env/bot.env
       ports:
-        - 5005:5005
+        - 80:80
+      depends_on:
+        - actions
+        - mongo
+      networks:
+        - bot
       command: sh -c "make telegram"
 
 networks:
