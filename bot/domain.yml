@@ -9,12 +9,16 @@ intents:
 responses:
   utter_cumprimentar:
   - text: |
+      Olá, bem vindo de volta ao Latte Chatbot, fico feliz que tenha vindo buscar mais conhecimento! No que posso te ajudar hoje?
+
+      Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais!
+      
+  utter_cumprimentar_novamente:
       Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar conhecimento.
       
       Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada? No que posso te ajudar?
       
       E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só perguntar!
-
   utter_saiba_mais:
   - text: |
      Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
@@ -41,10 +45,14 @@ responses:
   - text: |
       Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
       
-      Orientador: Sergio Antonio Andrade de Freitas
-      Consultor: Arthur Rocha Temporim De Lacerda
+      Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
+      Co-Orientador: Arthur Rocha Temporim De Lacerda
       Desenvolvedor: Luiz Henrique Fernandes Zamprogno
       Desenvolvedor: Victor Eduardo Araujo Ribeiro
+
+  utter_consultar_abnt:
+  - text: |
+      As normas completas e atualizadas ABNT podem ser onsultadas no Catálogo Ofical on-line: <link>   
     
 session_config:
   session_expiration_time: 60

@@ -5,6 +5,11 @@ stories:
   - intent: cumprimentar
   - action: utter_cumprimentar
 
+- story: cumprimentar_novamente
+  steps:
+  - intent: cumprimentar_novamente
+  - action: utter_cumprimentar_novamente
+
 - story: saiba_mais
   steps:
   - intent: saiba_mais
@@ -19,3 +24,11 @@ stories:
   steps:
   - intent: criadores
   - action: utter_criadores
+
+- story: consultar_abnt
+  steps:
+  - intent: consultar_abnt
+  - action: utter_consultar_abnt
+
+
+

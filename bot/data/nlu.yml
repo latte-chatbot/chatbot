@@ -11,6 +11,11 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+  - intent: cumprimentar_novamente
+  examples: |
+    - Olá, estou de volta
+    - Oi, sou eu novo
+    - Preciso tirar uma nova duvida
 - intent: saiba_mais
   examples: |
     - sobre o que você sabe falar
@@ -58,3 +63,11 @@ nlu:
     - Vc foi inventado por quem?
     - Vc foi criado por qm?
     - Vc foi inventado por qm?
+
+- intent: consultar_abnt
+  examples: |
+    - Onde posso ver as normas da abnt?
+    - Onde consultar as normas da abnt?
+    - Quais as normas da ABNT para um artigo?
+    - Quais as normas da ABNT para um TCC?
+    - Quais as normas da ABNT para escrita científica?
