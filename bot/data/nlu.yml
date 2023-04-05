@@ -1,5 +1,8 @@
 version: "3.1"
 nlu:
+
+# Cumprimentos, saudações e despedidas
+
 - intent: cumprimentar
   examples: |
     - olá
@@ -11,11 +14,13 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+
   - intent: cumprimentar_novamente
   examples: |
     - Olá, estou de volta
     - Oi, sou eu novo
     - Preciso tirar uma nova duvida
+
 - intent: saiba_mais
   examples: |
     - sobre o que você sabe falar
@@ -39,12 +44,16 @@ nlu:
     - Vc tem algum propósito?
     - Como que vc pode me ser útil?
     - Me fale mais sobre você.
+
 - intent: despedir
   examples: |
     - tchau
     - adeus
     - flw
     - Até mais, bot
+
+# Informações sobre o chatbot
+
 - intent: criadores
   examples: |
     - Quem te criou?
@@ -64,6 +73,8 @@ nlu:
     - Vc foi criado por qm?
     - Vc foi inventado por qm?
 
+# Duvidas sobre ABNT
+
 - intent: consultar_abnt
   examples: |
     - Onde posso ver as normas da abnt?
@@ -71,3 +82,5 @@ nlu:
     - Quais as normas da ABNT para um artigo?
     - Quais as normas da ABNT para um TCC?
     - Quais as normas da ABNT para escrita científica?
+
+  

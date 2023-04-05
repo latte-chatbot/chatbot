@@ -2,9 +2,13 @@ version: '3.1'
 
 intents:
   - cumprimentar
+  - cumprimentar_novamente
   - saiba_mais
   - despedir
+  - criadores
+  - consultar_abnt
 
+# Cumprimentos, saudações e despedidas
 
 responses:
   utter_cumprimentar:
@@ -19,10 +23,8 @@ responses:
       Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada? No que posso te ajudar?
       
       E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só perguntar!
-  utter_saiba_mais:
-  - text: |
-     Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
-  
+ 
+
   utter_despedir:
   - text: |
       Foi um prazer te ajudar!
@@ -40,7 +42,13 @@ responses:
       Foi um grande prazer ajudar!
       Sempre há algo novo a aprender, te espero em breve!
       Estou a disposição!
-
+ 
+ # Informações sobre o chatbot
+ 
+  utter_saiba_mais:
+  - text: |
+     Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
+  
   utter_criadores:
   - text: |
       Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
@@ -50,9 +58,12 @@ responses:
       Desenvolvedor: Luiz Henrique Fernandes Zamprogno
       Desenvolvedor: Victor Eduardo Araujo Ribeiro
 
+# Duvidas sobre ABNT
+
   utter_consultar_abnt:
   - text: |
-      As normas completas e atualizadas ABNT podem ser onsultadas no Catálogo Ofical on-line: <link>   
+      As normas completas e atualizadas ABNT podem ser onsultadas no site Ofical on-line: https://www.normasabnt.org/normas-abnt-2023/   
+    
     
 session_config:
   session_expiration_time: 60
