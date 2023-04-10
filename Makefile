@@ -62,7 +62,7 @@ webchat:
 	echo "Acesse o WEBCHAT em: http://localhost:5000"
 
 telegram:
-	docker compose run \
+	sudo docker compose run \
 		-d \
 		--rm \
 		--service-ports \

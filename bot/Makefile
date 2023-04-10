@@ -3,14 +3,14 @@
 ## FLAGS:
 LOG_LEVEL = -vv
 TRAIN_LOG_LEVEL = -v
-RASA_ENDPOINTS = --endpoints 
+RASA_ENDPOINTS = --endpoints
 ENDPOINTS = endpoints.yml
 RASA_CREDENTIALS = --credentials
 CREDENTIALS = credentials.yml
 
 # CLEAN PROJECT
 clean:
-	rm -rf graph.html \
+	sudo rm -rf graph.html \
 	       results/ \
 	       models/* \
 	       *.db* \
@@ -46,7 +46,7 @@ webchat:
 		$(RASA_ENDPOINTS) $(ENDPOINTS) \
 		$(RASA_CREDENTIALS) $(CREDENTIALS) \
 		--cors '*' \
-		--port 5005 
+		--port 5005
 
 telegram:
 	rasa run \
