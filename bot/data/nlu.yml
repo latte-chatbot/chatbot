@@ -83,4 +83,8 @@ nlu:
     - Quais as normas da ABNT para um TCC?
     - Quais as normas da ABNT para escrita científica?
 
+- intent: consultar_abnt_margens
+  examples: |
+    - Qual a medida das margens no padrão ABNT?
+    - Quanto usar margem em um artigo no padrão ABNT?
   

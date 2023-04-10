@@ -7,6 +7,11 @@ intents:
   - despedir
   - criadores
   - consultar_abnt
+  - consultar_abnt_margens
+
+#entities:
+#  - pergunta_teste
+
 
 # Cumprimentos, saudações e despedidas
 
@@ -62,9 +67,14 @@ responses:
 
   utter_consultar_abnt:
   - text: |
-      As normas completas e atualizadas ABNT podem ser onsultadas no site Ofical on-line: https://www.normasabnt.org/normas-abnt-2023/   
+      As normas da ABNT completas e atualizadas para escrita acadêmica podem ser consultadas no site oficial on-line: https://www.normasabnt.org/normas-abnt-2023/   
     
-    
+  utter_consultar_abnt_margens:
+  - text: |
+      As normas para de margens para escrita acadêmica definem que:
+      - Esquerda e superior com 3 cm
+      - Direita e inferior com 2 cm
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

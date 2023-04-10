@@ -30,5 +30,15 @@ stories:
   - intent: consultar_abnt
   - action: utter_consultar_abnt
 
+- story: consultar_abnt_margens
+  steps:
+  - intent: consultar_abnt_margens
+  - action: utter_consultar_abnt_margens
 
 
+#roles:
+#- rule: Pergunta exemplo
+#  steps:
+#  - intent: 
+#  - action:
+#  - active_loop: 
