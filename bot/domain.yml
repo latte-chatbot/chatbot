@@ -8,6 +8,7 @@ intents:
   - criadores
   - consultar_abnt
   - consultar_abnt_margens
+  - conceito_abnt
 
 #entities:
 #  - pergunta_teste
@@ -74,6 +75,10 @@ responses:
       As normas para de margens para escrita acadêmica definem que:
       - Esquerda e superior com 3 cm
       - Direita e inferior com 2 cm
+
+  utter_conceito_abnt:
+  - text: |
+      A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
 session_config:
   session_expiration_time: 60

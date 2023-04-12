@@ -86,5 +86,11 @@ nlu:
 - intent: consultar_abnt_margens
   examples: |
     - Qual a medida das margens no padrão ABNT?
-    - Quanto usar margem em um artigo no padrão ABNT?
+    - Quanto usar de margem em um artigo no padrão ABNT?
+    - Quanto usar de margem em um artigo ABNT?
+    - Padrão margem ABNT
+  
+  - intent: conceito_abnt
+  examples: |
+    - O que é ABNT?
   

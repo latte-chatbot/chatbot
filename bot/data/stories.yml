@@ -35,6 +35,10 @@ stories:
   - intent: consultar_abnt_margens
   - action: utter_consultar_abnt_margens
 
+- story: conceito_abnt
+  steps:
+  - intent: conceito_abnt
+  - action: utter_conceito_abnt
 
 #roles:
 #- rule: Pergunta exemplo
