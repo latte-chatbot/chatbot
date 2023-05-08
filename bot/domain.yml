@@ -9,13 +9,38 @@ intents:
   - consultar_abnt
   - consultar_abnt_margens
   - conceito_abnt
+  - informar_nome
+  - informar_tema_pesquisa
 
-#entities:
-#  - pergunta_teste
+
+entities:
+  - nome
+  - tema_pesquisa
+
+
+slots:
+  nome:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: nome
+      intent: informar_nome
+  tema_pesquisa:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tema_pesquisa
+      intent: informar_tema_pesquisa
+
+
+actions:
+  - action_falar_nome
+  - action_falar_tema_pesquisa
 
 
 # Cumprimentos, saudações e despedidas
-
 responses:
   utter_cumprimentar:
   - text: |
@@ -47,52 +72,65 @@ responses:
 
   utter_despedir:
   - text: |
-      Foi um prazer te ajudar!
-      Sempre que tiver alguma dúvida, volte aqui!
-      Até logo!
+        Foi um prazer te ajudar!
+        Sempre que tiver alguma dúvida, volte aqui!
+        Até logo!
   - text: |
-      Foi um prazer te ajudar!
-      Sempre que precisar, volte aqui!
-      Até a próxima!
+        Foi um prazer te ajudar!
+        Sempre que precisar, volte aqui!
+        Até a próxima!
   - text: |
-      Foi um prazer te ajudar!
-      Quando surgir alguma dúvida, volte aqui!
-      Até mais!
+        Foi um prazer te ajudar!
+        Quando surgir alguma dúvida, volte aqui!
+        Até mais!
   - text: |
-      Foi um grande prazer ajudar!
-      Sempre há algo novo a aprender, te espero em breve!
-      Estou a disposição!
+        Foi um grande prazer ajudar!
+        Sempre há algo novo a aprender, te espero em breve!
+        Estou a disposição!
  
  # Informações sobre o chatbot
- 
   utter_saiba_mais:
   - text: |
-     Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
+        Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
   
   utter_criadores:
   - text: |
-      Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
-      
-      Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
-      Co-Orientador: Arthur Rocha Temporim De Lacerda
-      Desenvolvedor: Luiz Henrique Fernandes Zamprogno
-      Desenvolvedor: Victor Eduardo Araujo Ribeiro
+        Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
+
+        Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
+        Co-Orientador: Arthur Rocha Temporim De Lacerda
+        Desenvolvedor: Luiz Henrique Fernandes Zamprogno
+        Desenvolvedor: Victor Eduardo Araújo Ribeiro
 
 # Duvidas sobre ABNT
-
   utter_consultar_abnt:
   - text: |
-      As normas da ABNT completas e atualizadas para escrita acadêmica podem ser consultadas no site oficial on-line: https://www.normasabnt.org/normas-abnt-2023/   
+        As normas da ABNT completas e atualizadas para escrita acadêmica podem ser consultadas no site oficial on-line: https://www.normasabnt.org/normas-abnt-2023/   
     
   utter_consultar_abnt_margens:
   - text: |
-      As normas para de margens para escrita acadêmica definem que:
-      - Esquerda e superior com 3 cm
-      - Direita e inferior com 2 cm
+        As normas para de margens para escrita acadêmica definem que:
+        - Esquerda e superior com 3 cm
+        - Direita e inferior com 2 cm
 
   utter_conceito_abnt:
   - text: |
-      A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
+        A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
+
+  utter_informar_nome:
+  - text: | 
+        Por favor me diga seu nome, ou como gostaria de ser chamado
+  - text: | 
+        Gostaria de conhecê-lo um pouco melhor, poderia me dizer seu nome?
+
+  utter_informar_tema_pesquisa:
+  - text: | 
+        Me informe o tema de sua pesquisa
+
+  utter_teste:
+  - text: |
+        Obrigado!
+
 
 session_config:
   session_expiration_time: 60

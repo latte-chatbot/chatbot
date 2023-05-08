@@ -64,7 +64,6 @@ webchat:
 telegram:
 	sudo docker compose run \
 		-d \
-		--rm \
 		--service-ports \
 		bot-telegram \
 		make telegram ENDPOINTS=$(ENDPOINTS) CREDENTIALS=$(CREDENTIALS)

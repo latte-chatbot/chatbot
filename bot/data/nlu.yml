@@ -15,7 +15,7 @@ nlu:
     - boa tarde
     - boa noite
 
-  - intent: cumprimentar_novamente
+- intent: cumprimentar_novamente
   examples: |
     - Olá, estou de volta
     - Oi, sou eu novo
@@ -89,8 +89,25 @@ nlu:
     - Quanto usar de margem em um artigo no padrão ABNT?
     - Quanto usar de margem em um artigo ABNT?
     - Padrão margem ABNT
-  
-  - intent: conceito_abnt
+
+- intent: conceito_abnt
   examples: |
     - O que é ABNT?
-  
+
+# Dados do usuário 
+
+- intent: informar_nome
+  examples: |
+    - [Victor](nome)
+    - O meu nome é [Victor](nome)
+    - me chamo [Victor](nome)
+    - Meu nome: [Victor](nome)
+    - Claro, meu nome é [Victor](nome)
+
+- intent: tema_pesquisa
+  examples: |
+    - [chatbot](tema_pesquisa)
+    - Meu tema de pesquisa é [chatbot](tema_pesquisa)
+    - Pesquiso sobre [chatbot](tema_pesquisa)
+    - Faco pesquisas sobre [chatbot](tema_pesquisa)
+    - Claro, sou pesquiador no tema [chatbot](tema_pesquisa)

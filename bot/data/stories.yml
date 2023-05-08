@@ -1,4 +1,6 @@
 version: "3.1"
+
+
 stories:
 - story: cumprimentar
   steps:
@@ -40,9 +42,17 @@ stories:
   - intent: conceito_abnt
   - action: utter_conceito_abnt
 
-#roles:
-#- rule: Pergunta exemplo
-#  steps:
-#  - intent: 
-#  - action:
-#  - active_loop: 
+- story: cumprimentar
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+
+- story: informar_nome
+  steps:
+  - intent: informar_nome
+  - action: utter_teste
+
+- story: informar_tema_pesquisa
+  steps:
+  - intent: informar_tema_pesquisa
+  - action: utter_teste
