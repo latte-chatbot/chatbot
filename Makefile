@@ -59,23 +59,6 @@ validate:
 		--rm bot \
 		make validate
 
-test:
-	docker compose run \
-		--rm bot \
-		make test
-
-test-nlu:
-	docker compose run \
-		--rm \
-		bot \
-		make test-nlu
-
-test-core:
-	docker compose run \
-		--rm \
-		bot \
-		make test-core
-
 model-report:
 	docker compose run \
 		--rm  \

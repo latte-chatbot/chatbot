@@ -136,3 +136,4 @@ dmypy.json
 
 # Conversation Database
 /data/db
+.idea/

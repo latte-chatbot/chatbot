@@ -44,8 +44,9 @@ telegram:
 actions:
 	rasa run actions \
 		--enable-api \
-		--actions actions \
-		$(LOG_LEVEL)
+		$(LOG_LEVEL) \
+		--auto-reload \
+		--actions actions
 
 # DEVELOPMENT
 train-nlu:

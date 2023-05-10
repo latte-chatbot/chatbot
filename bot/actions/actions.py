@@ -18,8 +18,10 @@ class ActionFalarNome(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        nome = tracker.get.slot("nome")
-        dispatcher.utter_message(text=f"A partir de agora irei chamá-lo de {nome}!")
+        nome = tracker.get_slot("nome")
+        x = tracker.latest_message
+        dispatcher.utter_message(text=f"{x}")
+        #dispatcher.utter_message(text=f"A partir de agora irei chamá-lo de {nome}!")
         return []
 
 class ActionFalarTemaPesquisa(Action):
@@ -29,7 +31,7 @@ class ActionFalarTemaPesquisa(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        tema_pesquisa = tracker.get.slot("tema_pesquisa")
+        tema_pesquisa = tracker.get_slot("tema_pesquisa")
         dispatcher.utter_message(text=f"Anotado! A partir de agora irei ajudá-lo em sua pesquisa sobre {tema_pesquisa}!")
         return []
 
@@ -40,7 +42,7 @@ class ActionCumprimentarNovamente(Action):
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        nome = tracker.get.slot("nome")
+        nome = tracker.get_slot("nome")
         if not nome:
             dispatcher.utter_message(text=f"Quanto tempo {nome}, tudo bem?!")
         else:
