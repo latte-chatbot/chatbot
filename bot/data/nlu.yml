@@ -18,8 +18,9 @@ nlu:
 - intent: cumprimentar_novamente
   examples: |
     - Olá, estou de volta
-    - Oi, sou eu novo
+    - Oi, sou eu denovo
     - Preciso tirar uma nova duvida
+    - Olá novamente
 
 - intent: saiba_mais
   examples: |
@@ -30,13 +31,6 @@ nlu:
     - lista de assuntos possiveis
     - quais as perguntas vc responde
     - quais as perquisar você responde
-    - quero [ajuda](meajuda)
-    - [meajuda](meajuda
-    - [meajude](meajuda)
-    - [MEAJDA](meajuda)
-    - [me ajuda](meajuda)
-    - [me ajude](meajuda)
-    - [ajuda eu](meajuda)
     - Qual o seu objetivo robo?
     - Qual o seu objetivo robô?
     - Vc tem um objetivo de existencia?
@@ -93,9 +87,9 @@ nlu:
 - intent: conceito_abnt
   examples: |
     - O que é ABNT?
+    - O que significa ABNT?
 
 # Dados do usuário 
-
 - intent: informar_nome
   examples: |
     - [Victor](nome)

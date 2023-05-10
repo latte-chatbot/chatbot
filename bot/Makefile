@@ -22,34 +22,17 @@ install:
 	pip install -r requirements.txt
 
 # RUN
-api:
-	rasa run \
-		-m models/ \
-		$(LOG_LEVEL) \
-		$(RASA_ENDPOINTS) $(ENDPOINTS) \
-		$(RASA_CREDENTIALS)	$(CREDENTIALS) \
-		--enable-api \
-		--cors '*' \
-		--port 5005
-
 shell:
 	rasa shell \
+		--enable-api\
 		-m models/ \
 		$(LOG_LEVEL) \
 		$(RASA_ENDPOINTS) $(ENDPOINTS) \
-		--port 5005
-
-webchat:
-	rasa run \
-		-m models/ \
-		$(LOG_LEVEL) \
-		$(RASA_ENDPOINTS) $(ENDPOINTS) \
-		$(RASA_CREDENTIALS) $(CREDENTIALS) \
-		--cors '*' \
 		--port 5005
 
 telegram:
 	rasa run \
+		--enable-api \
 		-m models/ \
 		$(LOG_LEVEL) \
 		$(RASA_ENDPOINTS) $(ENDPOINTS) \
@@ -60,6 +43,7 @@ telegram:
 # ACTIONS
 actions:
 	rasa run actions \
+		--enable-api \
 		--actions actions \
 		$(LOG_LEVEL)
 
@@ -85,26 +69,5 @@ test-core:
 		--fail-on-prediction-errors \
 		--out results/results-core-test
 
-# UTIL
-## RASALIT
-install-rasalit:
-	pip install -r rasalit-requirements.txt
-
-rasalit:
-	python -m rasalit nlu-cluster --port 8501
-
-interactive:
-	rasa interactive
-
-validate:
-	rasa data validate \
-		$(LOG_LEVEL)
-
-visualize:
-		rasa visualize \
-			--out ./graph.html
-
-tensor:
-		tensorboard \
-			--logdir .
-
+model-report:
+	rasa-model-report

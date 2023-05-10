@@ -12,7 +12,6 @@ clean:
 down:
 	docker compose down
 
-
 # RUN
 init:
 	make build
@@ -34,32 +33,12 @@ shell:
 		bot \
 		make shell ENDPOINTS=$(ENDPOINTS)
 
-api:
-	docker compose run \
-		--rm \
-		--service-ports \
-		bot \
-		make api ENDPOINTS=$(ENDPOINTS) CREDENTIALS=$(CREDENTIALS)
-
 actions:
 	docker compose run \
 		--rm \
 		--service-ports \
 		bot \
 		make actions
-
-
-webchat:
-	echo "Executando Bot com Webchat."
-	docker compose run \
-		-d \
-		--service-ports \
-		bot \
-		make webchat ENDPOINTS=$(ENDPOINTS) CREDENTIALS=$(CREDENTIALS)
-	docker compose up \
-		-d \
-		webchat
-	echo "Acesse o WEBCHAT em: http://localhost:5000"
 
 telegram:
 	sudo docker compose run \
@@ -97,3 +76,8 @@ test-core:
 		bot \
 		make test-core
 
+model-report:
+	docker compose run \
+		--rm  \
+		bot \
+		make model-report

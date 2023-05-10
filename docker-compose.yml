@@ -20,6 +20,8 @@ services:
     networks:
       - bot
 
+  # ================================= Mongo =====================================
+  # Save data of conversations
   mongo:
     container_name: mongo
     image: mongo:6.0
@@ -47,17 +49,6 @@ services:
     volumes:
       - ./bot:/bot
     command: sh -c "python -m rasa_sdk --actions actions"
-    networks:
-      - bot
-
-  # ============================ Webchat Page  =================================
-  # A container to run webchat html page
-  webchat:
-    image: nginx
-    ports:
-      - 5000:80
-    volumes:
-      - ./modules/webchat:/usr/share/nginx/html
     networks:
       - bot
 

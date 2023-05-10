@@ -10,6 +10,7 @@ stories:
 - story: cumprimentar_novamente
   steps:
   - intent: cumprimentar_novamente
+  - action: action_cumprimentar_novamente
   - action: utter_cumprimentar_novamente
 
 - story: saiba_mais
@@ -50,9 +51,9 @@ stories:
 - story: informar_nome
   steps:
   - intent: informar_nome
-  - action: utter_teste
+  - action: action_falar_nome
 
 - story: informar_tema_pesquisa
   steps:
   - intent: informar_tema_pesquisa
-  - action: utter_teste
+  - action: action_falar_tema_pesquisa

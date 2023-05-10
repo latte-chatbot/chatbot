@@ -21,24 +21,21 @@ entities:
 slots:
   nome:
     type: text
-    influence_conversation: true
     mappings:
     - type: from_entity
       entity: nome
-      intent: informar_nome
   tema_pesquisa:
     type: text
-    influence_conversation: true
     mappings:
     - type: from_entity
       entity: tema_pesquisa
-      intent: informar_tema_pesquisa
 
 
 actions:
   - action_falar_nome
   - action_falar_tema_pesquisa
-
+  - action_cumprimentar_novamente
+  - action_default_fallback
 
 # Cumprimentos, saudações e despedidas
 responses:
@@ -53,19 +50,19 @@ responses:
       
   utter_cumprimentar_novamente:
   - text: |
-      Bem-vindo novamente (nome) ao Latte Chatbot, caro pesquisador! Sinto-me honrado por tê-lo aqui novamente em busca de conhecimento e inspiração para as suas jornadas acadêmicas. Você é como um explorador em uma missão para desvendar os mistérios do universo, e aqui você encontrará uma fonte inesgotável de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada épica de descoberta e inovação científica.
+      Sinto-me honrado por tê-lo aqui novamente em busca de conhecimento e inspiração para as suas jornadas acadêmicas. Você é como um explorador em uma missão para desvendar os mistérios do universo, e aqui você encontrará uma fonte inesgotável de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada épica de descoberta e inovação científica.
 
       Quais são as suas dúvidas e desafios de hoje? Conte comigo para ajudá-lo a superá-los e levar a sua pesquisa para o próximo nível!
-   - text: |
-      Bem-vindo novamente ao Latte Chatbot, nobre acadêmico! É uma grande honra tê-lo de volta em busca de conhecimento e inspiração para as suas empreitadas intelectuais. Você é como um desbravador que busca desvendar os mistérios do mundo, e aqui você poderá encontrar um tesouro infinito de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada inspiradora de descoberta e inovação científica.
+  - text: |
+      É uma grande honra tê-lo de volta em busca de conhecimento e inspiração para as suas empreitadas intelectuais. Você é como um desbravador que busca desvendar os mistérios do mundo, e aqui você poderá encontrar um tesouro infinito de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada inspiradora de descoberta e inovação científica.
 
       Quais são as suas questões e obstáculos de hoje? Conte comigo para ajudá-lo a superá-los e levar a sua pesquisa ao próximo patamar!
-   - text: |
-      Olá novamente, caro (nome)! Sinto-me privilegiado em recebê-lo de volta ao Latte Chatbot, em busca de conhecimento e inspiração para sua jornada acadêmica. Você é como um desbravador destemido em uma missão para desvendar os enigmas do nosso universo, aqui você encontrará um universo de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu companheiro nesta jornada extraordinária de descoberta e inovação científica. 
+  - text: |
+      Sinto-me privilegiado em recebê-lo de volta ao Latte Chatbot, em busca de conhecimento e inspiração para sua jornada acadêmica. Você é como um desbravador destemido em uma missão para desvendar os enigmas do nosso universo, aqui você encontrará um universo de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu companheiro nesta jornada extraordinária de descoberta e inovação científica. 
       
       O que você gostaria de explorar e descobrir hoje? Conte comigo para ajudá-lo a superar quaisquer desafios e levar sua pesquisa a novas alturas!
-   - text: |
-      Seja bem-vindo novamente, destemido estudioso! Estou honrado por tê-lo de volta ao Latte Chatbot em busca de conhecimento e inspiração para suas pesquisas acadêmicas. Você é como um curioso incansável em uma busca incessante por descobertas científicas, e aqui você encontrará um manancial de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada apaixonante do caminho científico. 
+  - text: |
+      Estou honrado por tê-lo de volta ao Latte Chatbot em busca de conhecimento e inspiração para suas pesquisas acadêmicas. Você é como um curioso incansável em uma busca incessante por descobertas científicas, e aqui você encontrará um manancial de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada apaixonante do caminho científico. 
       
       O que você gostaria de explorar hoje? Conte comigo para ajudá-lo a enfrentar quaisquer desafios e elevar sua pesquisa a novos patamares!
 
@@ -131,6 +128,11 @@ responses:
   - text: |
         Obrigado!
 
+  # utters fallback
+  utter_nlu_fallback:
+  - text: "**NLU Fallback**: Desculpe, não consegui entender sua mensagem. Pode me perguntar de outra forma?"
+  utter_core_fallback:
+  - text: "**Core Fallback**: Desculpe, não consegui encontrar uma resposta pra sua mensagem. Digite /restart para recomeçar a conversa."
 
 session_config:
   session_expiration_time: 60
