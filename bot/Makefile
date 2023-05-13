@@ -44,8 +44,9 @@ telegram:
 actions:
 	rasa run actions \
 		--enable-api \
-		--actions actions \
-		$(LOG_LEVEL)
+		$(LOG_LEVEL) \
+		--auto-reload \
+		--actions actions
 
 # DEVELOPMENT
 train-nlu:
@@ -55,19 +56,6 @@ train-nlu:
 train:
 	rasa train \
 		$(TRAIN_LOG_LEVEL)
-
-test:
-	rasa test \
-		--out results/
-
-test-nlu:
-	rasa test nlu \
-		--out results/results-nlu-test
-
-test-core:
-	rasa test core \
-		--fail-on-prediction-errors \
-		--out results/results-core-test
 
 model-report:
 	rasa-model-report

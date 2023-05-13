@@ -15,13 +15,6 @@ nlu:
     - boa tarde
     - boa noite
 
-- intent: cumprimentar_novamente
-  examples: |
-    - Olá, estou de volta
-    - Oi, sou eu denovo
-    - Preciso tirar uma nova duvida
-    - Olá novamente
-
 - intent: saiba_mais
   examples: |
     - sobre o que você sabe falar
@@ -93,10 +86,13 @@ nlu:
 - intent: informar_nome
   examples: |
     - [Victor](nome)
-    - O meu nome é [Victor](nome)
-    - me chamo [Victor](nome)
-    - Meu nome: [Victor](nome)
-    - Claro, meu nome é [Victor](nome)
+    - O meu nome é [Arthur](nome)
+    - me chamo [Luis](nome)
+    - Meu nome: [Clarice](nome)
+    - Claro, meu nome é [Larissa](nome)
+    - Me chame de [Joana](nome)
+    - Sou o professor [Sérgio](nome)
+    - Meu nome é [Duerno](nome)
 
 - intent: tema_pesquisa
   examples: |

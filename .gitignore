@@ -110,7 +110,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-*.env
 .venv
 venv/
 env.bak/
@@ -136,3 +135,5 @@ dmypy.json
 
 # Conversation Database
 /data/db
+
+.idea/

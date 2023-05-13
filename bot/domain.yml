@@ -36,6 +36,7 @@ actions:
   - action_falar_tema_pesquisa
   - action_cumprimentar_novamente
   - action_default_fallback
+  - action_session_start
 
 # Cumprimentos, saudações e despedidas
 responses:
@@ -136,4 +137,4 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
