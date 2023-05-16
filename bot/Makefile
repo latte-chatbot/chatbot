@@ -57,5 +57,9 @@ train:
 	rasa train \
 		$(TRAIN_LOG_LEVEL)
 
+test:
+	rasa test \
+		--out results/
+
 model-report:
 	rasa-model-report

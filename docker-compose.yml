@@ -58,11 +58,11 @@ services:
       build:
         context: .
         dockerfile: ./docker/bot.Dockerfile
-      volumes:
-        - ./bot/:/bot/
       env_file:
         - ./env/bot-telegram.env
         - ./env/bot.env
+      volumes:
+        - ./bot/:/bot/
       ports:
         - 80:80
       depends_on:

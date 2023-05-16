@@ -2,58 +2,43 @@ version: "3.1"
 
 
 stories:
-- story: cumprimentar
+# Cumprimentos e despedidas
+- story: cumprimentar_reentrada
   steps:
-  - intent: cumprimentar
-  - action: utter_cumprimentar
-
-- story: cumprimentar_novamente
-  steps:
-  - intent: cumprimentar_novamente
+  - intent: cumprimentar_reentrada
   - action: action_cumprimentar_novamente
-  - action: utter_cumprimentar_novamente
-
-- story: saiba_mais
-  steps:
-  - intent: saiba_mais
-  - action: utter_saiba_mais
+  - action: utter_cumprimentar_reentrada
 
 - story: despedir
   steps:
   - intent: despedir
   - action: utter_despedir
 
-- story: criadores
+# Informações sobre o chatbot
+- story: saiba_mais
   steps:
-  - intent: criadores
-  - action: utter_criadores
+  - intent: saiba_mais
+  - action: utter_saiba_mais
 
-- story: consultar_abnt
+- story: criacao
   steps:
-  - intent: consultar_abnt
-  - action: utter_consultar_abnt
+  - intent: criacao
+  - action: utter_criacao
 
-- story: consultar_abnt_margens
-  steps:
-  - intent: consultar_abnt_margens
-  - action: utter_consultar_abnt_margens
-
-- story: conceito_abnt
-  steps:
-  - intent: conceito_abnt
-  - action: utter_conceito_abnt
-
-- story: cumprimentar
-  steps:
-  - intent: cumprimentar
-  - action: utter_cumprimentar
-
+# Informações do usuário
+## Nome
 - story: informar_nome
   steps:
-  - intent: informar_nome
-  - action: action_falar_nome
+  - intent: informou_nome
+  - action: action_informou_nome
 
-- story: informar_tema_pesquisa
+## Pesquisa
+- story: iniciar_pesquisa
   steps:
-  - intent: informar_tema_pesquisa
-  - action: action_falar_tema_pesquisa
+    - intent: iniciar_pesquisa
+    - action: utter_iniciar_pesquisa
+    - intent: informar_tema_pesquisa
+    - action: action_informou_tema_pesquisa
+    - action: utter_informar_string_buscas
+    - intent: informar_string_buscas
+    - action: action_informou_string_buscas

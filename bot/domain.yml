@@ -1,55 +1,71 @@
 version: '3.1'
 
+
 intents:
   - cumprimentar
-  - cumprimentar_novamente
-  - saiba_mais
+  - cumprimentar_reentrada
   - despedir
-  - criadores
-  - consultar_abnt
-  - consultar_abnt_margens
-  - conceito_abnt
-  - informar_nome
+  - saiba_mais
+  - criacao
+  - abnt
   - informar_tema_pesquisa
+  - informar_string_buscas
+  - informou_nome
+  - iniciar_pesquisa
 
 
 entities:
-  - nome
+  - nome_usuario
   - tema_pesquisa
+  - string_buscas
+
+
+actions:
+  - action_session_start
+  - action_restart
+  - action_default_fallback
+  - action_informou_nome
+  - action_informou_tema_pesquisa
+  - action_informou_string_buscas
+  - action_cumprimentar_novamente
 
 
 slots:
-  nome:
+  nome_usuario:
     type: text
     mappings:
     - type: from_entity
-      entity: nome
+      entity: nome_usuario
   tema_pesquisa:
     type: text
     mappings:
     - type: from_entity
       entity: tema_pesquisa
+  string_buscas:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: string_buscas
 
 
-actions:
-  - action_falar_nome
-  - action_falar_tema_pesquisa
-  - action_cumprimentar_novamente
-  - action_default_fallback
-  - action_session_start
-
-# Cumprimentos, saudações e despedidas
 responses:
-  utter_cumprimentar:
+# Cumprimentos e despedidas
+  utter_apresentacao:
   - text: |
-      Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar conhecimento.
-      
-      Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada? No que posso te ajudar?
+      Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar o conhecimento.
+      Você pode contar comigo para tirar suas dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada?
+
+      Para começar me diga seu nome ou como gostaria que te chamasse!
       
       E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só perguntar!
- 
-      
-  utter_cumprimentar_novamente:
+  
+  utter_cumprimentar:
+  - text: |
+      E aí, tudo bem?
+  - text: |
+      Opa, como vai?
+
+  utter_cumprimentar_reentrada:
   - text: |
       Sinto-me honrado por tê-lo aqui novamente em busca de conhecimento e inspiração para as suas jornadas acadêmicas. Você é como um explorador em uma missão para desvendar os mistérios do universo, e aqui você encontrará uma fonte inesgotável de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada épica de descoberta e inovação científica.
 
@@ -67,73 +83,72 @@ responses:
       
       O que você gostaria de explorar hoje? Conte comigo para ajudá-lo a enfrentar quaisquer desafios e elevar sua pesquisa a novos patamares!
 
-
   utter_despedir:
   - text: |
-        Foi um prazer te ajudar!
-        Sempre que tiver alguma dúvida, volte aqui!
-        Até logo!
+      Foi um prazer te ajudar!
+      Sempre que tiver alguma dúvida, volte aqui!
+      Até logo!
   - text: |
-        Foi um prazer te ajudar!
-        Sempre que precisar, volte aqui!
-        Até a próxima!
+      Foi um prazer te ajudar!
+      E sempre que precisar estarei aqui. Até a próxima!
   - text: |
-        Foi um prazer te ajudar!
-        Quando surgir alguma dúvida, volte aqui!
-        Até mais!
+      Foi um prazer te ajudar! Quando surgir alguma dúvida, volte aqui!
+      Até mais!
   - text: |
-        Foi um grande prazer ajudar!
-        Sempre há algo novo a aprender, te espero em breve!
-        Estou a disposição!
+      Foi um grande prazer ajudar!
+      Sempre há algo novo a aprender, te espero em breve!
  
  # Informações sobre o chatbot
   utter_saiba_mais:
   - text: |
-        Fui criado por um projeto da Universidade de Brasília para ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes. Durante sua jornada, posso ser seu assistente para produzir um artigo, testar seus conhecimentos com quizzes desafiadores, além disso tenho acesso à bases de dados incríveis e posso realizar pesquisas nelas de acordo com termos de sua escolha!  utter_despedir:
+      O objetivo de minha criaçã ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes, não é mesmo?! 
+      Estou aqui para te guiar em sua jornada de escrever um artigo cietífico, posso te ajudar a definir um cronograma de escrita e tirar suas dúvidas acerca do mundo acadêmico. Além disso, tenho acesso à uma base de dados incrível, e posso realizar pesquisas nelas de acordo com tema de sua pesquisa!
   
-  utter_criadores:
+  utter_criacao:
   - text: |
-        Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília inicialmente para de um trabalho de conclusão de curso com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
+      Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília como produto de um trabalho de conclusão de curso (TCC) com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
+      - Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
+      - Co-Orientador: Arthur Rocha Temporim De Lacerda
+      - Orientando: Luiz Henrique Fernandes Zamprogno
+      - Orientando: Victor Eduardo Araújo Ribeiro
 
-        Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
-        Co-Orientador: Arthur Rocha Temporim De Lacerda
-        Desenvolvedor: Luiz Henrique Fernandes Zamprogno
-        Desenvolvedor: Victor Eduardo Araújo Ribeiro
-
-# Duvidas sobre ABNT
-  utter_consultar_abnt:
+# Dúvidas sobre ABNT
+  utter_abnt/consultar:
   - text: |
-        As normas da ABNT completas e atualizadas para escrita acadêmica podem ser consultadas no site oficial on-line: https://www.normasabnt.org/normas-abnt-2023/   
+      As normas da ABNT completas e atualizadas para escrita acadêmica podem ser consultadas no site oficial on-line: https://www.normasabnt.org/normas-abnt-2023/   
     
-  utter_consultar_abnt_margens:
+  utter_abnt/margens:
   - text: |
-        As normas para de margens para escrita acadêmica definem que:
-        - Esquerda e superior com 3 cm
-        - Direita e inferior com 2 cm
+      As normas para de margens para escrita acadêmica definem que:
+      - Esquerda e superior com 3 cm
+      - Direita e inferior com 2 cm
 
-  utter_conceito_abnt:
+  utter_abnt/conceito:
   - text: |
-        A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
+      A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
-  utter_informar_nome:
-  - text: | 
-        Por favor me diga seu nome, ou como gostaria de ser chamado
-  - text: | 
-        Gostaria de conhecê-lo um pouco melhor, poderia me dizer seu nome?
+# Pesquisa
+  utter_iniciar_pesquisa:
+  - text: |
+      E lá vamos nós! Primeiro me diga como deseja nomear sua pesquisa
+  
+  utter_informar_string_buscas:
+  - text: |
+      Agora preciso da string de buscas que você deseja usar
 
+# Informações do usuário
   utter_informar_tema_pesquisa:
   - text: | 
-        Me informe o tema de sua pesquisa
+      Me informe um nome para sua pesquisa
 
-  utter_teste:
-  - text: |
-        Obrigado!
-
-  # utters fallback
+# Fallbacks
   utter_nlu_fallback:
-  - text: "**NLU Fallback**: Desculpe, não consegui entender sua mensagem. Pode me perguntar de outra forma?"
+  - text: |
+      Hmmm, não entendi. Poderia me explicar melhor?
   utter_core_fallback:
-  - text: "**Core Fallback**: Desculpe, não consegui encontrar uma resposta pra sua mensagem. Digite /restart para recomeçar a conversa."
+  - text: |
+      Hmmm, não entendi. Poderia me explicar melhor?
+
 
 session_config:
   session_expiration_time: 60

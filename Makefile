@@ -18,6 +18,11 @@ init:
 	make train
 	make shell
 
+deploy:
+	make build
+	make train
+	make telegram
+
 logs:
 	docker compose logs \
 		-f
@@ -41,8 +46,9 @@ actions:
 		make actions
 
 telegram:
-	sudo docker compose run \
+	docker compose run \
 		-d \
+		--rm \
 		--service-ports \
 		bot-telegram \
 		make telegram ENDPOINTS=$(ENDPOINTS) CREDENTIALS=$(CREDENTIALS)

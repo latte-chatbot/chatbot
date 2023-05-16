@@ -5,3 +5,18 @@ rules:
     steps:
       - intent: nlu_fallback
       - action: utter_nlu_fallback
+
+  - rule: Cumprimentar a qualquer momento da conversa
+    steps:
+      - intent: cumprimentar
+      - action: utter_cumprimentar
+
+  - rule: Se despedir a qualquer momento da conversa
+    steps:
+      - intent: despedir
+      - action: utter_despedir
+  
+  - rule: Responder sobre perguntas sobre a ABNT
+    steps:
+      - intent: abnt
+      - action: utter_abnt

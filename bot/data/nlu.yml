@@ -1,8 +1,6 @@
 version: "3.1"
 nlu:
-
-# Cumprimentos, saudações e despedidas
-
+# Cumprimentos
 - intent: cumprimentar
   examples: |
     - olá
@@ -14,24 +12,12 @@ nlu:
     - bom dia
     - boa tarde
     - boa noite
+    - E ai
+    - eAI
+    - Eae
+    - e AE
 
-- intent: saiba_mais
-  examples: |
-    - sobre o que você sabe falar
-    - o que mais você sabe falar
-    - quais assuntos você fala
-    - o que você sabe
-    - lista de assuntos possiveis
-    - quais as perguntas vc responde
-    - quais as perquisar você responde
-    - Qual o seu objetivo robo?
-    - Qual o seu objetivo robô?
-    - Vc tem um objetivo de existencia?
-    - Você foi feito pra que?
-    - Vc tem algum propósito?
-    - Como que vc pode me ser útil?
-    - Me fale mais sobre você.
-
+# Despedidas
 - intent: despedir
   examples: |
     - tchau
@@ -40,8 +26,7 @@ nlu:
     - Até mais, bot
 
 # Informações sobre o chatbot
-
-- intent: criadores
+- intent: criacao
   examples: |
     - Quem te criou?
     - Quem te inventou?
@@ -60,9 +45,25 @@ nlu:
     - Vc foi criado por qm?
     - Vc foi inventado por qm?
 
-# Duvidas sobre ABNT
+- intent: saiba_mais
+  examples: |
+    - sobre o que você sabe falar
+    - o que mais você sabe falar
+    - quais assuntos você fala
+    - o que você sabe
+    - lista de assuntos possiveis
+    - quais as perguntas vc responde
+    - quais as perquisar você responde
+    - Qual o seu objetivo robo?
+    - Qual o seu objetivo robô?
+    - Vc tem um objetivo de existencia?
+    - Você foi feito pra que?
+    - Vc tem algum propósito?
+    - Como que vc pode me ser útil?
+    - Me fale mais sobre você.
 
-- intent: consultar_abnt
+# Duvidas sobre ABNT
+- intent: abnt/consultar
   examples: |
     - Onde posso ver as normas da abnt?
     - Onde consultar as normas da abnt?
@@ -70,22 +71,22 @@ nlu:
     - Quais as normas da ABNT para um TCC?
     - Quais as normas da ABNT para escrita científica?
 
-- intent: consultar_abnt_margens
+- intent: abnt/margens
   examples: |
     - Qual a medida das margens no padrão ABNT?
     - Quanto usar de margem em um artigo no padrão ABNT?
     - Quanto usar de margem em um artigo ABNT?
     - Padrão margem ABNT
 
-- intent: conceito_abnt
+- intent: abnt/conceito
   examples: |
     - O que é ABNT?
     - O que significa ABNT?
 
-# Dados do usuário 
+# Informações do usuário 
+## Nome
 - intent: informar_nome
   examples: |
-    - [Victor](nome)
     - O meu nome é [Arthur](nome)
     - me chamo [Luis](nome)
     - Meu nome: [Clarice](nome)
@@ -93,11 +94,33 @@ nlu:
     - Me chame de [Joana](nome)
     - Sou o professor [Sérgio](nome)
     - Meu nome é [Duerno](nome)
+    - Me identifico como [Fabio](nome)
+    - Chame-me de [Amelia](nome)
+    - Pode ser de [Bruna](nome)
+    - Nome: [Edna](nome)
+    - [Victor](nome)
+    - [Guilherme](nome)
+    - [Matheus](nome)
+    - [Rodrigo](nome)
+    - [Zena](nome)
 
-- intent: tema_pesquisa
+## Pesquisa
+- intent: iniciar_pesquisa
   examples: |
-    - [chatbot](tema_pesquisa)
+    - gostaria de iniciar uma pesquisa
+    - quero fazer uma pesquisa 
+    - realizar pesquisa
+    - desejo pesquisar
+
+- intent: informar_pesquisa
+  examples: |
     - Meu tema de pesquisa é [chatbot](tema_pesquisa)
-    - Pesquiso sobre [chatbot](tema_pesquisa)
-    - Faco pesquisas sobre [chatbot](tema_pesquisa)
-    - Claro, sou pesquiador no tema [chatbot](tema_pesquisa)
+    - Pesquiso sobre [mobile](tema_pesquisa)
+    - Faço pesquisas sobre [web](tema_pesquisa)
+    - Claro, sou pesquiador no tema [computacao](tema_pesquisa)
+    - [tecnologia](tema_pesquisa)
+
+- intent: informar_string_buscas
+  examples: |
+    - Minha string é [chatbot AND gamification](string_buscas)
+    - termos: [mobile OR web AND development](string_buscas)
