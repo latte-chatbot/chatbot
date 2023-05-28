@@ -1,4 +1,4 @@
-name: Rasa Test
+name: Rasa Test PR
 
 on:
   pull_request:
