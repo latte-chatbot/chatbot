@@ -7,6 +7,7 @@ CREDENTIALS = credentials.yml
 # CLEAR PROJECT
 clean:
 	make down
+	sudo rm -rf data/
 	cd bot/ && make clean
 
 down:
