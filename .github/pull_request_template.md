@@ -1,5 +1,5 @@
 ## O que mudou?
-### Qual foi a mudança significativa para que haja um Pull Request?
+### Qual a mudança contida no Pull Request?
 - [ ] Nova funcionalidade (mundança que adiciona funcionabilidade)
 - [ ] Correção de bug (mudança que **NÃO** adiciona funcionalidades)
 <!--
