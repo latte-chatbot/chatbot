@@ -62,4 +62,4 @@ test:
 		--out results/
 
 model-report:
-	rasa-model-report
+	rasa-model-report --output-path results/

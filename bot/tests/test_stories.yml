@@ -13,3 +13,52 @@ stories:
       intent: despedir
     - action: utter_despedir
 
+- story: Cumprimentar a qualquer momento da conversa
+  steps:
+    - user: |
+        Olá.
+      intent: cumprimentar
+    - action: utter_cumprimentar
+
+- story: Se despedir a qualquer momento da conversa
+  steps:
+    - user: |
+        Tchau.
+      intent: despedir
+    - action: utter_despedir
+
+- story: Responder sobre perguntas sobre a ABNT
+  steps:
+    - user: |
+        Onde posso ver as normas da abnt?
+      intent: abnt
+    - action: utter_abnt
+    - user: |
+        Qual a medida das margens no padrão ABNT?
+      intent: abnt
+    - action: utter_abnt
+    - user: |
+        O que é ABNT?
+      intent: abnt
+    - action: utter_abnt
+
+- story: saiba_mais
+  steps:
+    - user: |
+        sobre o que você sabe falar?
+      intent: saiba_mais
+    - action: utter_saiba_mais
+
+- story: criacao
+  steps:
+    - user: |
+        Quem te criou?
+      intent: criacao
+    - action: utter_criacao
+
+- story: Pedir para reformular a mensagem caso NLU não entenda
+  steps:
+    - user: |
+        TESTE FALLBACK
+      intent: nlu_fallback
+    - action: utter_nlu_fallback

@@ -27,25 +27,25 @@ actions:
 #  - action_informou_nome
 #  - action_informou_tema_pesquisa
 #  - action_informou_string_buscas
-  - action_cumprimentar_novamente
+#  - action_cumprimentar_novamente
 
 
-slots:
-  nome_usuario:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: nome_usuario
-  tema_pesquisa:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: tema_pesquisa
-  string_buscas:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: string_buscas
+#slots:
+#  nome_usuario:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: nome_usuario
+#  tema_pesquisa:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: tema_pesquisa
+#  string_buscas:
+#    type: text
+#    mappings:
+#    - type: from_entity
+#      entity: string_buscas
 
 
 responses:

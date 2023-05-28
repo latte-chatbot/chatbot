@@ -88,17 +88,18 @@ class ActionDefaultFallback(Action):
 #        return []
 
 # Demais ações
-class ActionCumprimentarNovamente(Action):
-    def name(self) -> Text:
-        return "action_cumprimentar_novamente"
-    
-    def run(self, 
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        nome = tracker.get_slot("nome")
-        if not nome:
-            dispatcher.utter_message(text=f"Bem-vindo novamente, caro pesquisador!")
-        else:
-            dispatcher.utter_message(text=f"Quanto tempo {nome}, tudo bem?!")
-        return []
+#class ActionCumprimentarNovamente(Action):
+#    def name(self) -> Text:
+#        return "action_cumprimentar_novamente"
+#    
+#    def run(self, 
+#            dispatcher: CollectingDispatcher,
+#            tracker: Tracker,
+#            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#        nome = tracker.get_slot("nome")
+#        if not nome:
+#            dispatcher.utter_message(text=f"Bem-vindo novamente, caro pesquisador!")
+#        else:
+#            dispatcher.utter_message(text=f"Quanto tempo {nome}, tudo bem?!")
+#        return []
+#

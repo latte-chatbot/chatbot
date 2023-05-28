@@ -3,11 +3,11 @@ version: "3.1"
 
 stories:
 # Cumprimentos e despedidas
-- story: cumprimentar_reentrada
-  steps:
-  - intent: cumprimentar_reentrada
-  - action: action_cumprimentar_novamente
-  - action: utter_cumprimentar_reentrada
+#- story: cumprimentar_reentrada
+#  steps:
+#  - intent: cumprimentar_reentrada
+#  - action: action_cumprimentar_novamente
+#  - action: utter_cumprimentar_reentrada
 
 - story: despedir
   steps:
