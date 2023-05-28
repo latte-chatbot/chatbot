@@ -3,7 +3,7 @@ name: Rasa Test PR
 on:
   pull_request:
     branches:
-      - master  # substitua pelo nome da branch principal do seu repositório, se necessário
+      - main
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x  # substitua pela versão do Python que você está usando
+        python-version: 3.x
 
     - name: Install dependencies
       run: |
