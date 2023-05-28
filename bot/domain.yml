@@ -24,9 +24,9 @@ actions:
   - action_session_start
   - action_restart
   - action_default_fallback
-  - action_informou_nome
-  - action_informou_tema_pesquisa
-  - action_informou_string_buscas
+#  - action_informou_nome
+#  - action_informou_tema_pesquisa
+#  - action_informou_string_buscas
   - action_cumprimentar_novamente
 
 
@@ -54,10 +54,8 @@ responses:
   - text: |
       Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar o conhecimento.
       Você pode contar comigo para tirar suas dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada?
-
-      Para começar me diga seu nome ou como gostaria que te chamasse!
       
-      E claro, caso não me conheça ainda e deseje saber mais sobre minhas incríveis habilidades, é só perguntar!
+      E claro caso deseje saber mais sobre minhas incríveis habilidades ou minha histórias é só perguntar!
   
   utter_cumprimentar:
   - text: |
@@ -101,8 +99,9 @@ responses:
  # Informações sobre o chatbot
   utter_saiba_mais:
   - text: |
-      O objetivo de minha criaçã ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, afinal ser pesquisador pode ser bem desafiador às vezes, não é mesmo?! 
-      Estou aqui para te guiar em sua jornada de escrever um artigo cietífico, posso te ajudar a definir um cronograma de escrita e tirar suas dúvidas acerca do mundo acadêmico. Além disso, tenho acesso à uma base de dados incrível, e posso realizar pesquisas nelas de acordo com tema de sua pesquisa!
+      O objetivo de minha criação é ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos e para te guiar em sua jornada! Posso responder várias das dúvidas que você pode ter sobre escrever um artigo científico, e para alunos da UnB posso tirar algumas dúvidas específicas sobre os fluxos da universidade, basta perguntar!
+      Atualmente sei responder questões relacionads a ABNT
+#      (citações, referências, margens, etc), artigos científicos, TCC, monografia, dissertação, teses, e muito mais, sinta-se livre para me perguntar!
   
   utter_criacao:
   - text: |
@@ -128,18 +127,18 @@ responses:
       A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
 # Pesquisa
-  utter_iniciar_pesquisa:
-  - text: |
-      E lá vamos nós! Primeiro me diga como deseja nomear sua pesquisa
-  
-  utter_informar_string_buscas:
-  - text: |
-      Agora preciso da string de buscas que você deseja usar
-
-# Informações do usuário
-  utter_informar_tema_pesquisa:
-  - text: | 
-      Me informe um nome para sua pesquisa
+#  utter_iniciar_pesquisa:
+#  - text: |
+#      E lá vamos nós! Primeiro me diga como deseja nomear sua pesquisa
+#  
+#  utter_informar_string_buscas:
+#  - text: |
+#      Agora preciso da string de buscas que você deseja usar
+#
+## Informações do usuário
+#  utter_informar_tema_pesquisa:
+#  - text: | 
+#      Me informe um nome para sua pesquisa
 
 # Fallbacks
   utter_nlu_fallback:
@@ -152,4 +151,4 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: false
+  carry_over_slots_to_new_session: true

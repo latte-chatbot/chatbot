@@ -46,7 +46,7 @@ actions:
 		make actions
 
 telegram:
-	docker compose run \
+	sudo docker compose run \
 		-d \
 		--rm \
 		--service-ports \

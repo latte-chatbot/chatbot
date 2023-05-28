@@ -27,18 +27,18 @@ stories:
 
 # Informações do usuário
 ## Nome
-- story: informar_nome
-  steps:
-  - intent: informou_nome
-  - action: action_informou_nome
-
-## Pesquisa
-- story: iniciar_pesquisa
-  steps:
-    - intent: iniciar_pesquisa
-    - action: utter_iniciar_pesquisa
-    - intent: informar_tema_pesquisa
-    - action: action_informou_tema_pesquisa
-    - action: utter_informar_string_buscas
-    - intent: informar_string_buscas
-    - action: action_informou_string_buscas
+#- story: informar_nome
+#  steps:
+#  - intent: informou_nome
+#  - action: action_informou_nome
+#
+### Pesquisa
+#- story: iniciar_pesquisa
+#  steps:
+#    - intent: iniciar_pesquisa
+#    - action: utter_iniciar_pesquisa
+#    - intent: informar_tema_pesquisa
+#    - action: action_informou_tema_pesquisa
+#    - action: utter_informar_string_buscas
+#    - intent: informar_string_buscas
+#    - action: action_informou_string_buscas
