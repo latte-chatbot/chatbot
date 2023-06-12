@@ -23,6 +23,7 @@ responses:
       Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais!
       
   utter_cumprimentar_novamente:
+  - text: |
       Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar conhecimento.
       
       Aqui você poderá tirar dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada? No que posso te ajudar?

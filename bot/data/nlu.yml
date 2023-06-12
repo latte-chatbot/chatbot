@@ -15,7 +15,7 @@ nlu:
     - boa tarde
     - boa noite
 
-  - intent: cumprimentar_novamente
+- intent: cumprimentar_novamente
   examples: |
     - Olá, estou de volta
     - Oi, sou eu novo
