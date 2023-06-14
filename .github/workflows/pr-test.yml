@@ -4,6 +4,10 @@ on:
   pull_request:
     branches:
       - main
+      - deploy-1
+      - deploy-2
+      - deploy-3
+                  
 
 jobs:
   build:
