@@ -3,15 +3,10 @@ version: '3.1'
 
 intents:
   - cumprimentar
-  - cumprimentar_reentrada
   - despedir
   - saiba_mais
   - criacao
   - abnt
-  - informar_tema_pesquisa
-  - informar_string_buscas
-  - informou_nome
-  - iniciar_pesquisa
   - fontes_confiaveis
   - estruturacao
   - plagio

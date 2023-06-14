@@ -46,13 +46,6 @@ stories:
       intent: criacao
     - action: utter_criacao
 
-- story: Pedir para reformular a mensagem caso NLU não entenda
-  steps:
-    - user: |
-        TESTE FALLBACK
-      intent: nlu_fallback
-    - action: utter_nlu_fallback
-
 - story: Responder sobre perguntas sobre estruturacao
   steps:
     - user: |
@@ -101,3 +94,11 @@ stories:
         Onde encontrar fontes confiáveis?
       intent: fontes_confiaveis
     - action: utter_fontes_confiaveis
+
+- story: Pedir para reformular a mensagem caso NLU não entenda
+  steps:
+    - user: |
+        TESTE FALLBACK
+      intent: nlu_fallback
+    - action: utter_nlu_fallback
+    
