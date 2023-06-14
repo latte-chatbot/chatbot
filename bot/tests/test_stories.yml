@@ -2,16 +2,6 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 version: "2.0"
 stories:
-- story: Cumprimentar e despedir
-  steps:
-    - user: |
-        boa tarde!
-      intent: cumprimentar
-    - action: utter_cumprimentar
-    - user: |
-        Até logo.
-      intent: despedir
-    - action: utter_despedir
 
 - story: Cumprimentar a qualquer momento da conversa
   steps:
@@ -62,3 +52,52 @@ stories:
         TESTE FALLBACK
       intent: nlu_fallback
     - action: utter_nlu_fallback
+
+- story: Responder sobre perguntas sobre estruturacao
+  steps:
+    - user: |
+        Como estruturar um artigo?
+      intent: estruturacao
+    - action: utter_estruturacao
+    - user: |
+        Como estruturar a introducao de um artigo?
+      intent: estruturacao
+    - action: utter_estruturacao
+    - user: |
+        Como estruturar a conclusao de um artigo?
+      intent: estruturacao
+    - action: utter_estruturacao
+    - user: |
+        Como estruturar os metodos de um artigo?
+      intent: estruturacao
+    - action: utter_estruturacao
+    - user: |
+        Como estruturar a discussao de um artigo?
+      intent: estruturacao
+    - action: utter_estruturacao
+
+- story: Responder perguntas sobre plagio
+  steps:
+    - user: |
+        O que é plágio?
+      intent: plagio
+    - action: utter_plagio 
+    - user: |
+        Como evitar o plágio?
+      intent: plagio
+    - action: utter_plagio
+    - user: |
+        Como detectar o plágio em um artigo?
+      intent: plagio
+    - action: utter_plagio
+    - user: |
+        Quais as consequências de cometer plágio em um artigo?
+      intent: plagio
+    - action: utter_plagio
+
+- story: Responder sobre fontes confiaveis
+  steps:
+    - user: |
+        Onde encontrar fontes confiáveis?
+      intent: fontes_confiaveis
+    - action: utter_fontes_confiaveis

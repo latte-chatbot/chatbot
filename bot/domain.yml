@@ -12,40 +12,15 @@ intents:
   - informar_string_buscas
   - informou_nome
   - iniciar_pesquisa
-
-
-entities:
-  - nome_usuario
-  - tema_pesquisa
-  - string_buscas
+  - fontes_confiaveis
+  - estruturacao
+  - plagio
 
 
 actions:
   - action_session_start
   - action_restart
   - action_default_fallback
-#  - action_informou_nome
-#  - action_informou_tema_pesquisa
-#  - action_informou_string_buscas
-#  - action_cumprimentar_novamente
-
-
-#slots:
-#  nome_usuario:
-#    type: text
-#    mappings:
-#    - type: from_entity
-#      entity: nome_usuario
-#  tema_pesquisa:
-#    type: text
-#    mappings:
-#    - type: from_entity
-#      entity: tema_pesquisa
-#  string_buscas:
-#    type: text
-#    mappings:
-#    - type: from_entity
-#      entity: string_buscas
 
 
 responses:
@@ -62,24 +37,6 @@ responses:
       E aí, tudo bem?
   - text: |
       Opa, como vai?
-
-  utter_cumprimentar_reentrada:
-  - text: |
-      Sinto-me honrado por tê-lo aqui novamente em busca de conhecimento e inspiração para as suas jornadas acadêmicas. Você é como um explorador em uma missão para desvendar os mistérios do universo, e aqui você encontrará uma fonte inesgotável de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada épica de descoberta e inovação científica.
-
-      Quais são as suas dúvidas e desafios de hoje? Conte comigo para ajudá-lo a superá-los e levar a sua pesquisa para o próximo nível!
-  - text: |
-      É uma grande honra tê-lo de volta em busca de conhecimento e inspiração para as suas empreitadas intelectuais. Você é como um desbravador que busca desvendar os mistérios do mundo, e aqui você poderá encontrar um tesouro infinito de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada inspiradora de descoberta e inovação científica.
-
-      Quais são as suas questões e obstáculos de hoje? Conte comigo para ajudá-lo a superá-los e levar a sua pesquisa ao próximo patamar!
-  - text: |
-      Sinto-me privilegiado em recebê-lo de volta ao Latte Chatbot, em busca de conhecimento e inspiração para sua jornada acadêmica. Você é como um desbravador destemido em uma missão para desvendar os enigmas do nosso universo, aqui você encontrará um universo de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu companheiro nesta jornada extraordinária de descoberta e inovação científica. 
-      
-      O que você gostaria de explorar e descobrir hoje? Conte comigo para ajudá-lo a superar quaisquer desafios e levar sua pesquisa a novas alturas!
-  - text: |
-      Estou honrado por tê-lo de volta ao Latte Chatbot em busca de conhecimento e inspiração para suas pesquisas acadêmicas. Você é como um curioso incansável em uma busca incessante por descobertas científicas, e aqui você encontrará um manancial de recursos e informações valiosas para ajudá-lo a alcançar seus objetivos. Permita-me ser seu guia nesta jornada apaixonante do caminho científico. 
-      
-      O que você gostaria de explorar hoje? Conte comigo para ajudá-lo a enfrentar quaisquer desafios e elevar sua pesquisa a novos patamares!
 
   utter_despedir:
   - text: |
@@ -126,19 +83,85 @@ responses:
   - text: |
       A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
-# Pesquisa
-#  utter_iniciar_pesquisa:
-#  - text: |
-#      E lá vamos nós! Primeiro me diga como deseja nomear sua pesquisa
-#  
-#  utter_informar_string_buscas:
-#  - text: |
-#      Agora preciso da string de buscas que você deseja usar
-#
-## Informações do usuário
-#  utter_informar_tema_pesquisa:
-#  - text: | 
-#      Me informe um nome para sua pesquisa
+  utter_fontes_confiaveis:
+  - text: |
+      Fontes confiáveis são fontes de informação que são consideradas confiáveis e confiáveis para uso em trabalhos acadêmicos e científicos. Essas fontes são geralmente produzidas por autores ou organizações com experiência e credibilidade em um determinado campo de estudo.
+        
+      Aqui vai alguns exemplos de lugares onde você pode encontrar fontes confiáveis para usar em seus trabalhos:
+    
+      - PubMed Central: Uma biblioteca digital que oferece acesso gratuito a artigos científicos nas áreas de medicina, biologia e ciências da vida.
+      - PLOS ONE: Uma revista científica de acesso aberto que publica pesquisas em diversas áreas, incluindo ciências naturais, ciências da saúde e ciências sociais.
+      - arXiv: Um repositório de pré-publicações de artigos científicos nas áreas de física, matemática, ciências da computação e outras disciplinas relacionadas.
+      - Directory of Open Access Journals (DOAJ): Um diretório que indexa e fornece acesso a revistas científicas de acesso aberto em várias áreas do conhecimento.
+      - Google Scholar: Um mecanismo de busca acadêmico que permite encontrar artigos científicos, teses, dissertações e outros materiais acadêmicos de diversas fontes confiáveis.
+      - Open Science Framework (OSF): Uma plataforma de colaboração científica que permite compartilhar e acessar pesquisas em várias disciplinas.
+      - ScienceDirect: Uma plataforma de publicação e acesso a revistas científicas, oferecendo uma vasta coleção de artigos nas áreas de ciências naturais, ciências sociais e humanidades.
+      - CORE (COnnecting REpositories): Um serviço que permite buscar e acessar artigos acadêmicos de repositórios de acesso aberto em todo o mundo.
+      - Directory of Open Access Books (DOAB): Um diretório que oferece acesso a livros acadêmicos de acesso aberto em várias disciplinas.
+      - Europe PMC: Uma plataforma que fornece acesso a artigos científicos nas áreas de ciências da vida e biomedicina.
+      - IEEE Xplore: Uma biblioteca digital que contém artigos acadêmicos nas áreas de engenharia, tecnologia e ciências da computação.
+      - PubMed: Um banco de dados que indexa artigos acadêmicos nas áreas de medicina, biologia e ciências da saúde.
+      - SpringerLink: Uma plataforma de publicação e acesso a revistas científicas e livros em várias disciplinas acadêmicas.
+      - JSTOR: Um repositório digital que contém artigos acadêmicos em diversas áreas, incluindo ciências sociais, humanidades e ciências naturais.
+      - SciELO: Uma biblioteca digital que oferece acesso a artigos científicos de revistas acadêmicas da América Latina, Espanha, Portugal e África.
+      - Open Access Digital Library (OADL): Uma biblioteca digital que disponibiliza artigos de acesso aberto em várias áreas do conhecimento.
+      - BioMed Central: Uma editora de acesso aberto que publica revistas acadêmicas nas áreas de biomedicina, biologia e ciências da vida.
+      - Public Library of Science (PLOS): Uma organização que publica revistas científicas de acesso aberto em várias disciplinas.
+
+  utter_estruturacao/geral:
+  - text: |
+      A estrutura de um artigo científico geralmente segue uma organização padrão, que inclui os elementos principais, como introdução, métodos, resultados e discussão, e conclusão.
+      A introdução é onde você apresenta o tema, justifica a importância do estudo e estabelece o objetivo da pesquisa.
+      Os métodos descrevem os procedimentos e técnicas utilizados no estudo, permitindo que outros pesquisadores possam replicar os experimentos.
+      Na seção de resultados, você apresenta e analisa os dados coletados durante a pesquisa.
+      A discussão é o momento de interpretar os resultados, relacionando-os aos objetivos do estudo e discutindo suas implicações.
+      Por fim, a conclusão resume os principais achados e destaca as contribuições do estudo, além de apresentar possíveis recomendações ou direções para pesquisas futuras.
+      
+      Posso te dar mais detalhes sobre cada uma dessas seções, caso deseje saber mais, é só perguntar!
+
+  utter_estruturacao/introducao:
+  - text: |
+      A seção de introdução tem como objetivo apresentar o tema do estudo, fornecer o contexto relevante e estabelecer a importância da pesquisa.
+      Na introdução, você pode começar com uma contextualização ampla do assunto, em seguida, destacar a problemática específica que será abordada no seu estudo.
+      
+      Além disso, é importante estabelecer a relevância da pesquisa, explicando por que o tema é significativo e quais são as lacunas de conhecimento que o seu estudo pretende preencher.
+
+  utter_estruturacao/metodos:
+  - text: |
+      A seção de métodos descreve detalhadamente os procedimentos utilizados na pesquisa, incluindo a amostra, materiais, instrumentos, coleta de dados e análise estatística. 
+      Nessa seção, você pode descrever o tipo de estudo realizado, a população ou amostra selecionada, os critérios de inclusão e exclusão, bem como os procedimentos éticos seguidos.
+      Também é importante detalhar os instrumentos utilizados para coletar os dados, explicar como os dados foram coletados e qual método de análise foi empregado.
+
+  utter_estruturacao/resultados:
+  - text: |
+      A seção de resultados é onde você apresenta os principais achados da pesquisa.
+      Nessa seção, você pode utilizar gráficos, tabelas e outros recursos visuais para apresentar os dados de forma clara e objetiva.
+      Além de apresentar os resultados, é importante fazer uma análise e interpretação dos dados, relacionando-os aos objetivos da pesquisa e discutindo suas implicações.
+  utter_estruturacao/discussao:
+  - text: |
+      A seção de discussão é o espaço para interpretar e analisar os resultados obtidos. Nessa seção, você pode comparar seus resultados com estudos anteriores, discutir suas descobertas à luz da literatura existente e destacar as contribuições do seu estudo. É também o momento de abordar possíveis limitações do estudo e oferecer sugestões para pesquisas futuras, indicando caminhos para expandir o conhecimento sobre o tema.
+
+  utter_plagio/definicao:
+  - text: |
+      O plágio é a prática de usar o trabalho ou ideias de outras pessoas sem dar crédito adequado. É uma violação séria da ética acadêmica. Essa prática envolve copiar diretamente trechos de um trabalho sem citar a fonte corretamente. É importante sempre atribuir crédito quando você usa informações de outras fontes, uma vez que ao não fazê-lo pode resultar em consequências graves, como punições acadêmicas e reputação prejudicada. É essencial evitar essa prática e garantir a integridade do seu trabalho.
+
+  utter_plagio/consequencias:
+  - text: |
+      As consequências do plágio podem variar dependendo das políticas da instituição de ensino. No entanto, em geral, as consequências podem incluir advertências, reprovação em disciplinas, suspensão ou até mesmo a expulsão da instituição. Além das consequências acadêmicas, o plágio pode afetar negativamente sua reputação como estudante e profissional. 
+    
+      É importante manter a integridade acadêmica e evitar práticas desonestas. Lembre-se de que é sempre melhor produzir seu próprio trabalho e atribuir corretamente as fontes que você utiliza, em vez de arriscar as consequências do plágio.
+
+  utter_plagio/evitar:
+  - text: |
+      Para evitar o plágio, é fundamental citar corretamente todas as fontes que você usa em seu trabalho. Isso inclui fazer referência adequada a citações, paráfrases e ideias de outros autores. Use um estilo de citação apropriado, como a APA (American Psychological Association) ou a ABNT (Associação Brasileira de Normas Técnicas), para garantir que suas citações sejam formatadas corretamente.
+    
+      Além disso, certifique-se de que você entende completamente o conceito de plágio e as práticas éticas de escrita acadêmica. Familiarize-se com as diretrizes da sua instituição de ensino sobre o assunto.
+
+  utter_plagio/detectar:
+  - text: |
+      Para detectar plágio, existem várias ferramentas e técnicas disponíveis. Alguns exemplos incluem o uso de softwares de detecção de plágio, como Turnitin, Copyscape e Plagscan. Essas ferramentas analisam o texto do seu trabalho e comparam com uma vasta base de dados de conteúdo existente para identificar semelhanças. Elas podem destacar trechos suspeitos que possam indicar plágio.
+    
+      Além disso, você também pode fazer verificações manuais, como pesquisar partes do seu texto no Google para identificar se há conteúdo semelhante disponível online. É importante lembrar que a detecção de plágio é essencial para garantir a originalidade do seu trabalho e manter a integridade acadêmica.
 
 # Fallbacks
   utter_nlu_fallback:

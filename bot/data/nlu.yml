@@ -1,4 +1,6 @@
 version: "3.1"
+
+
 nlu:
 # Cumprimentos
 - intent: cumprimentar
@@ -83,44 +85,87 @@ nlu:
     - O que é ABNT?
     - O que significa ABNT?
 
-# Informações do usuário 
-## Nome
-- intent: informar_nome
+# Fontes confiáveis
+- intent: fontes_confiaveis
   examples: |
-    - O meu nome é [Arthur](nome)
-    - me chamo [Luis](nome)
-    - Meu nome: [Clarice](nome)
-    - Claro, meu nome é [Larissa](nome)
-    - Me chame de [Joana](nome)
-    - Sou o professor [Sérgio](nome)
-    - Meu nome é [Duerno](nome)
-    - Me identifico como [Fabio](nome)
-    - Chame-me de [Amelia](nome)
-    - Pode ser de [Bruna](nome)
-    - Nome: [Edna](nome)
-    - [Victor](nome)
-    - [Guilherme](nome)
-    - [Matheus](nome)
-    - [Rodrigo](nome)
-    - [Zena](nome)
+    - Onde posso encontrar fontes confiáveis para minha pesquisa?
+    - Quais são as fontes mais confiáveis para um trabalho acadêmico?
+    - Como identificar se uma fonte é confiável?
+    - Quais são os critérios para avaliar a confiabilidade de uma fonte?
+    - Quais sites são recomendados para encontrar informações confiáveis?
+    - Existe alguma lista de fontes confiáveis para trabalhos acadêmicos?
+    - Como posso saber se um livro é uma fonte confiável?
+    - O que devo considerar ao avaliar a confiabilidade de um artigo científico?
 
-## Pesquisa
-- intent: iniciar_pesquisa
-  examples: |
-    - gostaria de iniciar uma pesquisa
-    - quero fazer uma pesquisa 
-    - realizar pesquisa
-    - desejo pesquisar
 
-- intent: informar_pesquisa
+# Estruturação de artigos
+- intent: estruturacao/geral
   examples: |
-    - Meu tema de pesquisa é [chatbot](tema_pesquisa)
-    - Pesquiso sobre [mobile](tema_pesquisa)
-    - Faço pesquisas sobre [web](tema_pesquisa)
-    - Claro, sou pesquiador no tema [computacao](tema_pesquisa)
-    - [tecnologia](tema_pesquisa)
+    - Quais são as partes principais de um trabalho acadêmico?
+    - Como devo estruturar meu trabalho acadêmico?
+    - Quais são as seções comuns em um artigo científico?
+    - O que devo incluir na introdução do meu trabalho acadêmico?
+    - Quais são os elementos essenciais de uma seção de métodos?
+    - Como apresentar os resultados de forma adequada?
+    - O que devo abordar na seção de discussão do meu trabalho acadêmico?
+    - Quais são as considerações finais em um trabalho acadêmico?
+    - Como posso formatar as referências bibliográficas corretamente?
 
-- intent: informar_string_buscas
+- intent: estruturacao/introducao
   examples: |
-    - Minha string é [chatbot AND gamification](string_buscas)
-    - termos: [mobile OR web AND development](string_buscas)
+    - Qual é a estrutura recomendada para a seção de introdução de um artigo?
+    - O que devo incluir na seção de introdução do meu artigo?
+    - Quais são os elementos essenciais da introdução de um artigo científico?
+    - Como posso começar a seção de introdução do meu artigo de forma adequada?
+    - Quais informações devo fornecer na introdução do meu trabalho acadêmico?
+
+- intent: estruturacao/metodos
+  examples: |
+    - Como estruturar a seção de métodos de um artigo científico?
+    - Quais são os principais elementos que devo incluir na seção de métodos do meu artigo?
+    - O que devo descrever na seção de métodos do meu trabalho acadêmico?
+    - Como detalhar os procedimentos experimentais na seção de métodos?
+
+- intent: estruturacao/resultados
+  examples: |
+    - Qual é a melhor forma de apresentar os resultados em um artigo?
+    - Como estruturar a seção de resultados do meu trabalho acadêmico?
+    - O que devo incluir na seção de resultados do meu artigo científico?
+    - Quais são as melhores formas de visualizar e apresentar dados e gráficos nos resultados?
+
+- intent: estruturacao/discussao
+  examples: |
+    - Como estruturar a seção de discussão de um artigo científico?
+    - O que devo abordar na seção de discussão do meu trabalho acadêmico?
+    - Quais são os principais pontos que devo considerar ao escrever a seção de discussão do meu artigo?
+    - Como interpretar e analisar os resultados na seção de discussão?
+
+
+# Plágio
+- intent: plagio/definicao
+  examples: |
+    - O que é plágio?
+    - Qual é a definição de plágio?
+    - Como você define plágio?
+    - O plágio é considerado uma infração acadêmica?
+
+- intent: plagio/consequencias
+  examples: |
+    - Quais são as consequências do plágio em um trabalho acadêmico?
+    - O que acontece se eu cometer plágio em meu trabalho?
+    - Quais são as penalidades para o plágio na academia?
+    - Como o plágio pode afetar minha reputação acadêmica?
+
+- intent: plagio/evitar
+  examples: |
+    - Como posso evitar o plágio em meu trabalho acadêmico?
+    - Quais são as melhores práticas para evitar o plágio?
+    - Quais são as estratégias para evitar o plágio na escrita acadêmica?
+    - Como posso citar corretamente minhas fontes para evitar plágio?
+
+- intent: plagio/detectar
+  examples: |
+    - Como posso detectar o plágio em meu trabalho?
+    - Existem ferramentas para identificar o plágio em um documento?
+    - Quais métodos posso usar para verificar se meu trabalho contém plágio?
+    - Como posso garantir que meu trabalho seja original e livre de plágio?
