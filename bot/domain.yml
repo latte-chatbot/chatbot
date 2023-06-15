@@ -10,6 +10,8 @@ intents:
   - fontes_confiaveis
   - estruturacao
   - plagio
+  - originalidade
+  - revisao
 
 
 actions:
@@ -157,6 +159,42 @@ responses:
       Para detectar plágio, existem várias ferramentas e técnicas disponíveis. Alguns exemplos incluem o uso de softwares de detecção de plágio, como Turnitin, Copyscape e Plagscan. Essas ferramentas analisam o texto do seu trabalho e comparam com uma vasta base de dados de conteúdo existente para identificar semelhanças. Elas podem destacar trechos suspeitos que possam indicar plágio.
     
       Além disso, você também pode fazer verificações manuais, como pesquisar partes do seu texto no Google para identificar se há conteúdo semelhante disponível online. É importante lembrar que a detecção de plágio é essencial para garantir a originalidade do seu trabalho e manter a integridade acadêmica.
+
+  utter_originalidade/definicao_importancia:
+  - text: |
+      A originalidade e a inovação em trabalhos acadêmicos são essenciais para avançar o conhecimento em sua área de estudo. Ao trazer contribuições relevantes e inovadoras, você tem a oportunidade de impactar positivamente a comunidade acadêmica, gerar novos insights e abrir caminho para futuras pesquisas. Além disso, a originalidade demonstra sua capacidade de pensar criticamente e oferecer perspectivas únicas. Para garantir a autenticidade do seu trabalho, recomendo seguir algumas práticas, como realizar uma extensa revisão bibliográfica, desenvolver uma abordagem única e apresentar contribuições inovadoras para a área de estudo. Tenho algumas outras dicas, se desejar.
+
+  utter_originalidade/dicas:
+  - text: |
+      Certamente! Aqui estão algumas dicas para tornar seu trabalho acadêmico mais inovador: busque fontes de pesquisa atualizadas, identifique lacunas na literatura existente, explore novas metodologias ou abordagens, e esteja aberto a perspectivas e ideias originais. Lembre-se de que a originalidade é fundamental para destacar-se na área de estudo.
+      Para garantir a originalidade do seu trabalho, é importante analisar cuidadosamente as pesquisas já existentes na área. Identifique lacunas no conhecimento e proponha uma abordagem única para preenchê-las.
+      
+      Além disso, você pode explorar novas metodologias ou abordagens para investigar o problema de pesquisa, esteja aberto a perspectivas e ideias originais. Lembre-se de que a originalidade é fundamental para destacar-se na área de estudo. Desafie ideias convencionais, proponha novas perspectivas e apresente soluções inovadoras para os problemas de pesquisa.
+
+  utter_revisao/revisao_ortografia:
+  - text: |
+      Aqui estão algumas dicas para revisar a ortografia do seu texto:
+      - Verifique palavra por palavra em busca de erros ortográficos.
+      - Utilize ferramentas de correção ortográfica, como o corretor automático do seu editor de texto.
+      - Leia o texto em voz alta para identificar possíveis erros de pronúncia.
+      - Peça a alguém para revisar seu trabalho, pois uma segunda opinião pode ajudar a identificar erros que você possa ter deixado passar.
+
+  utter_revisao/revisao_gramatica:
+  - text: |
+      Revisar a gramática do seu texto é essencial. Aqui estão algumas dicas para ajudar na revisão gramatical:
+      - Verifique a concordância verbal e nominal.
+      - Revise o uso correto dos tempos verbais.
+      - Verifique o uso de pronomes e sua concordância com o restante da frase.
+      - Utilize ferramentas de correção gramatical, como gramáticos online ou programas de revisão de texto.
+
+  utter_revisao/revisao_coesao:
+  - text: |
+      Revisar a clareza e coesão do seu texto é importante para garantir uma comunicação efetiva. Aqui estão algumas dicas:
+      - Verifique se as ideias estão organizadas de forma lógica e sequencial.
+      - Utilize conectores e transições adequadas para tornar a leitura mais fluida.
+      - Revise a estrutura das frases para evitar ambiguidades e torná-las mais claras.
+      - Verifique se o texto está coeso, ou seja, se as partes estão interligadas de forma harmoniosa.
+
 
 # Fallbacks
   utter_nlu_fallback:
