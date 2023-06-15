@@ -6,7 +6,7 @@ on:
       - main      
 
 jobs:
-  build:
+  testes_rasa:
     runs-on: ubuntu-20.04
 
     steps:
@@ -23,11 +23,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r bot/requirements.txt
 
-    - name: Run Rasa Test
-      run: |
-        rasa test
-
-    - name: Run Rasa Model Report
+    - name: Run train
+      working-directory: bot/
       run: |
         rasa train
-        rasa model report
+      
+    - name: Run test
+      working-directory: bot/
+      run: |
+        rasa test
+        
+    - name: Run model report
+      working-directory: bot/
+      run: |
+        rasa-model-report
