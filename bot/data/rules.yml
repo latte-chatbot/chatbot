@@ -20,3 +20,13 @@ rules:
     steps:
       - intent: abnt
       - action: utter_abnt
+
+  - rule: Responder sobre perguntas sobre estruturacao
+    steps:
+      - intent: estruturacao
+      - action: utter_estruturacao
+
+  - rule: Responder sobre perguntas sobre plagio
+    steps:
+      - intent: plagio
+      - action: utter_plagio

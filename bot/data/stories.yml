@@ -2,13 +2,6 @@ version: "3.1"
 
 
 stories:
-# Cumprimentos e despedidas
-#- story: cumprimentar_reentrada
-#  steps:
-#  - intent: cumprimentar_reentrada
-#  - action: action_cumprimentar_novamente
-#  - action: utter_cumprimentar_reentrada
-
 - story: despedir
   steps:
   - intent: despedir
@@ -25,20 +18,8 @@ stories:
   - intent: criacao
   - action: utter_criacao
 
-# Informações do usuário
-## Nome
-#- story: informar_nome
-#  steps:
-#  - intent: informou_nome
-#  - action: action_informou_nome
-#
-### Pesquisa
-#- story: iniciar_pesquisa
-#  steps:
-#    - intent: iniciar_pesquisa
-#    - action: utter_iniciar_pesquisa
-#    - intent: informar_tema_pesquisa
-#    - action: action_informou_tema_pesquisa
-#    - action: utter_informar_string_buscas
-#    - intent: informar_string_buscas
-#    - action: action_informou_string_buscas
+# Fontes confiáveis
+- story: fontes_confiaveis
+  steps:
+  - intent: fontes_confiaveis
+  - action: utter_fontes_confiaveis
