@@ -26,4 +26,4 @@ jobs:
     - name: Run test
       working-directory: bot/
       run: |
-        sudo rasa test
+        rasa test
