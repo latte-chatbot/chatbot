@@ -26,14 +26,14 @@ jobs:
     - name: Run train
       working-directory: bot/
       run: |
-        rasa train
+        sudo rasa train
       
     - name: Run test
       working-directory: bot/
       run: |
-        rasa test
+        sudo rasa test
         
     - name: Run model report
       working-directory: bot/
       run: |
-        rasa-model-report
+        sudo rasa-model-report
