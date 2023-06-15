@@ -3,11 +3,7 @@ name: Rasa Test PR
 on:
   pull_request:
     branches:
-      - main
-      - deploy-1
-      - deploy-2
-      - deploy-3
-                  
+      - main      
 
 jobs:
   build:
@@ -20,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.1
+        python-version: 3.1.4
 
     - name: Install dependencies
       run: |
