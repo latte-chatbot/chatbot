@@ -1,7 +1,13 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
-version: "2.0"
+version: "3.1"
+
+
 stories:
+- story: Pedir para reformular a mensagem caso NLU não entenda
+  steps:
+    - user: |
+        TESTE FALLBACK
+      intent: nlu_fallback
+    - action: utter_nlu_fallback
 
 - story: Cumprimentar a qualquer momento da conversa
   steps:
@@ -95,10 +101,28 @@ stories:
       intent: fontes_confiaveis
     - action: utter_fontes_confiaveis
 
-- story: Pedir para reformular a mensagem caso NLU não entenda
+- story: Responder perguntas sobre originalidade
   steps:
     - user: |
-        TESTE FALLBACK
-      intent: nlu_fallback
-    - action: utter_nlu_fallback
-    
+        Como posso garantir que meu trabalho tenha originalidade?
+      intent: originalidade
+    - action: utter_originalidade
+    - user: |
+        Dicas para deixar meu trabalho mais original
+      intent: originalidade
+    - action: utter_originalidade
+
+- story: Responder perguntas sobre revisao
+  steps:
+    - user: |
+        Como posso garantir que meu texto não tenha erros de ortografia?
+      intent: revisao
+    - action: utter_revisao
+    - user: |
+        Como posso revisar a gramática do meu texto?
+      intent: revisao
+    - action: utter_revisao
+    - user: |
+        Como posso verificar se meu texto está claro e coeso?
+      intent: revisao
+    - action: utter_revisao

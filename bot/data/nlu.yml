@@ -169,3 +169,43 @@ nlu:
     - Existem ferramentas para identificar o plágio em um documento?
     - Quais métodos posso usar para verificar se meu trabalho contém plágio?
     - Como posso garantir que meu trabalho seja original e livre de plágio?
+
+- intent: originalidade/definicao_importancia
+  examples: |
+    - Como posso garantir que meu trabalho seja original?
+    - Como posso garantir que meu trabalho tenha originalidade?
+    - Quais estratégias posso usar para garantir a originalidade do meu trabalho acadêmico?
+    - Existem técnicas específicas para evitar plágio e garantir a autenticidade do meu trabalho?
+    - Por que é importante que meu trabalho seja original e inovador?
+    - Qual é o impacto de trazer contribuições relevantes e inovadoras em um trabalho acadêmico?
+    - Como a originalidade do trabalho pode influenciar sua relevância e aceitação na comunidade acadêmica?
+
+- intent: originalidade/dicas
+  examples: |
+    - Dicas para deixar meu trabalho mais original
+    - Existe alguma forma de tornar meu trabalho acadêmico mais inovador?
+    - Quais são as dicas para trazer originalidade ao meu estudo?
+    - Tem alguma estratégia para garantir a originalidade do meu trabalho de pesquisa?
+    - Como posso evitar que meu trabalho seja apenas uma cópia de outros estudos?
+    - Quais são as melhores práticas para trazer contribuições relevantes e inovadoras para a área?
+    - Quais são os elementos que tornam um trabalho acadêmico original e impactante?
+    - Tenho receio de que meu trabalho não seja considerado original. O que posso fazer para melhorar?
+    - Quais são as abordagens criativas que posso utilizar para destacar meu trabalho na área?
+
+- intent: revisao/revisao_ortografia
+  examples: |
+    - Como posso garantir que meu texto não tenha erros de ortografia?
+    - Quais são as melhores práticas para revisar a ortografia do meu trabalho acadêmico?
+    - Tenho dificuldades com a ortografia. Você tem alguma dica para me ajudar a corrigir erros?
+
+- intent: revisao/revisao_gramatica
+  examples: |
+    - Como posso revisar a gramática do meu texto?
+    - Quais são as principais regras gramaticais que devo revisar no meu trabalho?
+    - Existem ferramentas que podem me ajudar a identificar erros gramaticais?
+
+- intent: revisao/revisao_coesao
+  examples: |
+    - Como posso verificar se meu texto está claro e coeso?
+    - Quais são as estratégias para tornar meu texto mais claro e coeso?
+    - O que devo considerar ao revisar a clareza e coesão do meu trabalho?

@@ -23,6 +23,22 @@ pipeline:
   epochs: 100
   retrieval_intent: abnt
   constrain_similarities: true
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: estruturacao
+  constrain_similarities: true
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: plagio
+  constrain_similarities: true
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: originalidade
+  constrain_similarities: true
+- name: ResponseSelector
+  epochs: 100
+  retrieval_intent: revisao
+  constrain_similarities: true
 - name: FallbackClassifier
   threshold: 0.7
   ambiguity_threshold: 0.2

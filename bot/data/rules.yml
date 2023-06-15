@@ -30,3 +30,13 @@ rules:
     steps:
       - intent: plagio
       - action: utter_plagio
+
+  - rule: Responder sobre perguntas de originalidade
+    steps:
+      - intent: originalidade
+      - action: utter_originalidade
+
+  - rule: Responder sobre perguntas de revisão
+    steps:
+      - intent: revisao
+      - action: utter_revisao
