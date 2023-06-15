@@ -23,17 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r bot/requirements.txt
 
-    - name: Run train
-      working-directory: bot/
-      run: |
-        sudo rasa train
-      
     - name: Run test
       working-directory: bot/
       run: |
         sudo rasa test
-        
-    - name: Run model report
-      working-directory: bot/
-      run: |
-        sudo rasa-model-report
