@@ -2,7 +2,7 @@ version: '3.1'
 
 
 intents:
-  - cumprimentar
+  - apresentacao
   - despedir
   - saiba_mais
   - criacao
@@ -28,12 +28,6 @@ responses:
       
       Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você em algumas áreas, incluindo: adequação às normas ABNT, identificação de fontes confiáveis, estruturação eficiente de artigos, prevenção de plágio, promoção da originalidade na escrita e aprimoramento da revisão de textos. Como posso contribuir para o seu progresso hoje?
 
-  utter_cumprimentar:
-  - text: |
-      E aí, tudo bem?
-  - text: |
-      Opa, como vai?
-
   utter_despedir:
   - text: |
       Foi um prazer te ajudar!
@@ -52,8 +46,7 @@ responses:
  # Informações sobre o chatbot
   utter_saiba_mais:
   - text: |
-      O objetivo de minha criação é ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos e para te guiar em sua jornada! Posso responder várias das dúvidas que você pode ter sobre escrever um artigo científico, e para alunos da UnB posso tirar algumas dúvidas específicas sobre os fluxos da universidade, basta perguntar!
-      Atualmente sei responder questões relacionads a ABNT
+      O objetivo da minha criação é ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, para te guiar em sua jornada! Posso responder várias das dúvidas que você pode ter sobre escrever um artigo científico como:  adequação às normas ABNT, identificação de fontes confiáveis, estruturação eficiente de artigos, prevenção de plágio, promoção da originalidade na escrita e aprimoramento da revisão de textos.
 
 # (citações, referências, margens, etc), artigos científicos, TCC, monografia, dissertação, teses, e muito mais, sinta-se livre para me perguntar!  
   utter_criacao:
