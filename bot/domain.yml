@@ -26,7 +26,15 @@ responses:
   - text: |
       Olá, eu sou o Latte Chatbot! A minha missão é ser seu aliado na busca pelo conhecimento, a ferramenta mais poderosa do mundo. Estou aqui para auxiliar pesquisadores como você a aprimorar suas habilidades e a excelência em produção científica.
       
-      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você em algumas áreas, incluindo: adequação às normas ABNT, identificação de fontes confiáveis, estruturação eficiente de artigos, prevenção de plágio, promoção da originalidade na escrita e aprimoramento da revisão de textos. Como posso contribuir para o seu progresso hoje?
+      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você em algumas áreas, incluindo: 
+       - Adequação às normas ABNT
+       - Identificação de fontes confiáveis
+       - Estruturação eficiente de artigos
+       - Prevenção de plágio
+       - Ppromoção da originalidade na escrita
+       - Aprimoramento da revisão de textos 
+       
+      Como posso contribuir para o seu progresso hoje?
 
   utter_despedir:
   - text: |
@@ -43,7 +51,7 @@ responses:
       Foi um grande prazer ajudar!
       Sempre há algo novo a aprender, te espero em breve!
  
- # Informações sobre o chatbot
+# Informações sobre o chatbot
   utter_saiba_mais:
   - text: |
       O objetivo da minha criação é ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos, para te guiar em sua jornada! Posso responder várias das dúvidas que você pode ter sobre escrever um artigo científico como:  adequação às normas ABNT, identificação de fontes confiáveis, estruturação eficiente de artigos, prevenção de plágio, promoção da originalidade na escrita e aprimoramento da revisão de textos.
@@ -52,10 +60,12 @@ responses:
   utter_criacao:
   - text: |
       Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília como produto de um trabalho de conclusão de curso (TCC) com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
-      - Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
-      - Co-Orientador: Arthur Rocha Temporim De Lacerda
-      - Orientando: Luiz Henrique Fernandes Zamprogno
-      - Orientando: Victor Eduardo Araújo Ribeiro
+       - Orientador: Prof. Dr. Sergio Antonio Andrade de Freitas
+       - Co-Orientador: Arthur Rocha Temporim De Lacerda
+       - Orientando: Luiz Henrique Fernandes Zamprogno
+       - Orientando: Victor Eduardo Araújo Ribeiro
+    
+      Como eu posso te ajudar hoje?
 
 # Dúvidas sobre ABNT
   utter_abnt/consultar:
@@ -194,7 +204,7 @@ responses:
       Hmmm, não entendi. Poderia me explicar melhor?
   utter_core_fallback:
   - text: |
-      Hmmm, não entendi. Poderia me explicar melhor?
+      Não entendi o que você falou. Me explica melhor o que precisa?
 
 
 session_config:
