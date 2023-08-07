@@ -24,11 +24,10 @@ responses:
 # Cumprimentos e despedidas
   utter_apresentacao:
   - text: |
-      Olá, eu sou o Latte Chatbot, e estou aqui para te ajudar a conquistar a ferramenta mais poderosa do mundo, o conhecimento! Meu objetivo é ajudar pesquisadores a aprender e disseminar o conhecimento.
-      Você pode contar comigo para tirar suas dúvidas, realizar pesquisas e muito mais! Então, vamos embarcar nessa jornada?
+      Olá, eu sou o Latte Chatbot! A minha missão é ser seu aliado na busca pelo conhecimento, a ferramenta mais poderosa do mundo. Estou aqui para auxiliar pesquisadores como você a aprimorar suas habilidades e a excelência em produção científica.
       
-      E claro caso deseje saber mais sobre minhas incríveis habilidades ou minha histórias é só perguntar!
-  
+      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você em algumas áreas, incluindo: adequação às normas ABNT, identificação de fontes confiáveis, estruturação eficiente de artigos, prevenção de plágio, promoção da originalidade na escrita e aprimoramento da revisão de textos. Como posso contribuir para o seu progresso hoje?
+
   utter_cumprimentar:
   - text: |
       E aí, tudo bem?
@@ -55,8 +54,8 @@ responses:
   - text: |
       O objetivo de minha criação é ajudar você e vários outros pesquisadores a atingirem seus objetivos acadêmicos e para te guiar em sua jornada! Posso responder várias das dúvidas que você pode ter sobre escrever um artigo científico, e para alunos da UnB posso tirar algumas dúvidas específicas sobre os fluxos da universidade, basta perguntar!
       Atualmente sei responder questões relacionads a ABNT
-#      (citações, referências, margens, etc), artigos científicos, TCC, monografia, dissertação, teses, e muito mais, sinta-se livre para me perguntar!
-  
+
+# (citações, referências, margens, etc), artigos científicos, TCC, monografia, dissertação, teses, e muito mais, sinta-se livre para me perguntar!  
   utter_criacao:
   - text: |
       Fui criado por estudantes do curso de Engenharia de Software da Universidade de Brasília como produto de um trabalho de conclusão de curso (TCC) com objetivo de impactar a comunidade acadêmica. Meus criadores foram:
