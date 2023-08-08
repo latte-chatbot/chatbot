@@ -33,7 +33,7 @@ services:
     networks:
       - bot
     volumes:
-      - ./data/db:/data/db
+      - data-db:/data/db
 
   # ================================= Actions =================================
   # Rasa middleware used to connect with external APIs.
@@ -75,3 +75,6 @@ services:
 networks:
   bot:
     driver: bridge
+
+volumes:
+  data-db:
