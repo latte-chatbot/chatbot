@@ -11,6 +11,7 @@ from rasa_sdk.events import (
         FollowupAction
 )
 
+
 #Ações Padrão
 class ActionSessionStart(Action):
     def name(self) -> Text:
@@ -48,3 +49,20 @@ class ActionDefaultFallback(Action):
         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message(template="utter_core_fallback")
         return [UserUtteranceReverted()]
+
+
+# Gamificação
+
+## Barra de progressão
+
+class ActionCalculateLevel(Action):
+    def name(self):
+        return "action_calculate_level"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]):
+        # Implementar a lógica para calcular o novo nível com base na experiência acumulada do usuário
+        # experience = tracker.get_slot("experience")  # Recupera a experiência atual do usuário
+        # level = calculate_new_level(experience)  # Função para calcular o novo nível
+        dispatcher.utter_message(text=f"Parabéns! Você atingiu o nível {level}.")
+        return []
+
