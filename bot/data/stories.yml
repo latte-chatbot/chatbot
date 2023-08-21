@@ -1,5 +1,13 @@
 version: "3.1"
 
+# Informações sobre o cumprimentar
+stories:
+- story: cunprimentar
+  steps:
+  - intent: cunprimentar
+  - action: utter_cunprimentar
+
+
 # Informações sobre o despedir
 stories:
 - story: despedir

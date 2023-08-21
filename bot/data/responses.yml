@@ -4,7 +4,7 @@ responses:
 # Cumprimentos e despedidas
   utter_cumprimentar:
   - text: |
-      Olá!
+      Olá, como eu posso te ajudar hoje?
 
   utter_apresentacao:
   - text: |
