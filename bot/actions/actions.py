@@ -60,9 +60,8 @@ class ActionCalculateLevel(Action):
         return "action_calculate_level"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]):
-        # Implementar a lógica para calcular o novo nível com base na experiência acumulada do usuário
-        # experience = tracker.get_slot("experience")  # Recupera a experiência atual do usuário
-        # level = calculate_new_level(experience)  # Função para calcular o novo nível
+        experience = tracker.get_slot("experience")  # Recupera a experiência atual do usuário
+        level = experience // 100  # Cada 100 pontos de experiência, o usuário aumenta 1 nível
         dispatcher.utter_message(text=f"Parabéns! Você atingiu o nível {level}.")
         return []
 

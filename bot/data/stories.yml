@@ -1,6 +1,6 @@
 version: "3.1"
 
-
+# Informações sobre o despedir
 stories:
 - story: despedir
   steps:
@@ -23,3 +23,18 @@ stories:
   steps:
   - intent: fontes_confiaveis
   - action: utter_fontes_confiaveis
+
+
+# Gamificação
+
+# Ganhar experiencia
+- story: aumentar_nivel
+  steps:
+  - user: |
+      xp
+  - action: aumentar_nivel
+    entities:
+    - experience: "50"  # Ganha 50 pontos de experiência ao enviar uma mensagem
+  - user: |
+      Qual é o meu nível agora?
+  - action: action_calculate_level
