@@ -55,13 +55,12 @@ class ActionDefaultFallback(Action):
 
 ## Barra de progressão
 
-class ActionCalculateLevel(Action):
-    def name(self):
-        return "action_calculate_level"
-
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]):
-        experience = tracker.get_slot("experience")  # Recupera a experiência atual do usuário
-        level = experience // 100  # Cada 100 pontos de experiência, o usuário aumenta 1 nível
-        dispatcher.utter_message(text=f"Parabéns! Você atingiu o nível {level}.")
-        return []
+#class ActionCalculateLevel(Action):
+#    def name(self):
+#        return "action_calculate_level"
+#    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]):
+#        experience = tracker.get_slot("experience")  # Recupera a experiência atual do usuário
+#        level = experience // 100  # Cada 100 pontos de experiência, o usuário aumenta 1 nível
+#        dispatcher.utter_message(text=f"Parabéns! Você atingiu o nível {level}.")
+#        return []
 
