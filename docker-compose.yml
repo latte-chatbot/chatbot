@@ -9,7 +9,7 @@ services:
       dockerfile: ./docker/bot.Dockerfile
     container_name: bot
     env_file:
-      - ./env/bot.env
+      - ./.env
     volumes:
       - ./bot/:/bot/
     ports:
@@ -24,12 +24,15 @@ services:
   # Save data of conversations
   mongo:
     container_name: mongo
-    image: mongo:6.0
+    image: mongo
     restart: unless-stopped
     env_file:
-      - env/bot.env
+      - ./.env
     ports:
       - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=p1a2s3s4@
     networks:
       - bot
     volumes:
@@ -43,7 +46,7 @@ services:
       dockerfile: ./docker/actions.Dockerfile
     container_name: actions
     env_file:
-      - ./env/bot.env
+      - ./.env
     ports:
       - 5055:5055
     volumes:
@@ -58,9 +61,6 @@ services:
       build:
         context: .
         dockerfile: ./docker/bot.Dockerfile
-      env_file:
-        - ./env/bot-telegram.env
-        - ./env/bot.env
       volumes:
         - ./bot/:/bot/
       ports:

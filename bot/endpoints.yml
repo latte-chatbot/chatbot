@@ -4,9 +4,8 @@ action_endpoint:
 
 tracker_store:
   type: mongod
-  url: mongodb://${MONGO_HOST}:${MONGO_PORT}
+  url: mongodb://mongo:27017
   db: "bot"
-  username: ${MONGO_USERNAME}
-  password: ${MONGO_PASSWORD}
-  auth_source: "bot"
+  username: root
+  password: p1a2s3s4@
   

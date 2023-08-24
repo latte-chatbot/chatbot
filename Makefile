@@ -7,7 +7,6 @@ CREDENTIALS = credentials.yml
 # CLEAR PROJECT
 clean:
 	make down
-	sudo rm -rf data/
 	cd bot/ && make clean
 
 down:
@@ -47,8 +46,7 @@ actions:
 		make actions
 
 telegram:
-	sudo docker compose run \
-		-d \
+	docker compose run -d \
 		--rm \
 		--service-ports \
 		bot-telegram \
