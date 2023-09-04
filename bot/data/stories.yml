@@ -14,6 +14,7 @@ stories:
   - intent: despedir
   - action: utter_despedir
 
+
 # Informações sobre o chatbot
 - story: saiba_mais
   steps:
@@ -25,23 +26,69 @@ stories:
   - intent: criacao
   - action: utter_criacao
 
+
 # Fontes confiáveis
 - story: fontes_confiaveis
   steps:
   - intent: fontes_confiaveis
   - action: utter_fontes_confiaveis
 
+- story: exploracao_Inicial
+  steps:
+  - intent: iniciante
+  - action: utter_exploracao_inicial
 
-# Gamificação
+- story: navegando_pelo_conhecimento
+  steps:
+  - intent: navegador
+  - action: utter_navegador
 
-# Ganhar experiencia
-#- story: aumentar_nivel
-#  steps:
-#  - user: |
-#      xp
-#  - action: aumentar_nivel
-#    entities:
-#    - experience: "50"  # Ganha 50 pontos de experiência ao enviar uma mensagem
-#  - user: |
-#      Qual é o meu nível agora?
-#  - action: action_calculate_level
+- story: explorando_conteudos_avancados
+  steps:
+  - intent: explorador
+  - action: utter_explorador
+
+- story: google_scholar
+  steps:
+  - intent: google_scholar
+  - action: utter_google_scholar
+
+- story: doaj
+  steps:
+  - intent: doaj
+  - action: utter_doaj
+
+- story: open_stax
+  steps:
+  - intent: open_stax
+  - action: utter_open_stax
+
+- story: scopus
+  steps:
+  - intent: scopus
+  - action: utter_scopus
+
+- story: science_direct
+  steps:
+  - intent: science_direct
+  - action: utter_science_direct
+
+- story: web_of_science
+  steps:
+  - intent: web_of_science
+  - action: utter_web_of_science
+
+- story: pubmed
+  steps:
+  - intent: pubmed
+  - action: utter_pubmed
+
+- story: arxiv
+  steps:
+  - intent: arxiv
+  - action: utter_arxiv
+
+- story: nature_research_journals
+  steps:
+  - intent: nature_research_journals
+  - action: utter_nature_research_journals
