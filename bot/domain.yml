@@ -8,6 +8,7 @@ intents:
   - criacao
   - abnt
   - fontes_confiaveis
+  - biblio_citacoes
   - estruturacao
   - plagio
   - originalidade

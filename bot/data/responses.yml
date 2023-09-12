@@ -10,9 +10,10 @@ responses:
   - text: |
       Olá, eu sou o Latte Chatbot! A minha missão é ser seu aliado na busca pelo conhecimento, a ferramenta mais poderosa do mundo. Estou aqui para auxiliar pesquisadores como você a aprimorar suas habilidades e a excelência em produção científica.
       
-      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
+      Estou continuamente evoluSindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
-       
+        - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
+
       Como posso contribuir para o seu progresso hoje?
 
   utter_despedir:
@@ -72,6 +73,11 @@ responses:
       2. **Navegando pelo Conhecimento:** Descubra bases acadêmicas detalhadas disponíveis para estudantes que desejam aprofundar suas pesquisas (/navegador).
 
       3. **Explorando Conteúdos Avançados:** Explore bases acadêmicas altamente especializadas e detalhadas, que podem ter restrições de acesso. Este desafio é ideal para pesquisadores experientes que desejam se especializar ainda mais (/explorador).
+
+
+utter_biblio_citacoes:
+  - text: |
+      Escolha entre Citação e bibliografia
 
   utter_exploracao_inicial:
   - text: |

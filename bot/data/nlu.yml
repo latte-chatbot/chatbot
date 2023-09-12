@@ -85,6 +85,14 @@ nlu:
     - O que é ABNT?
     - O que significa ABNT?
 
+
+# Bibliografia e citações
+
+- intent: biblio_citacoes
+  examples: |
+    - Como formatar uma  bibliografia?
+    - Como formatar citações?
+
 # Fontes confiáveis
 - intent: fontes_confiaveis
   examples: |

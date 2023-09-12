@@ -26,6 +26,12 @@ stories:
   - intent: criacao
   - action: utter_criacao
 
+# Bibliografias e Citações
+
+- story: biblio_citacoes
+  steps:
+  - intent: biblio_citacoes
+  - action: utter_biblio_citacoes
 
 # Fontes confiáveis
 - story: fontes_confiaveis
