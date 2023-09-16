@@ -90,8 +90,10 @@ nlu:
 
 - intent: biblio_citacoes
   examples: |
-    - Como formatar uma  bibliografia?
+    - Como formatar uma bibliografia?
     - Como formatar citações?
+    - Como fazer um citação
+    - Como criar uma citação bibliográfica
 
 # Fontes confiáveis
 - intent: fontes_confiaveis
@@ -107,6 +109,7 @@ nlu:
 
 - intent: iniciante
   examples: |
+    - inciante
     - exploração inicial
 
 - intent: navegador
@@ -137,6 +140,7 @@ nlu:
 - intent: scopus
   examples: |
     - scopus
+    - base scopus
 
 - intent: science_direct
   examples: |
@@ -236,6 +240,8 @@ nlu:
     - Quais métodos posso usar para verificar se meu trabalho contém plágio?
     - Como posso garantir que meu trabalho seja original e livre de plágio?
 
+
+# Originalidade
 - intent: originalidade/definicao_importancia
   examples: |
     - Como posso garantir que meu trabalho seja original?
@@ -258,6 +264,7 @@ nlu:
     - Tenho receio de que meu trabalho não seja considerado original. O que posso fazer para melhorar?
     - Quais são as abordagens criativas que posso utilizar para destacar meu trabalho na área?
 
+# Revisão
 - intent: revisao/revisao_ortografia
   examples: |
     - Como posso garantir que meu texto não tenha erros de ortografia?
