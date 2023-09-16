@@ -10,14 +10,10 @@ responses:
   - text: |
       Olá, eu sou o Latte Chatbot! A minha missão é ser seu aliado na busca pelo conhecimento, a ferramenta mais poderosa do mundo. Estou aqui para auxiliar pesquisadores como você a aprimorar suas habilidades e a excelência em produção científica.
       
-      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você em algumas áreas, incluindo: 
-       - Adequação às normas ABNT
-       - Identificação de fontes confiáveis
-       - Estruturação eficiente de artigos
-       - Prevenção de plágio
-       - Ppromoção da originalidade na escrita
-       - Aprimoramento da revisão de textos 
-       
+      Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
+        - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
+        - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
+
       Como posso contribuir para o seu progresso hoje?
 
   utter_despedir:
@@ -68,28 +64,184 @@ responses:
 
   utter_fontes_confiaveis:
   - text: |
-      Fontes confiáveis são fontes de informação que são consideradas confiáveis e confiáveis para uso em trabalhos acadêmicos e científicos. Essas fontes são geralmente produzidas por autores ou organizações com experiência e credibilidade em um determinado campo de estudo.
-        
-      Aqui vai alguns exemplos de lugares onde você pode encontrar fontes confiáveis para usar em seus trabalhos:
-    
-      - PubMed Central: Uma biblioteca digital que oferece acesso gratuito a artigos científicos nas áreas de medicina, biologia e ciências da vida.
-      - PLOS ONE: Uma revista científica de acesso aberto que publica pesquisas em diversas áreas, incluindo ciências naturais, ciências da saúde e ciências sociais.
-      - arXiv: Um repositório de pré-publicações de artigos científicos nas áreas de física, matemática, ciências da computação e outras disciplinas relacionadas.
-      - Directory of Open Access Journals (DOAJ): Um diretório que indexa e fornece acesso a revistas científicas de acesso aberto em várias áreas do conhecimento.
-      - Google Scholar: Um mecanismo de busca acadêmico que permite encontrar artigos científicos, teses, dissertações e outros materiais acadêmicos de diversas fontes confiáveis.
-      - Open Science Framework (OSF): Uma plataforma de colaboração científica que permite compartilhar e acessar pesquisas em várias disciplinas.
-      - ScienceDirect: Uma plataforma de publicação e acesso a revistas científicas, oferecendo uma vasta coleção de artigos nas áreas de ciências naturais, ciências sociais e humanidades.
-      - CORE (COnnecting REpositories): Um serviço que permite buscar e acessar artigos acadêmicos de repositórios de acesso aberto em todo o mundo.
-      - Directory of Open Access Books (DOAB): Um diretório que oferece acesso a livros acadêmicos de acesso aberto em várias disciplinas.
-      - Europe PMC: Uma plataforma que fornece acesso a artigos científicos nas áreas de ciências da vida e biomedicina.
-      - IEEE Xplore: Uma biblioteca digital que contém artigos acadêmicos nas áreas de engenharia, tecnologia e ciências da computação.
-      - PubMed: Um banco de dados que indexa artigos acadêmicos nas áreas de medicina, biologia e ciências da saúde.
-      - SpringerLink: Uma plataforma de publicação e acesso a revistas científicas e livros em várias disciplinas acadêmicas.
-      - JSTOR: Um repositório digital que contém artigos acadêmicos em diversas áreas, incluindo ciências sociais, humanidades e ciências naturais.
-      - SciELO: Uma biblioteca digital que oferece acesso a artigos científicos de revistas acadêmicas da América Latina, Espanha, Portugal e África.
-      - Open Access Digital Library (OADL): Uma biblioteca digital que disponibiliza artigos de acesso aberto em várias áreas do conhecimento.
-      - BioMed Central: Uma editora de acesso aberto que publica revistas acadêmicas nas áreas de biomedicina, biologia e ciências da vida.
-      - Public Library of Science (PLOS): Uma organização que publica revistas científicas de acesso aberto em várias disciplinas.
+      Nesta funcionalidade, você terá acesso a uma variedade de fontes confiáveis para suas pesquisas. Explore as melhores bases acadêmicas para conduzir suas investigações!
+
+      **Selecione o seu estágio de pesquisa:**
+
+      1. **Exploração Inicial:** Acesse bases acadêmicas de fácil acesso com conteúdo geral, perfeitas para iniciantes em pesquisas (/iniciante).
+
+      2. **Navegando pelo Conhecimento:** Descubra bases acadêmicas detalhadas disponíveis para estudantes que desejam aprofundar suas pesquisas (/navegador).
+
+      3. **Explorando Conteúdos Avançados:** Explore bases acadêmicas altamente especializadas e detalhadas, que podem ter restrições de acesso. Este desafio é ideal para pesquisadores experientes que desejam se especializar ainda mais (/explorador).
+
+
+  utter_biblio_citacoes:
+  - text: |
+      Para fazer uma citação bibliográfica você tem que...
+
+  utter_exploracao_inicial:
+  - text: |
+      - Google Scholar: Uma ferramenta de busca acadêmica que oferece acesso a uma ampla variedade de literatura acadêmica, incluindo artigos, teses e livros. (/google_scholar)
+
+      - Directory of Open Access Journals (DOAJ): Um diretório que lista revistas acadêmicas de acesso aberto em várias disciplinas. Oferece acesso a artigos gratuitos em revistas de alta qualidade. (/doaj)
+
+      - OpenStax: Oferece acesso gratuito a livros didáticos de alta qualidade em diversas disciplinas. Ótimo para estudantes que desejam materiais educacionais gratuitos. (/open_stax)
+
+      Selecione a base que deseja explorar e obtenha mais informações.
+
+  utter_navegador:
+  - text: |
+      - Scopus: A Scopus é uma base de dados acadêmica abrangente, incluindo artigos de revistas, conferências e outras fontes em diversas disciplinas acadêmicas (/scopus).
+
+      - ScienceDirect: Uma base de dados que oferece acesso a milhares de revistas científicas e artigos em várias áreas da ciência (/science_direct).
+
+      - Web of Science: A Web of Science é uma base de dados acadêmica amplamente utilizada que oferece acesso a uma vasta coleção de literatura científica e é conhecida por suas métricas de citação (/web_of_science).
+
+  utter_explorador:
+  - text: |
+      - PubMed: Uma base de dados de literatura médica que inclui artigos de revistas científicas e trabalhos relacionados à saúde. É amplamente utilizado por profissionais da saúde e pesquisadores em biomedicina (/pubmed).
+
+      - arXiv: Um repositório de pré-impressões de artigos científicos em física, matemática, computação e outras áreas. Muitas vezes usado por pesquisadores avançados (/arxiv).
+
+      - Nature Research Journals: Publicações da Nature Research, incluindo revistas como Nature e Scientific American. Abordam tópicos avançados em ciência (/nature_research_journals).
+
+  utter_google_scholar:
+  - text: |
+      Você pode acessar o Google Scholar através do seguinte link: [Google Scholar](https://scholar.google.com/)
+
+      Quando você visitar o site, você terá acesso a uma barra de pesquisa onde pode digitar palavras-chave, tópicos ou frases relacionados à sua pesquisa. O Google Scholar irá então mostrar resultados que incluem artigos acadêmicos, teses, livros e outras fontes de literatura acadêmica relevantes para sua consulta.
+
+      Lembre-se de que, ao clicar em um resultado, você pode ser redirecionado para o site da editora ou para uma página onde poderá obter mais informações sobre o artigo em questão. Algumas publicações podem estar disponíveis gratuitamente, enquanto outras podem exigir acesso por meio de uma biblioteca universitária ou pagamento.
+
+      O Google Scholar é uma ferramenta valiosa para encontrar literatura acadêmica relevante para sua pesquisa, e muitas vezes é utilizado por estudantes e pesquisadores em todo o mundo.
+
+  utter_doaj:
+  - text: |
+      Você pode acessar o Directory of Open Access Journals (DOAJ), através do seguinte link:  [DOAJ](https://doaj.org/).
+
+      No site inicial do DOAJ, você verá uma barra de pesquisa onde pode começar a pesquisa inserindo palavras-chave, tópicos ou frases relacionadas à sua pesquisa.
+
+      Após inserir sua consulta de pesquisa, clique no botão "Search" (Buscar) ou pressione "Enter" no teclado.
+
+      Os resultados da pesquisa serão exibidos. Você pode clicar em um resultado para obter mais informações sobre o artigo ou para acessar o conteúdo completo, pois a maioria das revistas listadas no DOAJ é de acesso aberto.
+
+      Caso queira explorar as revistas disponíveis diretamente, você pode clicar em "Journals" (Revistas) no menu superior do site e navegar por áreas de conhecimento ou pesquisar revistas específicas.
+
+      O DOAJ é uma excelente fonte de revistas de acesso aberto e pode ser uma ferramenta valiosa para encontrar literatura acadêmica gratuita em diversas disciplinas. Você normalmente não precisa de uma afiliação institucional para acessar o conteúdo, já que a maioria das revistas no DOAJ é de acesso aberto.
+
+  utter_open_stax:
+  - text: |
+      Você pode acessar o OpenStax , através do seguinte link: [OpenStax](https://openstax.org/).
+
+      No site inicial do OpenStax, você verá um menu de navegação onde pode explorar as diferentes disciplinas acadêmicas. Clique na disciplina que corresponde ao livro didático que você deseja acessar.
+      
+      Dentro da disciplina selecionada, você encontrará uma lista de livros didáticos disponíveis. Clique no título do livro que você deseja acessar.
+      
+      Na página do livro, você terá a opção de "Read Now" (Ler Agora) para visualizar o livro online gratuitamente. Você também pode optar por fazer o download do livro em formato PDF ou e-book para uso offline, caso seja oferecido.
+      
+      A maioria dos livros do OpenStax é gratuita, mas eles também oferecem opções de compra de versões impressas para aqueles que preferem uma cópia física.
+      
+      O OpenStax é uma iniciativa de acesso aberto que oferece uma ampla variedade de livros didáticos de alta qualidade em várias disciplinas, tornando-os acessíveis a estudantes e educadores sem custo. Você pode navegar pelo site, escolher os livros adequados às suas necessidades e começar a estudar imediatamente.
+
+  utter_scopus:
+  - text: |
+      Você pode acessar a Scopus, através do seguinte link:  [Scopus](https://www.scopus.com/home.ur)
+
+      No site inicial da Scopus, você pode ver opções como "Login" ou "Register" (Entrar ou Registrar-se). Dependendo de sua filiação institucional, você pode ter acesso direto por meio de sua universidade, instituição de pesquisa ou biblioteca. Se você tiver credenciais de acesso, clique em "Login" para inserir suas informações de login e acessar a plataforma.
+      
+      Se você não tiver credenciais de acesso ou estiver tentando explorar o conteúdo disponível, pode clicar em "Explore Scopus" ou "Browse Content" para procurar informações sobre a plataforma e seus recursos.
+      
+      Você também pode usar a barra de pesquisa na página inicial para procurar por artigos acadêmicos, autores, revistas ou tópicos específicos.
+      
+      Dependendo da sua filiação institucional, pode ser necessário estar conectado a uma rede VPN da sua instituição para acessar a Scopus remotamente.
+      
+      Lembre-se de que a Scopus é uma base de dados paga e geralmente requer acesso por meio de uma instituição ou assinatura pessoal. Se você é estudante ou pesquisador, verifique com sua instituição para ver se eles oferecem acesso à Scopus ou se você precisa adquirir uma assinatura pessoal para utilizá-la.
+
+  utter_science_direct:
+  - text: |
+      Você pode acessar a ScienceDirect, através do seguinte link: [ScienceDirect](https://www.sciencedirect.com/).
+
+      No site inicial do ScienceDirect, você pode usar a barra de pesquisa na parte superior da página para pesquisar por palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
+      
+      Após inserir sua consulta de pesquisa, clique no botão "Search" (Buscar) ou pressione "Enter" no teclado.
+      
+      Os resultados da pesquisa serão exibidos. Você verá uma lista de artigos e publicações acadêmicas relevantes para sua pesquisa.
+      
+      Você pode clicar em um resultado para obter mais informações sobre o artigo ou para acessar o conteúdo completo, caso esteja disponível. Alguns artigos podem ser acessados gratuitamente, enquanto outros podem exigir pagamento ou acesso por meio de uma instituição afiliada.
+      
+      Se você tiver afiliação a uma universidade ou instituição de pesquisa, verifique se a sua instituição oferece acesso ao ScienceDirect. Muitas instituições acadêmicas assinam o serviço para seus membros.
+      
+      Se você não tiver acesso direto, o ScienceDirect também oferece opções de compra de artigos individuais ou assinaturas pessoais para acesso ao conteúdo completo.
+      
+      Lembre-se de que o ScienceDirect é uma das maiores e mais respeitadas bases de dados acadêmicas, e é amplamente utilizada por estudantes e pesquisadores em todo o mundo para acesso a literatura científica de alta qualidade.
+     
+  utter_web_of_science:
+  - text: |
+      Você pode acessar a Web of Science, através do seguinte link: [Science](https://www.webofscience.com/).
+
+      No site inicial da Web of Science, você pode ver opções como "Sign In" (Entrar) ou "Register" (Registrar-se). Dependendo da sua afiliação institucional, você pode ter acesso direto por meio de sua universidade, instituição de pesquisa ou biblioteca. Se você tiver credenciais de acesso, clique em "Sign In" para inserir suas informações de login e acessar a plataforma.
+      
+      Se você não tiver credenciais de acesso ou estiver tentando explorar o conteúdo disponível, pode usar a opção "Search" (Pesquisar) para procurar informações sobre a plataforma e seus recursos.
+      
+      Você também pode usar a barra de pesquisa na página inicial para pesquisar por artigos acadêmicos, autores, revistas ou tópicos específicos.
+      
+      Dependendo da sua afiliação institucional, pode ser necessário estar conectado a uma rede VPN da sua instituição para acessar a Web of Science remotamente.
+      
+      Lembre-se de que a Web of Science é uma base de dados paga e geralmente requer acesso por meio de uma instituição ou assinatura pessoal. Se você é estudante ou pesquisador, verifique com sua instituição para ver se eles oferecem acesso à Web of Science ou se você precisa adquirir uma assinatura pessoal para utilizá-la.
+
+
+  utter_pubmed:
+  - text: |
+      Você pode acessar a PubMed, através do seguinte link: [PubMed](https://pubmed.ncbi.nlm.nih.gov/).
+
+      No site inicial do PubMed, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
+      
+      Após inserir sua consulta de pesquisa, clique no botão "Search" (Buscar) ou pressione "Enter" no teclado.
+      
+      Os resultados da pesquisa serão exibidos. Você verá uma lista de artigos científicos e literatura relacionada à sua pesquisa.
+      
+      Você pode clicar em um resultado para obter mais informações sobre o artigo ou para acessar o conteúdo completo, caso esteja disponível. A maioria dos artigos do PubMed está disponível gratuitamente.
+      
+      Você pode usar os recursos de pesquisa avançada para refinar seus resultados, como filtrar por tipo de publicação, data de publicação e outros critérios.
+      
+      O PubMed é uma fonte altamente respeitada e amplamente utilizada por profissionais de saúde, pesquisadores em biomedicina e outros interessados em literatura médica e de saúde.
+      
+      Lembre-se de que o PubMed é uma base de dados de acesso aberto, e a maioria dos artigos pode ser acessada gratuitamente. É uma ferramenta valiosa para encontrar literatura médica relevante para sua pesquisa, estudos clínicos e prática médica.
+
+  utter_arxiv:
+  - text: |
+      Você pode acessar a arXiv, através do seguinte link: arXiv: [arXiv](https://arxiv.org/).
+
+      No site inicial do arXiv, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
+      
+      Após inserir sua consulta de pesquisa, clique no botão "Search" (Buscar) ou pressione "Enter" no teclado.
+      
+      Os resultados da pesquisa serão exibidos. Você verá uma lista de artigos de pré-impressão relacionados à sua pesquisa.
+      
+      Você pode clicar em um resultado para obter mais informações sobre o artigo ou para acessar o conteúdo completo em formato PDF.
+      
+      O arXiv é uma plataforma de acesso aberto, o que significa que a maioria dos artigos está disponível gratuitamente para download e leitura.
+      
+      Os artigos no arXiv são frequentemente compartilhados por pesquisadores antes de serem revisados por pares e publicados em revistas científicas. Portanto, o arXiv é uma excelente fonte para encontrar pesquisas em estágio inicial e tópicos avançados.
+      
+      Lembre-se de que o arXiv é amplamente utilizado por pesquisadores avançados e é uma ferramenta valiosa para acompanhar as últimas pesquisas em várias disciplinas científicas e matemáticas.
+
+  utter_nature_research_journals:
+  - text: |
+      Você pode acessar a Nature Research, através do seguinte link: [Nature Research](https://www.nature.com/).
+
+      No site inicial da Nature Research, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos ou autores relacionados à sua pesquisa. Você também pode navegar pelas revistas disponíveis na parte superior do site.
+      
+      Após inserir sua consulta de pesquisa ou escolher uma revista específica, os resultados relevantes serão exibidos.
+      
+      Você pode clicar em um resultado para obter mais informações sobre o artigo ou para acessar o conteúdo completo, caso esteja disponível. Lembre-se de que algumas revistas podem exigir assinatura ou pagamento para acesso a artigos específicos.
+      
+      As publicações da Nature Research abordam tópicos avançados em diversas áreas da ciência, tornando-as uma fonte de literatura científica de alta qualidade.
+      
+      Se você tiver acesso através de uma afiliação institucional, como uma universidade, você pode ter acesso direto a muitas dessas revistas. Caso contrário, você pode verificar as opções de assinatura pessoal ou adquirir artigos individuais, quando necessário.
+      
+      Lembre-se de que as publicações da Nature Research são amplamente respeitadas na comunidade científica e são conhecidas por sua qualidade e relevância em tópicos avançados em ciência.
+
 
   utter_estruturacao/geral:
   - text: |

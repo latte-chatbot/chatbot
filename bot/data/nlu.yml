@@ -85,6 +85,16 @@ nlu:
     - O que é ABNT?
     - O que significa ABNT?
 
+
+# Bibliografia e citações
+
+- intent: biblio_citacoes
+  examples: |
+    - Como formatar uma bibliografia?
+    - Como formatar citações?
+    - Como fazer um citação
+    - Como criar uma citação bibliográfica
+
 # Fontes confiáveis
 - intent: fontes_confiaveis
   examples: |
@@ -96,6 +106,66 @@ nlu:
     - Existe alguma lista de fontes confiáveis para trabalhos acadêmicos?
     - Como posso saber se um livro é uma fonte confiável?
     - O que devo considerar ao avaliar a confiabilidade de um artigo científico?
+
+- intent: iniciante
+  examples: |
+    - inciante
+    - exploração inicial
+
+- intent: navegador
+  examples: |
+    - navegador
+    - navegando pelo conhecimento
+
+- intent: explorador
+  examples: |
+    - explorador
+    - explorando conteúdos avançados
+
+- intent: google_scholar
+  examples: |
+    - google scholar
+    - google_scholar
+
+- intent: doaj
+  examples: |
+    - Directory of Open Access Journals
+    - doaj
+
+- intent: open_stax
+  examples: |
+    - open stax
+    - open_stax
+
+- intent: scopus
+  examples: |
+    - scopus
+    - base scopus
+
+- intent: science_direct
+  examples: |
+    - science direct
+    - science_direct
+
+- intent: web_of_science
+  examples: |
+    - web of science
+    - web_of_science
+
+- intent: pubmed
+  examples: |
+    - pub med
+    - pubmed
+
+- intent: arxiv
+  examples: |
+    - arxiv
+    - ar xiv
+
+- intent: nature_research_journals
+  examples: |
+    - nature research journals
+    - nature_research_journals
 
 
 # Estruturação de artigos
@@ -170,6 +240,8 @@ nlu:
     - Quais métodos posso usar para verificar se meu trabalho contém plágio?
     - Como posso garantir que meu trabalho seja original e livre de plágio?
 
+
+# Originalidade
 - intent: originalidade/definicao_importancia
   examples: |
     - Como posso garantir que meu trabalho seja original?
@@ -192,6 +264,7 @@ nlu:
     - Tenho receio de que meu trabalho não seja considerado original. O que posso fazer para melhorar?
     - Quais são as abordagens criativas que posso utilizar para destacar meu trabalho na área?
 
+# Revisão
 - intent: revisao/revisao_ortografia
   examples: |
     - Como posso garantir que meu texto não tenha erros de ortografia?

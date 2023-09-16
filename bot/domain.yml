@@ -8,11 +8,23 @@ intents:
   - criacao
   - abnt
   - fontes_confiaveis
+  - biblio_citacoes
   - estruturacao
   - plagio
   - originalidade
   - revisao
-
+  - iniciante
+  - navegador
+  - explorador
+  - google_scholar
+  - doaj
+  - open_stax
+  - scopus
+  - science_direct
+  - web_of_science
+  - pubmed
+  - arxiv
+  - nature_research_journals
 
 actions:
   - action_session_start

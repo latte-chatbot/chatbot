@@ -101,6 +101,14 @@ stories:
       intent: fontes_confiaveis
     - action: utter_fontes_confiaveis
 
+- story: Responder sobre fontes confiaveis
+  steps:
+    - user: |
+        Onde encontrar fontes confiáveis?
+      intent: biblio_citacoes
+    - action: utter_biblio_citacoes
+
+
 - story: Responder perguntas sobre originalidade
   steps:
     - user: |
