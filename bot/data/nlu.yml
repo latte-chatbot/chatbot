@@ -2,7 +2,7 @@ version: "3.1"
 
 
 nlu:
-# Cumprimentos
+# Cumprimentar
 - intent: cumprimentar
   examples: |
     - olá
@@ -19,7 +19,7 @@ nlu:
     - Eae
     - e AE
 
-# Despedidas
+# Despedir
 - intent: despedir
   examples: |
     - tchau
@@ -27,7 +27,7 @@ nlu:
     - flw
     - Até mais, bot
 
-# Informações sobre o chatbot
+# Criação do chatbot
 - intent: criacao
   examples: |
     - Quem te criou?
@@ -47,6 +47,7 @@ nlu:
     - Vc foi criado por qm?
     - Vc foi inventado por qm?
 
+# Saiba mais
 - intent: saiba_mais
   examples: |
     - sobre o que você sabe falar
@@ -87,7 +88,6 @@ nlu:
 
 
 # Bibliografia e citações
-
 - intent: biblio_citacoes
   examples: |
     - Como formatar uma bibliografia?
@@ -167,7 +167,6 @@ nlu:
     - nature research journals
     - nature_research_journals
 
-
 # Estruturação de artigos
 - intent: estruturacao/geral
   examples: |
@@ -209,7 +208,6 @@ nlu:
     - O que devo abordar na seção de discussão do meu trabalho acadêmico?
     - Quais são os principais pontos que devo considerar ao escrever a seção de discussão do meu artigo?
     - Como interpretar e analisar os resultados na seção de discussão?
-
 
 # Plágio
 - intent: plagio/definicao

@@ -1,33 +1,31 @@
 version: "3.1"
 
-# Informações sobre o cumprimentar
+# Cumprimentar
 stories:
 - story: cumprimentar
   steps:
   - intent: cumprimentar
   - action: utter_cumprimentar
 
-
-# Informações sobre o despedir
+# Despedir
 - story: despedir
   steps:
   - intent: despedir
   - action: utter_despedir
 
-
-# Informações sobre o chatbot
-- story: saiba_mais
-  steps:
-  - intent: saiba_mais
-  - action: utter_saiba_mais
-
+# Criação do chatbot
 - story: criacao
   steps:
   - intent: criacao
   - action: utter_criacao
 
-# Bibliografias e Citações
+# Saiba mais
+- story: saiba_mais
+  steps:
+  - intent: saiba_mais
+  - action: utter_saiba_mais
 
+# Bibliografias e Citações
 - story: biblio_citacoes
   steps:
   - intent: biblio_citacoes
