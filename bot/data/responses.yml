@@ -64,9 +64,245 @@ responses:
   - text: |
       A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
+
+# Bibliografias e Citações
   utter_biblio_citacoes:
   - text: |
-      Para fazer uma citação bibliográfica você tem que...
+      Seleciona uma das opções do assistente de citações:
+
+      Opção 1 (modo fácil): Gerar citação ou bibliografia: Se você precisa de uma citação ou referência bibliográfica agora e não está pronto para aprender como fazer isso sozinho, escolha esta opção. Vamos guiá-lo por meio de uma narrativa interativa para gerar a citação desejada de forma rápida e eficiente. Esta é uma ótima maneira de obter o que você precisa sem se preocupar com os detalhes técnicos. Vamos começar a sua jornada agora e criar a citação desejada! (/gerador_biblio_citacoes)
+      
+      Opção 2 (modo difícil): Selecione esta opção se você deseja aprender como estruturar corretamente uma citação ou referência bibliográfica. Entender como fazer isso é essencial para citar fontes corretamente em trabalhos acadêmicos, artigos e relatórios. Ao escolher esta opção, você terá acesso a um guia passo a passo que explicará os elementos necessários para criar citações/bibliográficas precisas. Vamos começar sua jornada de aprendizado agora! (/explicar_biblio_citacoes)
+
+  utter_explicar_biblio_citacoes:
+  - text: |
+      Vamos começar sua jornada de aprendizado agora, escolha qual caminho deseja seguir:
+
+      Aprender a Estruturar uma Citação (/explicar_citacao)
+      
+      Aprender a Estruturar uma Bibliografia (/explicar_bibliografia)
+      
+  utter_explicar_citacao:
+  - text: |
+      Existem dois tipos principais de citação de fontes em trabalhos acadêmicos e científicos: citação direta e citação indireta (ou parafraseada). Vou explicar ambos:
+      
+      A citação direta ocorre quando você reproduz as palavras exatas de uma fonte, colocando-as entre aspas duplas.
+      Geralmente, é usada quando você deseja citar uma parte específica do texto de outra pessoa para enfatizar uma ideia, conceito ou argumento.
+      É importante incluir a página ou o número do parágrafo de onde a citação foi retirada, para permitir que os leitores localizem a fonte original.
+      Exemplo de citação direta: Segundo Smith (2019), "A educação é a chave para o desenvolvimento de uma sociedade."
+      
+      A citação indireta, também conhecida como paráfrase, ocorre quando você reescreve a ideia, conceito ou argumento de outra pessoa em suas próprias palavras.
+      Geralmente, é usada para resumir, explicar ou reformular as informações de uma fonte sem reproduzir o texto original.
+      Também é importante fornecer uma referência à fonte original para dar crédito ao autor original.
+      Exemplo de citação indireta (paráfrase): Smith (2019) argumenta que a educação desempenha um papel fundamental no desenvolvimento da sociedade.
+      
+      Ambos os tipos de citação são importantes em trabalhos acadêmicos e científicos para dar crédito aos autores originais e evitar o plágio. A escolha entre citação direta e indireta depende do contexto e do objetivo da citação em seu trabalho. Para mais informações escolha entre citação direta (/explicar_citacao_direta) ou citação indireta (/explicar_citacao_indireta).
+
+  utter_explicar_citacao_direta:
+  - text: |
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Citação de Livro (/citacao_direta_livro)
+      2. Citação de Artigo de Revista (/citacao_direta_revista)
+      3. Citação de Artigo de Jornal (/citacao_direta_jornal)
+      4. Citação de Tese ou Dissertação (/citacao_direta_dissertacao)
+      5. Citação de Site da Internet (/citacao_direta_internet)
+      6. Citação de Entrevista (/citacao_direta_entrevista)
+      7. Citação de Documento Legal (Leis, Decretos, etc.) (/citacao_direta_doc_legal)
+
+  utter_citacao_direta_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro.
+      - Título do livro em itálico.
+      - Edição (se houver).
+      - Local de publicação.
+      - Editora.
+      - Ano de publicação.
+      - Página(s) específica(s) da citação.
+
+      Exemplo:> De acordo com Smith (2010), "A pesquisa científica é uma busca contínua por conhecimento" (p. 45).
+
+  utter_citacao_direta_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Título da revista em itálico.
+      - Volume da revista.
+      - Número do fascículo (se houver).
+      - Página específica da citação.
+      - Ano de publicação.
+
+      Exemplo:> No artigo de Johnson (2018), é enfatizado que "a sustentabilidade é essencial para o futuro do planeta" ("Sustainability and the Future," *Environmental Science*, 36(4), p. 78).
+
+  utter_citacao_direta_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Nome do jornal em itálico.
+      - Data de publicação.
+      - Seção (se houver).
+      - Página(s) específica(s) da citação.
+
+      Exemplo:> Segundo Brown (2021), "A economia global está passando por mudanças significativas" ("Economic Shifts," *The New York Times*, 15 de maio, p. A3).
+
+  utter_citacao_direta_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor da tese ou dissertação.
+      - Título da tese ou dissertação em itálico.
+      - Tipo (Tese ou Dissertação).
+      - Instituição de ensino.
+      - Ano de defesa.
+      - Página(s) específica(s) da citação (opcional).
+
+      Exemplo: > De acordo com Santos (2017), "A pesquisa revelou resultados significativos" (*Tese de Doutorado*, Universidade Federal, 2017, p. 56).
+
+  utter_citacao_direta_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) (se disponível).
+      - Título da página ou artigo (se disponível) entre aspas.
+      - URL (endereço web).
+      - Data de acesso.
+
+      Exemplo:> Segundo o Ministério da Saúde (2022), "É importante manter medidas de higiene pessoal" ("Prevenção da COVID-19", https://www.saude.gov.br/prevencaocovid, acessado em 10 de agosto de 2022).
+
+  utter_citacao_direta_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Título da entrevista (se houver) entre aspas.
+      - Entrevistador (se aplicável).
+      - Local da entrevista (se aplicável).
+      - Data da entrevista.
+
+      Exemplo: > Durante a entrevista com Maria Silva (2021), ela declarou que "a educação é a chave para o progresso social" (entrevista pessoal, realizada em São Paulo, 5 de setembro de 2021).
+
+  utter_citacao_direta_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do órgão emissor.
+      - Título da lei ou decreto (se houver) entre aspas.
+      - Número e data de publicação (se disponível).
+
+      Exemplo: > De acordo com o Decreto Presidencial nº 123/2020, "Todas as empresas devem seguir as normas de segurança no local de trabalho" (Diário Oficial da União, 10 de março de 2020, p. 3).
+
+  utter_explicar_citacao_indireta:
+  - text: |
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Citação de Livro (/citacao_indireta_livro)
+      2. Citação de Artigo de Revista (/citacao_indireta_revista)
+      3. Citação de Artigo de Jornal (/citacao_indireta_jornal)
+      4. Citação de Tese ou Dissertação (/citacao_indireta_dissertacao)
+      5. Citação de Site da Internet (/citacao_indireta_internet)
+      6. Citação de Entrevista (/citacao_indireta_entrevista)
+      7. Citação de Documento Legal (Leis, Decretos, etc.) (/citacao_indireta_doc_legal)
+
+  utter_citacao_indireta_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro.
+      - Título do livro em itálico.
+      - Ano de publicação.
+      
+      Exemplo:
+      > Smith (2010) enfatiza a importância da pesquisa científica como uma busca contínua por conhecimento.
+
+  utter_citacao_indireta_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Título da revista em itálico.
+      - Ano de publicação.
+      
+      Exemplo:
+      > Johnson (2018) discute a necessidade de sustentabilidade para o futuro do planeta em seu artigo.
+
+
+  utter_citacao_indireta_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Nome do jornal em itálico.
+      - Data de publicação.
+      
+      Exemplo > Brown (2021) analisou as mudanças na economia global em seu artigo recente.
+
+  utter_citacao_indireta_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor da tese ou dissertação.
+      - Título da tese ou dissertação em itálico.
+      - Ano de defesa.
+
+      Exemplo > Santos (2017) conduziu uma pesquisa significativa em sua tese de doutorado.
+
+  utter_citacao_indireta_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) (se disponível).
+      - Título da página ou artigo (se disponível) entre aspas.
+      - Ano de publicação (se disponível).
+
+      Exemplo > O Ministério da Saúde (2022) enfatiza a importância das medidas de higiene pessoal em seu site.
+
+  utter_citacao_indireta_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Data da entrevista.
+
+      Exemplo > Durante a entrevista realizada com Maria Silva (2021), ela destacou a relevância da educação para o progresso social.
+
+  utter_citacao_indireta_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Título da lei ou decreto (se houver) entre aspas.
+      - Ano de publicação (se disponível).
+
+      Exemplo > O Decreto Presidencial nº 123/2020 menciona a necessidade de seguir as normas de segurança no local de trabalho.
+  
+  # TO-DO - Implementar explicação bibliografia
+  utter_explicar_bibliografia:
+  - text: |
+      Ainda não posso te ajudar com isso, mas em breve poderei!
+  
+  utter_gerador_biblio_citacoes:
+  - text: |
+      Escolha a opção desejada:
+
+      Gerar uma Citação (/gerador_citacao)
+      Gerar uma Bibliografia (/gerador_bibliografia)
+
+  # TO-DO - Implementar Gerador de citacao
+  utter_gerador_citacao:
+  - text: |
+      Ainda não posso te ajudar com isso, mas em breve poderei!
+
+  # TO-DO - Implementar Gerador de bibliografia
+  utter_gerador_bibliografia:
+  - text: |
+      Ainda não posso te ajudar com isso, mas em breve poderei!
 
 # Fontes Confiáveis
   utter_fontes_confiaveis:

@@ -31,6 +31,116 @@ stories:
   - intent: biblio_citacoes
   - action: utter_biblio_citacoes
 
+- story: explicar_biblio_citacoes
+  steps:
+  - intent: explicar_biblio_citacoes
+  - action: utter_explicar_biblio_citacoes
+
+- story: explicar_citacao
+  steps:
+  - intent: explicar_citacao
+  - action: utter_explicar_citacao
+
+- story: explicar_citacao_direta
+  steps:
+  - intent: explicar_citacao_direta
+  - action: utter_explicar_citacao_direta
+
+- story: citacao_direta_livro
+  steps:
+  - intent: citacao_direta_livro
+  - action: utter_citacao_direta_livro
+
+- story: citacao_direta_revista
+  steps:
+  - intent: citacao_direta_revista
+  - action: utter_citacao_direta_revista
+
+- story: citacao_direta_jornal
+  steps:
+  - intent: citacao_direta_jornal
+  - action: utter_citacao_direta_jornal
+
+- story: citacao_direta_dissertacao
+  steps:
+  - intent: citacao_direta_dissertacao
+  - action: utter_citacao_direta_dissertacao
+
+- story: citacao_direta_internet
+  steps:
+  - intent: citacao_direta_internet
+  - action: utter_citacao_direta_internet
+
+- story: citacao_direta_entrevista
+  steps:
+  - intent: citacao_direta_entrevista
+  - action: utter_citacao_direta_entrevista
+
+- story: citacao_direta_doc_legal
+  steps:
+  - intent: citacao_direta_doc_legal
+  - action: utter_citacao_direta_doc_legal
+
+- story: explicar_citacao_indireta
+  steps:
+  - intent: explicar_citacao_indireta
+  - action: utter_explicar_citacao_indireta
+
+- story: citacao_indireta_livro
+  steps:
+  - intent: citacao_indireta_livro
+  - action: utter_citacao_indireta_livro
+
+- story: citacao_indireta_revista
+  steps:
+  - intent: citacao_indireta_revista
+  - action: utter_citacao_indireta_revista
+
+- story: citacao_indireta_jornal
+  steps:
+  - intent: citacao_indireta_jornal
+  - action: utter_citacao_indireta_jornal
+
+- story: citacao_indireta_dissertacao
+  steps:
+  - intent: citacao_indireta_dissertacao
+  - action: utter_citacao_indireta_dissertacao
+
+- story: citacao_indireta_internet
+  steps:
+  - intent: citacao_indireta_internet
+  - action: utter_citacao_indireta_internet
+
+- story: citacao_indireta_entrevista
+  steps:
+  - intent: citacao_indireta_entrevista
+  - action: utter_citacao_indireta_entrevista
+
+- story: citacao_indireta_doc_legal
+  steps:
+  - intent: citacao_indireta_doc_legal
+  - action: utter_citacao_indireta_doc_legal
+
+- story: explicar_bibliografia
+  steps:
+  - intent: explicar_bibliografia
+  - action: utter_explicar_bibliografia
+
+- story: gerador_biblio_citacoes
+  steps:
+  - intent: gerador_biblio_citacoes
+  - action: utter_gerador_biblio_citacoes
+
+- story: gerador_citacao
+  steps:
+  - intent: gerador_citacao
+  - action: utter_gerador_citacao
+
+- story: gerador_bibliografia
+  steps:
+  - intent: gerador_bibliografia
+  - action: utter_gerador_bibliografia
+
 # Fontes confiáveis
 - story: fontes_confiaveis
   steps:
