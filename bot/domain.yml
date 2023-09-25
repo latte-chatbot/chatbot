@@ -47,6 +47,7 @@ intents:
   - pubmed
   - arxiv
   - nature_research_journals
+  - estruturacao_artigo
 
 actions:
   - action_session_start
