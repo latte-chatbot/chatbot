@@ -305,18 +305,6 @@ responses:
       Ainda não posso te ajudar com isso, mas em breve poderei!
 
 # Fontes Confiáveis
-  utter_fontes_confiaveis:
-  - text: |
-      Nesta funcionalidade, você terá acesso a uma variedade de fontes confiáveis para suas pesquisas. Explore as melhores bases acadêmicas para conduzir suas investigações!
-
-      **Selecione o seu estágio de pesquisa:**
-
-      1. **Exploração Inicial:** Acesse bases acadêmicas de fácil acesso com conteúdo geral, perfeitas para iniciantes em pesquisas (/iniciante).
-
-      2. **Navegando pelo Conhecimento:** Descubra bases acadêmicas detalhadas disponíveis para estudantes que desejam aprofundar suas pesquisas (/navegador).
-
-      3. **Explorando Conteúdos Avançados:** Explore bases acadêmicas altamente especializadas e detalhadas, que podem ter restrições de acesso. Este desafio é ideal para pesquisadores experientes que desejam se especializar ainda mais (/explorador).
-
   utter_exploracao_inicial:
   - text: |
       - Google Scholar: Uma ferramenta de busca acadêmica que oferece acesso a uma ampla variedade de literatura acadêmica, incluindo artigos, teses e livros. (/google_scholar)

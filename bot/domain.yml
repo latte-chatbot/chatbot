@@ -53,6 +53,7 @@ actions:
   - action_session_start
   - action_restart
   - action_default_fallback
+  - action_utter_fontes_confiaveis
 
 session_config:
   session_expiration_time: 60
