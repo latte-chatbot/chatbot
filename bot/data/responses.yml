@@ -282,27 +282,113 @@ responses:
 
       Exemplo > O Decreto Presidencial nº 123/2020 menciona a necessidade de seguir as normas de segurança no local de trabalho.
   
-  # TO-DO - Implementar explicação bibliografia
   utter_explicar_bibliografia:
   - text: |
-      Ainda não posso te ajudar com isso, mas em breve poderei!
-  
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Referência bibliográfica de Livro (/referencia_livro)
+      2. Referência bibliográfica de Artigo de Revista (/referencia_revista)
+      3. Referência bibliográfica de Artigo de Jornal (/referencia_jornal)
+      4. Referência bibliográfica de Tese ou Dissertação (/referencia_dissertacao)
+      5. Referência bibliográfica de Site da Internet (/referencia_internet)
+      6. Referência bibliográfica de Entrevista (/referencia_entrevista)
+      7. Referência bibliográfica de Documento Legal (Leis, Decretos, etc.) (/referencia_doc_legal)
+      
+  utter_referencia_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro: A ordem é sobrenome seguido pelas iniciais do nome.
+      - Título do livro: Deve estar em itálico.
+      - Ano de publicação: Este é o ano em que o livro foi publicado.
+      
+      Exemplo:
+      > SOBRENOME, Nome. Título: subtítulo (se houver). Edição (se não for a primeira). Local de Publicação: Editora, ano.
+      > SILVA, Maria A. Introdução à biblioteconomia. 3. ed. São Paulo: Cultura Acadêmica, 2000.
+
+  utter_referencia_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo: Nome do(s) escritor(es) do artigo. Sobrenome seguido pelas iniciais do nome.
+      - Título do artigo.
+      - Nome do periódico em itálico.
+      - Ano de publicação.
+      - Volume e número do periódico.
+      - Páginas do artigo.
+      
+      Exemplo:
+      > SOBRENOME, Nome. Título do artigo. Nome do Periódico, Local de Publicação, volume, número, páginas do artigo, mês e ano.
+      > COSTA, João L. Novas tecnologias na biblioteca. Revista Brasileira de Biblioteconomia, Rio de Janeiro, v. 5, n. 2, p. 55-70, jul. 1995.
+
+  utter_referencia_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo: Nome do(s) escritor(es) do artigo. Sobrenome seguido pelas iniciais do nome.
+      - Título do artigo.
+      - Nome do jornal em itálico.
+      - Data de publicação completa.
+      
+      Exemplo: 
+      > SOBRENOME, Nome. Título do artigo. Nome do Jornal, Local de Publicação, data de publicação. Seção, caderno ou parte do jornal, p. número das páginas.
+      > RIBEIRO, João. Inovações tecnológicas no ensino. O Estado de S. Paulo, São Paulo, 20 abr. 2002. Caderno Tecnologia, p. B8.
+
+  utter_referencia_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor: Nome do autor da tese ou dissertação.
+      - Título da tese/dissertação em itálico.
+      - Ano.
+      - Número de páginas.
+      - Nível (Mestrado ou Doutorado) e Instituição.
+
+      Exemplo:
+      > SOBRENOME, Nome. Título: subtítulo (se houver). Ano. Total de páginas. Tese (Doutorado) ou Dissertação (Mestrado) – Instituição, Local, Ano de defesa.
+      > SANTOS, Ana M. A inovação na biblioteconomia brasileira. 2005. 180 f. Tese (Doutorado) - Universidade de São Paulo, São Paulo, 2005.
+
+  utter_referencia_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor ou Instituição.
+      - Título da página ou nome do site em itálico.
+      - Ano de publicação ou atualização.
+      - URL completa.
+
+      Exemplo:
+      > AUTOR (ou INSTITUIÇÃO). Título do trabalho ou da página. Ano de publicação ou atualização. Disponível em: <URL>. Acesso em: dia mês abreviado. ano.
+      > BRASIL. Ministério da Saúde. Informações sobre saúde. 2020. Disponível em: <http://www.saude.gov.br>. Acesso em: 25 jul. 2021.
+
+  utter_referencia_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Tema ou título da entrevista (se houver).
+      - Data.
+
+      Exemplo:
+      > SOBRENOME, Nome do entrevistado. Informação verbal. [entrevista concedida a] Nome do entrevistador. Local, data.
+      > FERNANDES, Júlia. Informação verbal. [entrevista concedida a] João Silva. São Paulo, 10 maio 2019.
+
+  utter_referencia_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Jurisdição ou Entidade.
+      - Título e número do documento.
+      - Data de publicação.
+
+      Exemplo:
+      > JURISDIÇÃO (ou ENTIDADE). Título, número e data. Descrição. Diário Oficial [da União, do Estado, do Município], local, data de publicação. Seção e página.
+      > BRASIL. Lei nº 12.305, de 2 de agosto de 2010. Institui a Política Nacional de Resíduos Sólidos. Diário Oficial da União, Brasília, DF, 3 ago. 2010. Seção 1, p. 3.
+
   utter_gerador_biblio_citacoes:
   - text: |
-      Escolha a opção desejada:
-
-      Gerar uma Citação (/gerador_citacao)
-      Gerar uma Bibliografia (/gerador_bibliografia)
-
-  # TO-DO - Implementar Gerador de citacao
-  utter_gerador_citacao:
-  - text: |
-      Ainda não posso te ajudar com isso, mas em breve poderei!
-
-  # TO-DO - Implementar Gerador de bibliografia
-  utter_gerador_bibliografia:
-  - text: |
-      Ainda não posso te ajudar com isso, mas em breve poderei!
+      Para gerar sua citação ou referência bibliográfica facilmente, você pode usar o Mybib com o qual você poderá preencher as informações manualmente ou mesmo enviar um arquivo PDF e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, o aplicaivo suporta diversos outras normas técnicas, então lembre-se de selecionar aquela que você está precisando.
+      Para usá-lo, acesse o link: www.mybib.com
 
 # Fontes Confiáveis
   utter_exploracao_inicial:

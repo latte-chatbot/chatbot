@@ -126,20 +126,45 @@ stories:
   - intent: explicar_bibliografia
   - action: utter_explicar_bibliografia
 
+- story: referencia_livro
+  steps:
+  - intent: referencia_livro
+  - action: utter_referencia_livro
+
+- story: referencia_revista
+  steps:
+  - intent: referencia_revista
+  - action: utter_referencia_revista
+
+- story: referencia_jornal
+  steps:
+  - intent: referencia_jornal
+  - action: utter_referencia_jornal
+
+- story: referencia_dissertacao
+  steps:
+  - intent: referencia_dissertacao
+  - action: utter_referencia_dissertacao
+
+- story: referencia_internet
+  steps:
+  - intent: referencia_internet
+  - action: utter_referencia_internet
+
+- story: referencia_entrevista
+  steps:
+  - intent: referencia_entrevista
+  - action: utter_referencia_entrevista
+
+- story: referencia_doc_legal
+  steps:
+  - intent: referencia_doc_legal
+  - action: utter_referencia_doc_legal
+
 - story: gerador_biblio_citacoes
   steps:
   - intent: gerador_biblio_citacoes
   - action: utter_gerador_biblio_citacoes
-
-- story: gerador_citacao
-  steps:
-  - intent: gerador_citacao
-  - action: utter_gerador_citacao
-
-- story: gerador_bibliografia
-  steps:
-  - intent: gerador_bibliografia
-  - action: utter_gerador_bibliografia
 
 # Fontes confiáveis
 - story: fontes_confiaveis

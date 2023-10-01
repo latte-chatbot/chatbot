@@ -189,20 +189,45 @@ nlu:
     - Explicar sobre bibliografia
     - Como fazer uma referência bibliográfica
 
+- intent: referencia_livro
+  examples: |
+    - Explicar sobre referências bibliográficas de livros
+    - Como fazer referências bibliográficas de livros
+
+- intent: referencia_revista
+  examples: |
+    - Explicar sobre referências bibliográficas de revistas
+    - Como fazer referências bibliográficas de revistas
+
+- intent: referencia_jornal
+  examples: |
+    - Explicar sobre referências bibliográficas de jornal
+    - Como fazer referências bibliográficas de jornal
+
+- intent: referencia_dissertacao
+  examples: |
+    - Explicar sobre referências bibliográficas de dissertações
+    - Como fazer referências bibliográficas de dissertação
+
+- intent: referencia_internet
+  examples: |
+    - Explicar sobre referências bibliográficas de páginas da internet
+    - Como fazer referências bibliográficas da internet
+
+- intent: referencia_entrevista
+  examples: |
+    - Explicar sobre referências bibliográficas de entrevistas
+    - Como fazer referências bibliográficas de um entrevista
+
+- intent: referencia_doc_legal
+  examples: |
+    - Explicar sobre referências bibliográficas de um documento legal
+    - Como fazer referências bibliográficas de documentos legais
+
 - intent: gerador_biblio_citacoes
   examples: |
     - Gerar um bibliografia ou citação
     - Gerador de bibliografia e citações
-
-- intent: gerador_citacao
-  examples: |
-    - Gerar uma citação
-    - Gerar citação
-
-- intent: gerador_bibliografia
-  examples: |
-    - Gerar um bibliografia
-    - Gerar uma referência bibliográfica
 
 # Fontes confiáveis
 - intent: fontes_confiaveis

@@ -31,9 +31,14 @@ intents:
   - citacao_indireta_entrevista
   - citacao_indireta_doc_legal
   - explicar_bibliografia
+  - referencia_livro
+  - referencia_revista
+  - referencia_jornal
+  - referencia_dissertacao
+  - referencia_internet
+  - referencia_entrevista
+  - referencia_doc_legal
   - gerador_biblio_citacoes
-  - gerador_citacao
-  - gerador_bibliografia
   - fontes_confiaveis
   - iniciante
   - navegador
