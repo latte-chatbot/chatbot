@@ -390,6 +390,107 @@ responses:
       Para gerar sua citação ou referência bibliográfica facilmente, você pode usar o Mybib com o qual você poderá preencher as informações manualmente ou mesmo enviar um arquivo PDF e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, o aplicaivo suporta diversos outras normas técnicas, então lembre-se de selecionar aquela que você está precisando.
       Para usá-lo, acesse o link: www.mybib.com
 
+
+# Estruturação de artigos
+
+  utter_estruturacao_artigos:
+  - text: |
+      Entendemos que a escrita de um artigo científico pode ser uma tarefa desafiadora. É importante saber que existem diferentes tipos de artigos, cada um com sua própria estrutura e finalidade específica. Para ajudá-lo a começar, você pode escolher abaixo o tipo de artigo que deseja estruturar. Basta selecionar o tipo desejado e forneceremos orientações detalhadas sobre como organizá-lo da melhor maneira possível.
+      
+      Artigo de Pesquisa Empírica: Se você está conduzindo um estudo original com coleta de dados, escolha esta opção. \pesquisa_empirica
+      
+      Artigo de Revisão Bibliográfica: Se sua intenção é analisar a pesquisa existente sobre um tópico, este é o caminho. \revisao_bibliografica
+      
+      Artigo de Pesquisa Experimental: Se você realizou experimentos controlados, esta é a escolha adequada. \pesquisa_experimental
+      
+      Artigo de Pesquisa Qualitativa: Para explorar fenômenos sociais e humanos complexos, selecione esta opção. \pesquisa_qualitativa
+      
+      Artigo de Revisão Sistemática: Se você deseja resumir e analisar sistematicamente a literatura existente, esta é a escolha. revisao_sistematica
+      
+      Personalizado: Crie um modelo personalizado com os tópicos de sua escolha e obtenha uma avaliação do chatbot em relação à estrutura que você montou. \personalizado
+      
+      Escolha a opção desejada para mais detalhes!
+
+
+  utter_pesquisa_empirica:
+  - text: |
+      Artigo de Pesquisa Empírica: Descreve estudos originais com coleta de dados por experimentos ou pesquisa de campo, visando comunicar resultados para avançar o conhecimento em um campo específico.
+      
+      Introdução: Apresenta o problema de pesquisa e a importância do estudo.
+      
+      Revisão da Literatura: Resume pesquisas anteriores relevantes.
+      
+      Metodologia: Descreve como o estudo foi conduzido.
+      
+      Resultados: Apresenta os dados e análises.
+      
+      Discussão: Interpreta os resultados e discute implicações.
+      
+      Conclusão: Resume as principais conclusões do estudo.
+
+
+  utter_revisao_bibliografica:
+  - text: |
+      Artigo de Revisão Bibliográfica: Analisa a literatura existente sobre um tópico, resumindo tendências e destacando lacunas, com o objetivo de fornecer uma visão abrangente da pesquisa em um campo.
+      
+      Introdução: Introduz o tópico e a importância da revisão.
+      
+      Objetivos da Revisão: Define os objetivos da análise.
+      
+      Metodologia de Busca: Descreve como os estudos foram selecionados.
+      
+      Análise da Literatura: Sintetiza os principais achados dos estudos.
+      
+      Discussão dos Resultados: Examina implicações e tendências.
+      
+      Conclusão e Implicações: Resume os principais pontos e destaca implicações para futura pesquisa.
+
+  utter_pesquisa_experimental:
+  - text: |
+      Artigo de Pesquisa Experimental:Descreve experimentos controlados para testar hipóteses e coletar dados quantitativos, com o objetivo de comunicar procedimentos e resultados para validação e replicação.
+      
+      Introdução: Apresenta a pergunta de pesquisa e a hipótese.
+      
+      Metodologia: Detalha o desenho experimental e a coleta de dados.
+      
+      Resultados: Apresenta os resultados numéricos e estatísticos.
+      
+      Discussão: Interpreta os resultados e discute implicações.
+      
+      Conclusão: Resume as principais conclusões do estudo.
+      
+      Referências: Citação de fontes utilizadas.
+
+  utter_pesquisa_qualitativa:
+  - text: |
+      Artigo de Pesquisa Qualitativa: Explora fenômenos sociais e humanos complexos, frequentemente usando entrevistas ou análise de texto, para aprofundar a compreensão de experiências e perspectivas humanas.
+      
+      Introdução: Apresenta o contexto e a pergunta de pesquisa.
+      
+      Quadro Teórico: Explica a base teórica para o estudo.
+      
+      Metodologia: Descreve os métodos de coleta e análise de dados.
+      
+      Análise de Dados: Apresenta e interpreta os dados qualitativos.
+      
+      Discussão: Examina os achados e implicações.
+      
+      Conclusão: Resumo das principais conclusões do estudo.
+
+  utter_revisao_sistematica:
+  - text: |
+      Artigo de Revisão Sistemática: Realiza uma pesquisa abrangente da literatura existente com critérios definidos para inclusão de estudos, com o objetivo de resumir todas as evidências disponíveis sobre um tópico.
+      
+      Introdução: Apresenta o tópico e a importância da revisão.
+      
+      Metodologia da Revisão: Descreve os critérios de seleção dos estudos.
+      
+      Resultados da Revisão: Apresenta as descobertas da análise.
+      
+      Discussão dos Achados: Examina as implicações e as limitações.
+      
+      Conclusão e Implicações para Pesquisa Futura: Resume as principais conclusões e destaca as direções para futura pesquisa.
+
 # Fontes Confiáveis
   utter_exploracao_inicial:
   - text: |
