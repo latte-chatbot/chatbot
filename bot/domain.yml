@@ -53,6 +53,12 @@ intents:
   - arxiv
   - nature_research_journals
   - estruturacao_artigo
+  - estruturacao_artigos
+  - pesquisa_empirica
+  - revisao_bibliografica
+  - pesquisa_experimental
+  - pesquisa_qualitativa
+  - revisao_sistematica
 
 actions:
   - action_session_start
