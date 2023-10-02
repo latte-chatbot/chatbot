@@ -166,6 +166,38 @@ stories:
   - intent: gerador_biblio_citacoes
   - action: utter_gerador_biblio_citacoes
 
+
+# Estruturação de aquigos
+- story: estruturacao_artigos
+  steps:
+  - intent: estruturacao_artigos
+  - action: utter_estruturacao_artigos
+
+- story: pesquisa_empirica
+  steps:
+  - intent: pesquisa_empirica
+  - action: utter_pesquisa_empirica
+
+- story: revisao_bibliografica
+  steps:
+  - intent: revisao_bibliografica
+  - action: utter_revisao_bibliografica
+  
+- story: pesquisa_experimental
+  steps:
+  - intent: pesquisa_experimental
+  - action: utter_pesquisa_experimental
+
+- story: pesquisa_qualitativa
+  steps:
+  - intent: pesquisa_qualitativa
+  - action: utter_pesquisa_qualitativa
+
+- story: revisao_sistematica
+  steps:
+  - intent: revisao_sistematica
+  - action: utter_revisao_sistematica  
+
 # Fontes confiáveis
 - story: fontes_confiaveis
   steps:
