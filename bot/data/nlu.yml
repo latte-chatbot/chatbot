@@ -1,6 +1,5 @@
 version: "3.1"
 
-
 nlu:
 # Cumprimentar
 - intent: cumprimentar
@@ -301,7 +300,44 @@ nlu:
     - nature research journals
     - nature_research_journals
 
-# Estruturação de artigos
+# Funcionalide de estrturação de artigos
+- intent: estruturacao_artigos
+  examples: |
+    - estruturacao_artigos
+    - estruturacao artigos
+    - estruturacao artigos cientificos
+
+- intent: pesquisa_empirica
+  examples: |
+    - artigo_pesquisa_empirica
+    - artigo de pesquisa empírica
+    - pesquisa empírica
+
+- intent: revisao_bibliografica
+  examples: |
+    - artigo_revisao_bibliografica
+    - artigo de revisão bibliografica
+    - revisão bibliografica
+
+- intent: pesquisa_experimental
+  examples: |
+    - pesquisa_experimental
+    - artigo de pesquisa experimental
+    - pesquisa experimental
+
+- intent: pesquisa_qualitativa
+  examples: |
+    - pesquisa_qualitativa
+    - Artigo de Pesquisa Qualitativa
+    - Pesquisa Qualitativa
+
+- intent:  revisao_sistematica
+  examples: |
+    - artigo_pesquisa_empirica
+    - Artigo de Revisão Sistemática
+    - Revisão Sistemática
+
+# Conteudo - Estruturação de artigos
 - intent: estruturacao/geral
   examples: |
     - Quais são as partes principais de um trabalho acadêmico?
