@@ -46,7 +46,9 @@ responses:
       Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
         - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
-        - Estruturação de texto, normas gerais da ABNT, orginalidade de texto e revisão (Basta me perguntar sobre)
+        - Estruturação de artigos (/estruturacao_artigos)
+        - Dicas de estruturação de textos, normas gerais da ABNT, orginalidade de texto e revisão (Não há um comando específico, basta me perguntar sobre!)
+      
       Como posso contribuir para o seu progresso hoje?
 
 # Dúvidas sobre ABNT
@@ -392,20 +394,19 @@ responses:
 
 
 # Estruturação de artigos
-
   utter_estruturacao_artigos:
   - text: |
       Entendemos que a escrita de um artigo científico pode ser uma tarefa desafiadora. É importante saber que existem diferentes tipos de artigos, cada um com sua própria estrutura e finalidade específica. Para ajudá-lo a começar, você pode escolher abaixo o tipo de artigo que deseja estruturar. Basta selecionar o tipo desejado e forneceremos orientações detalhadas sobre como organizá-lo da melhor maneira possível.
       
-      Artigo de Pesquisa Empírica: Se você está conduzindo um estudo original com coleta de dados, escolha esta opção. \pesquisa_empirica
+      Artigo de Pesquisa Empírica: Se você está conduzindo um estudo original com coleta de dados, escolha esta opção. (/pesquisa_empirica)
       
-      Artigo de Revisão Bibliográfica: Se sua intenção é analisar a pesquisa existente sobre um tópico, este é o caminho. \revisao_bibliografica
+      Artigo de Revisão Bibliográfica: Se sua intenção é analisar a pesquisa existente sobre um tópico, este é o caminho. (/revisao_bibliografica)
       
-      Artigo de Pesquisa Experimental: Se você realizou experimentos controlados, esta é a escolha adequada. \pesquisa_experimental
+      Artigo de Pesquisa Experimental: Se você realizou experimentos controlados, esta é a escolha adequada. (/pesquisa_experimental)
       
-      Artigo de Pesquisa Qualitativa: Para explorar fenômenos sociais e humanos complexos, selecione esta opção. \pesquisa_qualitativa
+      Artigo de Pesquisa Qualitativa: Para explorar fenômenos sociais e humanos complexos, selecione esta opção. (/pesquisa_qualitativa)
       
-      Artigo de Revisão Sistemática: Se você deseja resumir e analisar sistematicamente a literatura existente, esta é a escolha. revisao_sistematica
+      Artigo de Revisão Sistemática: Se você deseja resumir e analisar sistematicamente a literatura existente, esta é a escolha. (/revisao_sistematica)
             
       Escolha a opção desejada para mais detalhes!
 
