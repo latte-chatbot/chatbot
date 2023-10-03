@@ -1,6 +1,5 @@
 version: "3.1"
 
-
 nlu:
 # Cumprimentar
 - intent: cumprimentar
@@ -86,7 +85,6 @@ nlu:
     - O que é ABNT?
     - O que significa ABNT?
 
-
 # Bibliografia e citações
 - intent: biblio_citacoes
   examples: |
@@ -94,6 +92,141 @@ nlu:
     - Como formatar citações?
     - Como fazer um citação
     - Como criar uma citação bibliográfica
+
+- intent: explicar_biblio_citacoes
+  examples: |
+    - Explicar bibiliografia e citações
+    - Explicar sobre bibliografia ou citações
+
+- intent: explicar_citacao
+  examples: |
+    - Explicar sobre citações
+    - Como fazer citações
+
+- intent: explicar_citacao_direta
+  examples: |
+    - Explicar sobre citações diretas
+    - Como fazer citações diretas
+
+- intent: citacao_direta_livro
+  examples: |
+    - Explicar sobre citações diretas de livros
+    - Como fazer citações diretas de livros
+
+- intent: citacao_direta_revista
+  examples: |
+    - Explicar sobre citações diretas de revistas
+    - Como fazer citações diretas de revistas
+
+- intent: citacao_direta_jornal
+  examples: |
+    - Explicar sobre citações diretas de jornal
+    - Como fazer citações diretas de jornal
+
+- intent: citacao_direta_dissertacao
+  examples: |
+    - Explicar sobre citações diretas de dissertações
+    - Como fazer citações diretas de dissertação
+
+- intent: citacao_direta_internet
+  examples: |
+    - Explicar sobre citações diretas de páginas da internet
+    - Como fazer citações diretas da internet
+
+- intent: citacao_direta_entrevista
+  examples: |
+    - Explicar sobre citações diretas de entrevistas
+    - Como fazer citações diretas de um entrevista
+
+- intent: citacao_direta_doc_legal
+  examples: |
+    - Explicar sobre citações diretas de um documento legal
+    - Como fazer citações diretas de documentos legais
+
+- intent: explicar_citacao_indireta
+  examples: |
+    - Explicar sobre citações indiretas
+    - Como fazer citações indiretas
+
+- intent: citacao_indireta_livro
+  examples: |
+    - Explicar sobre citações indiretas de livros
+    - Como fazer citações indiretas de livros
+
+- intent: citacao_indireta_revista
+  examples: |
+    - Explicar sobre citações indiretas de revistas
+    - Como fazer citações indiretas de revistas
+
+- intent: citacao_indireta_jornal
+  examples: |
+    - Explicar sobre citações indiretas de jornal
+    - Como fazer citações indiretas de jornal
+
+- intent: citacao_indireta_dissertacao
+  examples: |
+    - Explicar sobre citações indiretas de dissertações
+    - Como fazer citações indiretas de dissertação
+
+- intent: citacao_indireta_internet
+  examples: |
+    - Explicar sobre citações indiretas de páginas da internet
+    - Como fazer citações indiretas da internet
+
+- intent: citacao_indireta_entrevista
+  examples: |
+    - Explicar sobre citações indiretas de entrevistas
+    - Como fazer citações indiretas de um entrevista
+
+- intent: citacao_indireta_doc_legal
+  examples: |
+    - Explicar sobre citações indiretas de um documento legal
+    - Como fazer citações indiretas de documentos legais
+
+- intent: explicar_bibliografia
+  examples: |
+    - Explicar sobre bibliografia
+    - Como fazer uma referência bibliográfica
+
+- intent: referencia_livro
+  examples: |
+    - Explicar sobre referências bibliográficas de livros
+    - Como fazer referências bibliográficas de livros
+
+- intent: referencia_revista
+  examples: |
+    - Explicar sobre referências bibliográficas de revistas
+    - Como fazer referências bibliográficas de revistas
+
+- intent: referencia_jornal
+  examples: |
+    - Explicar sobre referências bibliográficas de jornal
+    - Como fazer referências bibliográficas de jornal
+
+- intent: referencia_dissertacao
+  examples: |
+    - Explicar sobre referências bibliográficas de dissertações
+    - Como fazer referências bibliográficas de dissertação
+
+- intent: referencia_internet
+  examples: |
+    - Explicar sobre referências bibliográficas de páginas da internet
+    - Como fazer referências bibliográficas da internet
+
+- intent: referencia_entrevista
+  examples: |
+    - Explicar sobre referências bibliográficas de entrevistas
+    - Como fazer referências bibliográficas de um entrevista
+
+- intent: referencia_doc_legal
+  examples: |
+    - Explicar sobre referências bibliográficas de um documento legal
+    - Como fazer referências bibliográficas de documentos legais
+
+- intent: gerador_biblio_citacoes
+  examples: |
+    - Gerar um bibliografia ou citação
+    - Gerador de bibliografia e citações
 
 # Fontes confiáveis
 - intent: fontes_confiaveis
@@ -167,7 +300,44 @@ nlu:
     - nature research journals
     - nature_research_journals
 
-# Estruturação de artigos
+# Funcionalide de estrturação de artigos
+- intent: estruturacao_artigos
+  examples: |
+    - estruturacao_artigos
+    - estruturacao artigos
+    - estruturacao artigos cientificos
+
+- intent: pesquisa_empirica
+  examples: |
+    - artigo_pesquisa_empirica
+    - artigo de pesquisa empírica
+    - pesquisa empírica
+
+- intent: revisao_bibliografica
+  examples: |
+    - artigo_revisao_bibliografica
+    - artigo de revisão bibliografica
+    - revisão bibliografica
+
+- intent: pesquisa_experimental
+  examples: |
+    - pesquisa_experimental
+    - artigo de pesquisa experimental
+    - pesquisa experimental
+
+- intent: pesquisa_qualitativa
+  examples: |
+    - pesquisa_qualitativa
+    - Artigo de Pesquisa Qualitativa
+    - Pesquisa Qualitativa
+
+- intent:  revisao_sistematica
+  examples: |
+    - artigo_pesquisa_empirica
+    - Artigo de Revisão Sistemática
+    - Revisão Sistemática
+
+# Conteudo - Estruturação de artigos
 - intent: estruturacao/geral
   examples: |
     - Quais são as partes principais de um trabalho acadêmico?

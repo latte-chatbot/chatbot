@@ -99,7 +99,7 @@ stories:
     - user: |
         Onde encontrar fontes confiáveis?
       intent: fontes_confiaveis
-    - action: utter_fontes_confiaveis
+    - action: action_utter_fontes_confiaveis
 
 - story: Responder sobre fontes confiaveis
   steps:

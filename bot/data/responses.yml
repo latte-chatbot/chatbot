@@ -46,7 +46,7 @@ responses:
       Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
         - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
-
+        - Estruturação de texto, normas gerais da ABNT, orginalidade de texto e revisão (Basta me perguntar sobre)
       Como posso contribuir para o seu progresso hoje?
 
 # Dúvidas sobre ABNT
@@ -64,23 +64,432 @@ responses:
   - text: |
       A Associação Brasileira de Normas Técnicas (ABNT) é uma das entidades brasileiras que estabelece quais são as normas padrões internacionalmente aceitas para a produção de trabalhos acadêmicos e científicos, sendo no Brasil um dos padrões mais utilizados no meio acadêmico.
 
+
+# Bibliografias e Citações
   utter_biblio_citacoes:
   - text: |
-      Para fazer uma citação bibliográfica você tem que...
+      Seleciona uma das opções do assistente de citações:
+
+      Opção 1 (modo fácil): Gerar citação ou bibliografia: Se você precisa de uma citação ou referência bibliográfica agora e não está pronto para aprender como fazer isso sozinho, escolha esta opção. Vamos guiá-lo por meio de uma narrativa interativa para gerar a citação desejada de forma rápida e eficiente. Esta é uma ótima maneira de obter o que você precisa sem se preocupar com os detalhes técnicos. Vamos começar a sua jornada agora e criar a citação desejada! (/gerador_biblio_citacoes)
+      
+      Opção 2 (modo difícil): Selecione esta opção se você deseja aprender como estruturar corretamente uma citação ou referência bibliográfica. Entender como fazer isso é essencial para citar fontes corretamente em trabalhos acadêmicos, artigos e relatórios. Ao escolher esta opção, você terá acesso a um guia passo a passo que explicará os elementos necessários para criar citações/bibliográficas precisas. Vamos começar sua jornada de aprendizado agora! (/explicar_biblio_citacoes)
+
+  utter_explicar_biblio_citacoes:
+  - text: |
+      Vamos começar sua jornada de aprendizado agora, escolha qual caminho deseja seguir:
+
+      Aprender a Estruturar uma Citação (/explicar_citacao)
+      
+      Aprender a Estruturar uma Bibliografia (/explicar_bibliografia)
+      
+  utter_explicar_citacao:
+  - text: |
+      Existem dois tipos principais de citação de fontes em trabalhos acadêmicos e científicos: citação direta e citação indireta (ou parafraseada). Vou explicar ambos:
+      
+      A citação direta ocorre quando você reproduz as palavras exatas de uma fonte, colocando-as entre aspas duplas.
+      Geralmente, é usada quando você deseja citar uma parte específica do texto de outra pessoa para enfatizar uma ideia, conceito ou argumento.
+      É importante incluir a página ou o número do parágrafo de onde a citação foi retirada, para permitir que os leitores localizem a fonte original.
+      Exemplo de citação direta: Segundo Smith (2019), "A educação é a chave para o desenvolvimento de uma sociedade."
+      
+      A citação indireta, também conhecida como paráfrase, ocorre quando você reescreve a ideia, conceito ou argumento de outra pessoa em suas próprias palavras.
+      Geralmente, é usada para resumir, explicar ou reformular as informações de uma fonte sem reproduzir o texto original.
+      Também é importante fornecer uma referência à fonte original para dar crédito ao autor original.
+      Exemplo de citação indireta (paráfrase): Smith (2019) argumenta que a educação desempenha um papel fundamental no desenvolvimento da sociedade.
+      
+      Ambos os tipos de citação são importantes em trabalhos acadêmicos e científicos para dar crédito aos autores originais e evitar o plágio. A escolha entre citação direta e indireta depende do contexto e do objetivo da citação em seu trabalho. Para mais informações escolha entre citação direta (/explicar_citacao_direta) ou citação indireta (/explicar_citacao_indireta).
+
+  utter_explicar_citacao_direta:
+  - text: |
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Citação de Livro (/citacao_direta_livro)
+      2. Citação de Artigo de Revista (/citacao_direta_revista)
+      3. Citação de Artigo de Jornal (/citacao_direta_jornal)
+      4. Citação de Tese ou Dissertação (/citacao_direta_dissertacao)
+      5. Citação de Site da Internet (/citacao_direta_internet)
+      6. Citação de Entrevista (/citacao_direta_entrevista)
+      7. Citação de Documento Legal (Leis, Decretos, etc.) (/citacao_direta_doc_legal)
+
+  utter_citacao_direta_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro.
+      - Título do livro em itálico.
+      - Edição (se houver).
+      - Local de publicação.
+      - Editora.
+      - Ano de publicação.
+      - Página(s) específica(s) da citação.
+
+      Exemplo:> De acordo com Smith (2010), "A pesquisa científica é uma busca contínua por conhecimento" (p. 45).
+
+  utter_citacao_direta_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Título da revista em itálico.
+      - Volume da revista.
+      - Número do fascículo (se houver).
+      - Página específica da citação.
+      - Ano de publicação.
+
+      Exemplo:> No artigo de Johnson (2018), é enfatizado que "a sustentabilidade é essencial para o futuro do planeta" ("Sustainability and the Future," *Environmental Science*, 36(4), p. 78).
+
+  utter_citacao_direta_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Nome do jornal em itálico.
+      - Data de publicação.
+      - Seção (se houver).
+      - Página(s) específica(s) da citação.
+
+      Exemplo:> Segundo Brown (2021), "A economia global está passando por mudanças significativas" ("Economic Shifts," *The New York Times*, 15 de maio, p. A3).
+
+  utter_citacao_direta_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor da tese ou dissertação.
+      - Título da tese ou dissertação em itálico.
+      - Tipo (Tese ou Dissertação).
+      - Instituição de ensino.
+      - Ano de defesa.
+      - Página(s) específica(s) da citação (opcional).
+
+      Exemplo: > De acordo com Santos (2017), "A pesquisa revelou resultados significativos" (*Tese de Doutorado*, Universidade Federal, 2017, p. 56).
+
+  utter_citacao_direta_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) (se disponível).
+      - Título da página ou artigo (se disponível) entre aspas.
+      - URL (endereço web).
+      - Data de acesso.
+
+      Exemplo:> Segundo o Ministério da Saúde (2022), "É importante manter medidas de higiene pessoal" ("Prevenção da COVID-19", https://www.saude.gov.br/prevencaocovid, acessado em 10 de agosto de 2022).
+
+  utter_citacao_direta_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Título da entrevista (se houver) entre aspas.
+      - Entrevistador (se aplicável).
+      - Local da entrevista (se aplicável).
+      - Data da entrevista.
+
+      Exemplo: > Durante a entrevista com Maria Silva (2021), ela declarou que "a educação é a chave para o progresso social" (entrevista pessoal, realizada em São Paulo, 5 de setembro de 2021).
+
+  utter_citacao_direta_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do órgão emissor.
+      - Título da lei ou decreto (se houver) entre aspas.
+      - Número e data de publicação (se disponível).
+
+      Exemplo: > De acordo com o Decreto Presidencial nº 123/2020, "Todas as empresas devem seguir as normas de segurança no local de trabalho" (Diário Oficial da União, 10 de março de 2020, p. 3).
+
+  utter_explicar_citacao_indireta:
+  - text: |
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Citação de Livro (/citacao_indireta_livro)
+      2. Citação de Artigo de Revista (/citacao_indireta_revista)
+      3. Citação de Artigo de Jornal (/citacao_indireta_jornal)
+      4. Citação de Tese ou Dissertação (/citacao_indireta_dissertacao)
+      5. Citação de Site da Internet (/citacao_indireta_internet)
+      6. Citação de Entrevista (/citacao_indireta_entrevista)
+      7. Citação de Documento Legal (Leis, Decretos, etc.) (/citacao_indireta_doc_legal)
+
+  utter_citacao_indireta_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro.
+      - Título do livro em itálico.
+      - Ano de publicação.
+      
+      Exemplo:
+      > Smith (2010) enfatiza a importância da pesquisa científica como uma busca contínua por conhecimento.
+
+  utter_citacao_indireta_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Título da revista em itálico.
+      - Ano de publicação.
+      
+      Exemplo:
+      > Johnson (2018) discute a necessidade de sustentabilidade para o futuro do planeta em seu artigo.
+
+
+  utter_citacao_indireta_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo.
+      - Título do artigo entre aspas.
+      - Nome do jornal em itálico.
+      - Data de publicação.
+      
+      Exemplo > Brown (2021) analisou as mudanças na economia global em seu artigo recente.
+
+  utter_citacao_indireta_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor da tese ou dissertação.
+      - Título da tese ou dissertação em itálico.
+      - Ano de defesa.
+
+      Exemplo > Santos (2017) conduziu uma pesquisa significativa em sua tese de doutorado.
+
+  utter_citacao_indireta_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) (se disponível).
+      - Título da página ou artigo (se disponível) entre aspas.
+      - Ano de publicação (se disponível).
+
+      Exemplo > O Ministério da Saúde (2022) enfatiza a importância das medidas de higiene pessoal em seu site.
+
+  utter_citacao_indireta_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Data da entrevista.
+
+      Exemplo > Durante a entrevista realizada com Maria Silva (2021), ela destacou a relevância da educação para o progresso social.
+
+  utter_citacao_indireta_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Título da lei ou decreto (se houver) entre aspas.
+      - Ano de publicação (se disponível).
+
+      Exemplo > O Decreto Presidencial nº 123/2020 menciona a necessidade de seguir as normas de segurança no local de trabalho.
+  
+  utter_explicar_bibliografia:
+  - text: |
+      Existem 7 tipos de citação, escolha qual deseja aprender agora:
+
+      1. Referência bibliográfica de Livro (/referencia_livro)
+      2. Referência bibliográfica de Artigo de Revista (/referencia_revista)
+      3. Referência bibliográfica de Artigo de Jornal (/referencia_jornal)
+      4. Referência bibliográfica de Tese ou Dissertação (/referencia_dissertacao)
+      5. Referência bibliográfica de Site da Internet (/referencia_internet)
+      6. Referência bibliográfica de Entrevista (/referencia_entrevista)
+      7. Referência bibliográfica de Documento Legal (Leis, Decretos, etc.) (/referencia_doc_legal)
+      
+  utter_referencia_livro:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do livro: A ordem é sobrenome seguido pelas iniciais do nome.
+      - Título do livro: Deve estar em itálico.
+      - Ano de publicação: Este é o ano em que o livro foi publicado.
+      
+      Exemplo:
+      > SOBRENOME, Nome. Título: subtítulo (se houver). Edição (se não for a primeira). Local de Publicação: Editora, ano.
+      > SILVA, Maria A. Introdução à biblioteconomia. 3. ed. São Paulo: Cultura Acadêmica, 2000.
+
+  utter_referencia_revista:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo: Nome do(s) escritor(es) do artigo. Sobrenome seguido pelas iniciais do nome.
+      - Título do artigo.
+      - Nome do periódico em itálico.
+      - Ano de publicação.
+      - Volume e número do periódico.
+      - Páginas do artigo.
+      
+      Exemplo:
+      > SOBRENOME, Nome. Título do artigo. Nome do Periódico, Local de Publicação, volume, número, páginas do artigo, mês e ano.
+      > COSTA, João L. Novas tecnologias na biblioteca. Revista Brasileira de Biblioteconomia, Rio de Janeiro, v. 5, n. 2, p. 55-70, jul. 1995.
+
+  utter_referencia_jornal:
+  - text: |
+      Informações necessárias:
+      
+      - Autor(es) do artigo: Nome do(s) escritor(es) do artigo. Sobrenome seguido pelas iniciais do nome.
+      - Título do artigo.
+      - Nome do jornal em itálico.
+      - Data de publicação completa.
+      
+      Exemplo: 
+      > SOBRENOME, Nome. Título do artigo. Nome do Jornal, Local de Publicação, data de publicação. Seção, caderno ou parte do jornal, p. número das páginas.
+      > RIBEIRO, João. Inovações tecnológicas no ensino. O Estado de S. Paulo, São Paulo, 20 abr. 2002. Caderno Tecnologia, p. B8.
+
+  utter_referencia_dissertacao:
+  - text: |
+      Informações necessárias:
+      
+      - Autor: Nome do autor da tese ou dissertação.
+      - Título da tese/dissertação em itálico.
+      - Ano.
+      - Número de páginas.
+      - Nível (Mestrado ou Doutorado) e Instituição.
+
+      Exemplo:
+      > SOBRENOME, Nome. Título: subtítulo (se houver). Ano. Total de páginas. Tese (Doutorado) ou Dissertação (Mestrado) – Instituição, Local, Ano de defesa.
+      > SANTOS, Ana M. A inovação na biblioteconomia brasileira. 2005. 180 f. Tese (Doutorado) - Universidade de São Paulo, São Paulo, 2005.
+
+  utter_referencia_internet:
+  - text: |
+      Informações necessárias:
+      
+      - Autor ou Instituição.
+      - Título da página ou nome do site em itálico.
+      - Ano de publicação ou atualização.
+      - URL completa.
+
+      Exemplo:
+      > AUTOR (ou INSTITUIÇÃO). Título do trabalho ou da página. Ano de publicação ou atualização. Disponível em: <URL>. Acesso em: dia mês abreviado. ano.
+      > BRASIL. Ministério da Saúde. Informações sobre saúde. 2020. Disponível em: <http://www.saude.gov.br>. Acesso em: 25 jul. 2021.
+
+  utter_referencia_entrevista:
+  - text: |
+      Informações necessárias:
+      
+      - Nome do entrevistado.
+      - Tema ou título da entrevista (se houver).
+      - Data.
+
+      Exemplo:
+      > SOBRENOME, Nome do entrevistado. Informação verbal. [entrevista concedida a] Nome do entrevistador. Local, data.
+      > FERNANDES, Júlia. Informação verbal. [entrevista concedida a] João Silva. São Paulo, 10 maio 2019.
+
+  utter_referencia_doc_legal:
+  - text: |
+      Informações necessárias:
+      
+      - Jurisdição ou Entidade.
+      - Título e número do documento.
+      - Data de publicação.
+
+      Exemplo:
+      > JURISDIÇÃO (ou ENTIDADE). Título, número e data. Descrição. Diário Oficial [da União, do Estado, do Município], local, data de publicação. Seção e página.
+      > BRASIL. Lei nº 12.305, de 2 de agosto de 2010. Institui a Política Nacional de Resíduos Sólidos. Diário Oficial da União, Brasília, DF, 3 ago. 2010. Seção 1, p. 3.
+
+  utter_gerador_biblio_citacoes:
+  - text: |
+      Para gerar sua citação ou referência bibliográfica facilmente, você pode usar o Mybib com o qual você poderá preencher as informações manualmente ou mesmo enviar um arquivo PDF e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, o aplicaivo suporta diversos outras normas técnicas, então lembre-se de selecionar aquela que você está precisando.
+      Para usá-lo, acesse o link: www.mybib.com
+
+
+# Estruturação de artigos
+
+  utter_estruturacao_artigos:
+  - text: |
+      Entendemos que a escrita de um artigo científico pode ser uma tarefa desafiadora. É importante saber que existem diferentes tipos de artigos, cada um com sua própria estrutura e finalidade específica. Para ajudá-lo a começar, você pode escolher abaixo o tipo de artigo que deseja estruturar. Basta selecionar o tipo desejado e forneceremos orientações detalhadas sobre como organizá-lo da melhor maneira possível.
+      
+      Artigo de Pesquisa Empírica: Se você está conduzindo um estudo original com coleta de dados, escolha esta opção. \pesquisa_empirica
+      
+      Artigo de Revisão Bibliográfica: Se sua intenção é analisar a pesquisa existente sobre um tópico, este é o caminho. \revisao_bibliografica
+      
+      Artigo de Pesquisa Experimental: Se você realizou experimentos controlados, esta é a escolha adequada. \pesquisa_experimental
+      
+      Artigo de Pesquisa Qualitativa: Para explorar fenômenos sociais e humanos complexos, selecione esta opção. \pesquisa_qualitativa
+      
+      Artigo de Revisão Sistemática: Se você deseja resumir e analisar sistematicamente a literatura existente, esta é a escolha. revisao_sistematica
+            
+      Escolha a opção desejada para mais detalhes!
+
+
+  utter_pesquisa_empirica:
+  - text: |
+      Artigo de Pesquisa Empírica: Descreve estudos originais com coleta de dados por experimentos ou pesquisa de campo, visando comunicar resultados para avançar o conhecimento em um campo específico.
+      
+      Introdução: Apresenta o problema de pesquisa e a importância do estudo.
+      
+      Revisão da Literatura: Resume pesquisas anteriores relevantes.
+      
+      Metodologia: Descreve como o estudo foi conduzido.
+      
+      Resultados: Apresenta os dados e análises.
+      
+      Discussão: Interpreta os resultados e discute implicações.
+      
+      Conclusão: Resume as principais conclusões do estudo.
+
+
+  utter_revisao_bibliografica:
+  - text: |
+      Artigo de Revisão Bibliográfica: Analisa a literatura existente sobre um tópico, resumindo tendências e destacando lacunas, com o objetivo de fornecer uma visão abrangente da pesquisa em um campo.
+      
+      Introdução: Introduz o tópico e a importância da revisão.
+      
+      Objetivos da Revisão: Define os objetivos da análise.
+      
+      Metodologia de Busca: Descreve como os estudos foram selecionados.
+      
+      Análise da Literatura: Sintetiza os principais achados dos estudos.
+      
+      Discussão dos Resultados: Examina implicações e tendências.
+      
+      Conclusão e Implicações: Resume os principais pontos e destaca implicações para futura pesquisa.
+
+  utter_pesquisa_experimental:
+  - text: |
+      Artigo de Pesquisa Experimental:Descreve experimentos controlados para testar hipóteses e coletar dados quantitativos, com o objetivo de comunicar procedimentos e resultados para validação e replicação.
+      
+      Introdução: Apresenta a pergunta de pesquisa e a hipótese.
+      
+      Metodologia: Detalha o desenho experimental e a coleta de dados.
+      
+      Resultados: Apresenta os resultados numéricos e estatísticos.
+      
+      Discussão: Interpreta os resultados e discute implicações.
+      
+      Conclusão: Resume as principais conclusões do estudo.
+      
+      Referências: Citação de fontes utilizadas.
+
+  utter_pesquisa_qualitativa:
+  - text: |
+      Artigo de Pesquisa Qualitativa: Explora fenômenos sociais e humanos complexos, frequentemente usando entrevistas ou análise de texto, para aprofundar a compreensão de experiências e perspectivas humanas.
+      
+      Introdução: Apresenta o contexto e a pergunta de pesquisa.
+      
+      Quadro Teórico: Explica a base teórica para o estudo.
+      
+      Metodologia: Descreve os métodos de coleta e análise de dados.
+      
+      Análise de Dados: Apresenta e interpreta os dados qualitativos.
+      
+      Discussão: Examina os achados e implicações.
+      
+      Conclusão: Resumo das principais conclusões do estudo.
+
+  utter_revisao_sistematica:
+  - text: |
+      Artigo de Revisão Sistemática: Realiza uma pesquisa abrangente da literatura existente com critérios definidos para inclusão de estudos, com o objetivo de resumir todas as evidências disponíveis sobre um tópico.
+      
+      Introdução: Apresenta o tópico e a importância da revisão.
+      
+      Metodologia da Revisão: Descreve os critérios de seleção dos estudos.
+      
+      Resultados da Revisão: Apresenta as descobertas da análise.
+      
+      Discussão dos Achados: Examina as implicações e as limitações.
+      
+      Conclusão e Implicações para Pesquisa Futura: Resume as principais conclusões e destaca as direções para futura pesquisa.
 
 # Fontes Confiáveis
-  utter_fontes_confiaveis:
-  - text: |
-      Nesta funcionalidade, você terá acesso a uma variedade de fontes confiáveis para suas pesquisas. Explore as melhores bases acadêmicas para conduzir suas investigações!
-
-      **Selecione o seu estágio de pesquisa:**
-
-      1. **Exploração Inicial:** Acesse bases acadêmicas de fácil acesso com conteúdo geral, perfeitas para iniciantes em pesquisas (/iniciante).
-
-      2. **Navegando pelo Conhecimento:** Descubra bases acadêmicas detalhadas disponíveis para estudantes que desejam aprofundar suas pesquisas (/navegador).
-
-      3. **Explorando Conteúdos Avançados:** Explore bases acadêmicas altamente especializadas e detalhadas, que podem ter restrições de acesso. Este desafio é ideal para pesquisadores experientes que desejam se especializar ainda mais (/explorador).
-
   utter_exploracao_inicial:
   - text: |
       - Google Scholar: Uma ferramenta de busca acadêmica que oferece acesso a uma ampla variedade de literatura acadêmica, incluindo artigos, teses e livros. (/google_scholar)

@@ -31,11 +31,178 @@ stories:
   - intent: biblio_citacoes
   - action: utter_biblio_citacoes
 
+- story: explicar_biblio_citacoes
+  steps:
+  - intent: explicar_biblio_citacoes
+  - action: utter_explicar_biblio_citacoes
+
+- story: explicar_citacao
+  steps:
+  - intent: explicar_citacao
+  - action: utter_explicar_citacao
+
+- story: explicar_citacao_direta
+  steps:
+  - intent: explicar_citacao_direta
+  - action: utter_explicar_citacao_direta
+
+- story: citacao_direta_livro
+  steps:
+  - intent: citacao_direta_livro
+  - action: utter_citacao_direta_livro
+
+- story: citacao_direta_revista
+  steps:
+  - intent: citacao_direta_revista
+  - action: utter_citacao_direta_revista
+
+- story: citacao_direta_jornal
+  steps:
+  - intent: citacao_direta_jornal
+  - action: utter_citacao_direta_jornal
+
+- story: citacao_direta_dissertacao
+  steps:
+  - intent: citacao_direta_dissertacao
+  - action: utter_citacao_direta_dissertacao
+
+- story: citacao_direta_internet
+  steps:
+  - intent: citacao_direta_internet
+  - action: utter_citacao_direta_internet
+
+- story: citacao_direta_entrevista
+  steps:
+  - intent: citacao_direta_entrevista
+  - action: utter_citacao_direta_entrevista
+
+- story: citacao_direta_doc_legal
+  steps:
+  - intent: citacao_direta_doc_legal
+  - action: utter_citacao_direta_doc_legal
+
+- story: explicar_citacao_indireta
+  steps:
+  - intent: explicar_citacao_indireta
+  - action: utter_explicar_citacao_indireta
+
+- story: citacao_indireta_livro
+  steps:
+  - intent: citacao_indireta_livro
+  - action: utter_citacao_indireta_livro
+
+- story: citacao_indireta_revista
+  steps:
+  - intent: citacao_indireta_revista
+  - action: utter_citacao_indireta_revista
+
+- story: citacao_indireta_jornal
+  steps:
+  - intent: citacao_indireta_jornal
+  - action: utter_citacao_indireta_jornal
+
+- story: citacao_indireta_dissertacao
+  steps:
+  - intent: citacao_indireta_dissertacao
+  - action: utter_citacao_indireta_dissertacao
+
+- story: citacao_indireta_internet
+  steps:
+  - intent: citacao_indireta_internet
+  - action: utter_citacao_indireta_internet
+
+- story: citacao_indireta_entrevista
+  steps:
+  - intent: citacao_indireta_entrevista
+  - action: utter_citacao_indireta_entrevista
+
+- story: citacao_indireta_doc_legal
+  steps:
+  - intent: citacao_indireta_doc_legal
+  - action: utter_citacao_indireta_doc_legal
+
+- story: explicar_bibliografia
+  steps:
+  - intent: explicar_bibliografia
+  - action: utter_explicar_bibliografia
+
+- story: referencia_livro
+  steps:
+  - intent: referencia_livro
+  - action: utter_referencia_livro
+
+- story: referencia_revista
+  steps:
+  - intent: referencia_revista
+  - action: utter_referencia_revista
+
+- story: referencia_jornal
+  steps:
+  - intent: referencia_jornal
+  - action: utter_referencia_jornal
+
+- story: referencia_dissertacao
+  steps:
+  - intent: referencia_dissertacao
+  - action: utter_referencia_dissertacao
+
+- story: referencia_internet
+  steps:
+  - intent: referencia_internet
+  - action: utter_referencia_internet
+
+- story: referencia_entrevista
+  steps:
+  - intent: referencia_entrevista
+  - action: utter_referencia_entrevista
+
+- story: referencia_doc_legal
+  steps:
+  - intent: referencia_doc_legal
+  - action: utter_referencia_doc_legal
+
+- story: gerador_biblio_citacoes
+  steps:
+  - intent: gerador_biblio_citacoes
+  - action: utter_gerador_biblio_citacoes
+
+
+# Estruturação de aquigos
+- story: estruturacao_artigos
+  steps:
+  - intent: estruturacao_artigos
+  - action: utter_estruturacao_artigos
+
+- story: pesquisa_empirica
+  steps:
+  - intent: pesquisa_empirica
+  - action: utter_pesquisa_empirica
+
+- story: revisao_bibliografica
+  steps:
+  - intent: revisao_bibliografica
+  - action: utter_revisao_bibliografica
+  
+- story: pesquisa_experimental
+  steps:
+  - intent: pesquisa_experimental
+  - action: utter_pesquisa_experimental
+
+- story: pesquisa_qualitativa
+  steps:
+  - intent: pesquisa_qualitativa
+  - action: utter_pesquisa_qualitativa
+
+- story: revisao_sistematica
+  steps:
+  - intent: revisao_sistematica
+  - action: utter_revisao_sistematica  
+
 # Fontes confiáveis
 - story: fontes_confiaveis
   steps:
   - intent: fontes_confiaveis
-  - action: utter_fontes_confiaveis
+  - action: action_utter_fontes_confiaveis
 
 - story: exploracao_Inicial
   steps:

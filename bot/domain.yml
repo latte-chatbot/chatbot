@@ -7,12 +7,39 @@ intents:
   - saiba_mais
   - criacao
   - abnt
-  - fontes_confiaveis
-  - biblio_citacoes
   - estruturacao
   - plagio
   - originalidade
   - revisao
+  - biblio_citacoes
+  - explicar_biblio_citacoes
+  - explicar_citacao
+  - explicar_citacao_direta
+  - citacao_direta_livro
+  - citacao_direta_revista
+  - citacao_direta_jornal
+  - citacao_direta_dissertacao
+  - citacao_direta_internet
+  - citacao_direta_entrevista
+  - citacao_direta_doc_legal
+  - explicar_citacao_indireta
+  - citacao_indireta_livro
+  - citacao_indireta_revista
+  - citacao_indireta_jornal
+  - citacao_indireta_dissertacao
+  - citacao_indireta_internet
+  - citacao_indireta_entrevista
+  - citacao_indireta_doc_legal
+  - explicar_bibliografia
+  - referencia_livro
+  - referencia_revista
+  - referencia_jornal
+  - referencia_dissertacao
+  - referencia_internet
+  - referencia_entrevista
+  - referencia_doc_legal
+  - gerador_biblio_citacoes
+  - fontes_confiaveis
   - iniciante
   - navegador
   - explorador
@@ -25,11 +52,19 @@ intents:
   - pubmed
   - arxiv
   - nature_research_journals
+  - estruturacao_artigo
+  - estruturacao_artigos
+  - pesquisa_empirica
+  - revisao_bibliografica
+  - pesquisa_experimental
+  - pesquisa_qualitativa
+  - revisao_sistematica
 
 actions:
   - action_session_start
   - action_restart
   - action_default_fallback
+  - action_utter_fontes_confiaveis
 
 session_config:
   session_expiration_time: 60
