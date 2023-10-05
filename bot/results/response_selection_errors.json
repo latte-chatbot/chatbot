@@ -1,0 +1,10 @@
+[
+  {
+    "text": "O que devo abordar na seção de discussão do meu trabalho acadêmico?",
+    "intent_response_key_target": "estruturacao/geral",
+    "intent_response_key_prediction": {
+      "name": "estruturacao/discussao",
+      "confidence": 0.5592979192733765
+    }
+  }
+]

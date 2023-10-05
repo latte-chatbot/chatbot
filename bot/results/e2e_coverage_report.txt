@@ -1,0 +1,56 @@
+-------------------------------------------------
+End-to-end tests coverage report
+-------------------------------------------------
+Elements that aren't covered:
+ + Intents
+   - iniciante
+   - navegador
+   - explorador
+   - google_scholar
+   - doaj
+   - open_stax
+   - scopus
+   - science_direct
+   - web_of_science
+   - pubmed
+   - arxiv
+   - nature_research_journals
+ + Actions
+   - utter_apresentacao
+   - utter_abnt/consultar
+   - utter_abnt/margens
+   - utter_abnt/conceito
+   - utter_exploracao_inicial
+   - utter_navegador
+   - utter_explorador
+   - utter_google_scholar
+   - utter_doaj
+   - utter_open_stax
+   - utter_scopus
+   - utter_science_direct
+   - utter_web_of_science
+   - utter_pubmed
+   - utter_arxiv
+   - utter_nature_research_journals
+   - utter_estruturacao/geral
+   - utter_estruturacao/introducao
+   - utter_estruturacao/metodos
+   - utter_estruturacao/resultados
+   - utter_estruturacao/discussao
+   - utter_plagio/definicao
+   - utter_plagio/consequencias
+   - utter_plagio/evitar
+   - utter_plagio/detectar
+   - utter_originalidade/definicao_importancia
+   - utter_originalidade/dicas
+   - utter_revisao/revisao_ortografia
+   - utter_revisao/revisao_gramatica
+   - utter_revisao/revisao_coesao
+   - utter_core_fallback
+   - action_restart
+   - action_default_fallback
+
+Total number of elements: 63
+Total number of not covered elements: 45
+Coverage rate: 28.6%
+-------------------------------------------------

@@ -1,0 +1,6 @@
+version: "3.1"
+stories:
+- story: Responder sobre fontes confiaveis (./tests/test_stories.yml)
+  steps:
+  - intent: biblio_citacoes  # predicted: fontes_confiaveis: Onde encontrar fontes confiáveis?
+  - action: utter_biblio_citacoes
