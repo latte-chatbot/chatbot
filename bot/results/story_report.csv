@@ -1,0 +1,4 @@
+"","Response","Precision","Recall","F1 Score","Number of occurrences"
+"🟢","utter_cumprimentar","100.0%","100.0%","100.0%","1"
+"🟢","utter_despedir","100.0%","100.0%","100.0%","1"
+"🟢","action_listen","100.0%","100.0%","100.0%","2"
