@@ -1,0 +1,6 @@
+version: "3.1"
+stories:
+- story: Pedir para reformular a mensagem caso NLU não entenda (./tests/test_stories.yml)
+  steps:
+  - intent: nlu_fallback  # predicted: saiba_mais: TESTE FALLBACK
+  - action: utter_nlu_fallback

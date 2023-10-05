@@ -1,0 +1,24 @@
+-------------------------------------------------
+End-to-end tests coverage report
+-------------------------------------------------
+Elements that aren't covered:
+ + Intents
+   - cumprimentar_reentrada
+   - informar_tema_pesquisa
+   - informar_string_buscas
+   - informou_nome
+   - iniciar_pesquisa
+ + Actions
+   - utter_apresentacao
+   - utter_cumprimentar_reentrada
+   - utter_abnt/consultar
+   - utter_abnt/margens
+   - utter_abnt/conceito
+   - utter_core_fallback
+   - action_restart
+   - action_default_fallback
+
+Total number of elements: 23
+Total number of not covered elements: 13
+Coverage rate: 43.5%
+-------------------------------------------------
