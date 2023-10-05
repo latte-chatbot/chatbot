@@ -1,0 +1,38 @@
+version: "3.1"
+stories:
+- story: Religião (./tests/test_stories.yml)
+  steps:
+  - intent: religiao  # predicted: saiba_mais: Você segue qual religião?
+  - action: utter_religiao  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+- story: piada (./tests/test_stories.yml)
+  steps:
+  - intent: piada  # predicted: saiba_mais: Você sabe alguma piada?
+  - action: utter_piada  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+- story: futebol (./tests/test_stories.yml)
+  steps:
+  - intent: time  # predicted: saiba_mais: Você gosta de futebol?
+  - action: utter_time  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+- story: história qualquer (./tests/test_stories.yml)
+  steps:
+  - intent: time  # predicted: saiba_mais: Qual seu time favorito?
+  - action: utter_time  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+  - intent: onde_voce_mora  # predicted: saiba_mais: Onde você vive?
+  - action: utter_onde_voce_mora  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+  - intent: musica  # predicted: saiba_mais: Qual estilo de música você ouve?
+  - action: utter_musica  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+  - intent: comida  # predicted: saiba_mais: Você come o quê?
+  - action: utter_comida  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+  - intent: tudo_bem  # predicted: saiba_mais: Como está se sentindo hoje?
+  - action: utter_tudo_bem  # predicted: action_default_fallback
+  - intent: elogios  # predicted: nlu_fallback: Adorei ter esta conversa com você bot
+  - action: utter_elogios  # predicted: action_default_fallback
+  - action: utter_continuar_conversa  # predicted: action_listen
+  - intent: despedir  # predicted: nlu_fallback: Valeu, to indo nessa
+  - action: utter_despedir
