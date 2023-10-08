@@ -2,10 +2,10 @@ FROM rasa/rasa:3.4.2-full
 
 WORKDIR /bot
 COPY ./bot /bot
+COPY ./utils/requirements.txt /bot
 
 USER root
-RUN apt-get install make && \
-    make install
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 ENTRYPOINT []
 CMD []

@@ -1,11 +1,7 @@
-# https://rasa.com/docs/rasa/nlu/components/
 recipe: default.v1
 
+language: pt_br
 
-language: br
-
-
-# See https://rasa.com/docs/rasa/tuning-your-model
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
@@ -15,10 +11,10 @@ pipeline:
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
+- name: EntitySynonymMapper
 - name: DIETClassifier
   epochs: 80
   constrain_similarities: true
-- name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
   retrieval_intent: abnt
@@ -43,8 +39,6 @@ pipeline:
   threshold: 0.7
   ambiguity_threshold: 0.2
 
-
-# https://rasa.com/docs/rasa/core/policies/
 policies:
 - name: MemoizationPolicy
 - name: TEDPolicy
@@ -55,4 +49,5 @@ policies:
   core_fallback_threshold: 0.7
   core_fallback_action_name: "action_default_fallback"
   enable_fallback_prediction: true
-assistant_id: 20230527-214302-matte-moscato
+
+assistant_id: latte_chatbot

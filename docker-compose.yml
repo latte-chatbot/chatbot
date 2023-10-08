@@ -1,83 +1,114 @@
 version: "3.9"
 
 services:
-  # ================================= Bot =====================================
-  # Generic Rasa bot, used to run console for example.
-  bot:
+  # ============================ Telegram Bot =================================
+  # Container que executará o módulo principal do rasa.
+  bot-telegram:
+    container_name: bot-telegram
     build:
       context: .
       dockerfile: ./docker/bot.Dockerfile
-    container_name: bot
     env_file:
       - .env
     volumes:
       - ./bot/:/bot/
     ports:
-      - 5005:5005
+      - 80:80
     depends_on:
       - actions
-      - mongo
+      - consumer
     networks:
       - bot
-
-  # ================================= Mongo =====================================
-  # Save data of conversations
-  mongo:
-    container_name: mongo
-    image: mongo
-    restart: unless-stopped
-    env_file:
-      - .env
-    ports:
-      - "${MONGO_PORT}:27017"
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USERNAME}
-      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD}
-    networks:
-      - bot
-    volumes:
-      - data-db:/data/db
+    command: rasa run --enable-api -m models/ --cors '*' --port 80
 
   # ================================= Actions =================================
-  # Rasa middleware used to connect with external APIs.
+  # Container usado para execução de funções personalizadas e conexões com API.
   actions:
+    container_name: actions
     build:
       context: .
       dockerfile: ./docker/actions.Dockerfile
-    container_name: actions
     env_file:
       - .env
     ports:
       - 5055:5055
     volumes:
       - ./bot:/bot
-    command: sh -c "python -m rasa_sdk --actions actions"
+    networks:
+      - bot
+    command: python -m rasa_sdk --actions actions -p 5055
+
+  # ================================= RabbitMQ =================================
+  # Event broker para o rasa.
+  rabbitmq:
+    container_name: rabbitmq
+    image: "rabbitmq:3.12.6-management"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_USERNAME}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}
+    ports:
+      - "15672:15672"
+      - "5672:5672"
     networks:
       - bot
 
-  # ============================ Telegram Bot =================================
-  # Specific Rasa bot integrated with Telegram.
-  bot-telegram:
-      build:
-        context: .
-        dockerfile: ./docker/bot.Dockerfile
-      env_file:
-        - .env
+  # ================================= Consumer =================================
+  # Consumidor genérico para fornecer as conversas para o elasticsearch
+  consumer:
+    container_name: consumer
+    build:
+      context: .
+      dockerfile: ./docker/consumer.Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+      - elasticsearch
+      - kibana
+    networks:
+      - bot
 
-      volumes:
-        - ./bot/:/bot/
-      ports:
-        - 80:80
-      depends_on:
-        - actions
-        - mongo
-      networks:
-        - bot
-      command: sh -c "make telegram"
+  # ================================= Elasticseacrh =================================
+  # Armazena e persiste as conversas
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - ELASTIC_USER=${ES_USERNAME}
+      - ELASTIC_PASSWORD=${ES_PASSWORD}
+    volumes:
+      - elsdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - bot
+
+  # ================================= Kibana =================================
+  # Ferramenta de exibição e análise das conversas
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.14.0
+    environment:
+     - ELASTICSEARCH_URL=http://elasticsearch:9200
+     - xpack.security.enabled=true
+     - ELASTICSEARCH_USERNAME=${ES_USERNAME}
+     - ELASTICSEARCH_PASSWORD=${ES_PASSWORD}
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - bot
+
 
 networks:
   bot:
+    name: bot
     driver: bridge
 
+
 volumes:
-  data-db:
+  elsdata:
+    name: elsdata
