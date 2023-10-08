@@ -21,10 +21,6 @@ pipeline:
   constrain_similarities: true
 - name: ResponseSelector
   epochs: 100
-  retrieval_intent: estruturacao
-  constrain_similarities: true
-- name: ResponseSelector
-  epochs: 100
   retrieval_intent: plagio
   constrain_similarities: true
 - name: ResponseSelector

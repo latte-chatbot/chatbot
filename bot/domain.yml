@@ -7,7 +7,6 @@ intents:
   - saiba_mais
   - criacao
   - abnt
-  - estruturacao
   - plagio
   - originalidade
   - revisao
@@ -52,7 +51,6 @@ intents:
   - pubmed
   - arxiv
   - nature_research_journals
-  - estruturacao_artigo
   - estruturacao_artigos
   - pesquisa_empirica
   - revisao_bibliografica
@@ -64,7 +62,6 @@ actions:
   - action_session_start
   - action_restart
   - action_default_fallback
-  - action_utter_fontes_confiaveis
 
 session_config:
   session_expiration_time: 60

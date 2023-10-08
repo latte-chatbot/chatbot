@@ -392,6 +392,21 @@ responses:
       Para gerar sua citação ou referência bibliográfica facilmente, você pode usar o Mybib com o qual você poderá preencher as informações manualmente ou mesmo enviar um arquivo PDF e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, o aplicaivo suporta diversos outras normas técnicas, então lembre-se de selecionar aquela que você está precisando.
       Para usá-lo, acesse o link: www.mybib.com
 
+# Fontes Confiáveis
+  utter_fontes_confiaveis:
+  - text: |
+      Nesta funcionalidade, você terá acesso a uma variedade de fontes confiáveis para suas pesquisas. Explore as melhores bases acadêmicas para conduzir suas investigações!  
+      
+      Selecione o seu estágio de pesquisa:  
+      
+      1. Exploração Inicial: Acesse bases acadêmicas de fácil acesso com conteúdo geral, perfeitas para iniciantes em pesquisas (/iniciante).  
+      
+      2. Navegando pelo Conhecimento: Descubra bases acadêmicas detalhadas disponíveis para estudantes que desejam aprofundar suas pesquisas (/navegador).  
+      
+      3. Explorando Conteúdos Avançados: Explore bases acadêmicas altamente especializadas e detalhadas, que podem ter restrições de acesso. Este desafio é ideal para pesquisadores experientes que desejam se especializar ainda mais (/explorador).
+    custom:
+      telegram:
+        parse_mode: "MarkdownV2"
 
 # Estruturação de artigos
   utter_estruturacao_artigos:
@@ -653,41 +668,6 @@ responses:
       Se você tiver acesso através de uma afiliação institucional, como uma universidade, você pode ter acesso direto a muitas dessas revistas. Caso contrário, você pode verificar as opções de assinatura pessoal ou adquirir artigos individuais, quando necessário.
       
       Lembre-se de que as publicações da Nature Research são amplamente respeitadas na comunidade científica e são conhecidas por sua qualidade e relevância em tópicos avançados em ciência.
-
-# Estruturação
-  utter_estruturacao/geral:
-  - text: |
-      A estrutura de um artigo científico geralmente segue uma organização padrão, que inclui os elementos principais, como introdução, métodos, resultados e discussão, e conclusão.
-      A introdução é onde você apresenta o tema, justifica a importância do estudo e estabelece o objetivo da pesquisa.
-      Os métodos descrevem os procedimentos e técnicas utilizados no estudo, permitindo que outros pesquisadores possam replicar os experimentos.
-      Na seção de resultados, você apresenta e analisa os dados coletados durante a pesquisa.
-      A discussão é o momento de interpretar os resultados, relacionando-os aos objetivos do estudo e discutindo suas implicações.
-      Por fim, a conclusão resume os principais achados e destaca as contribuições do estudo, além de apresentar possíveis recomendações ou direções para pesquisas futuras.
-      
-      Posso te dar mais detalhes sobre cada uma dessas seções, caso deseje saber mais, é só perguntar!
-
-  utter_estruturacao/introducao:
-  - text: |
-      A seção de introdução tem como objetivo apresentar o tema do estudo, fornecer o contexto relevante e estabelecer a importância da pesquisa.
-      Na introdução, você pode começar com uma contextualização ampla do assunto, em seguida, destacar a problemática específica que será abordada no seu estudo.
-      
-      Além disso, é importante estabelecer a relevância da pesquisa, explicando por que o tema é significativo e quais são as lacunas de conhecimento que o seu estudo pretende preencher.
-
-  utter_estruturacao/metodos:
-  - text: |
-      A seção de métodos descreve detalhadamente os procedimentos utilizados na pesquisa, incluindo a amostra, materiais, instrumentos, coleta de dados e análise estatística. 
-      Nessa seção, você pode descrever o tipo de estudo realizado, a população ou amostra selecionada, os critérios de inclusão e exclusão, bem como os procedimentos éticos seguidos.
-      Também é importante detalhar os instrumentos utilizados para coletar os dados, explicar como os dados foram coletados e qual método de análise foi empregado.
-
-  utter_estruturacao/resultados:
-  - text: |
-      A seção de resultados é onde você apresenta os principais achados da pesquisa.
-      Nessa seção, você pode utilizar gráficos, tabelas e outros recursos visuais para apresentar os dados de forma clara e objetiva.
-      Além de apresentar os resultados, é importante fazer uma análise e interpretação dos dados, relacionando-os aos objetivos da pesquisa e discutindo suas implicações.
-  
-  utter_estruturacao/discussao:
-  - text: |
-      A seção de discussão é o espaço para interpretar e analisar os resultados obtidos. Nessa seção, você pode comparar seus resultados com estudos anteriores, discutir suas descobertas à luz da literatura existente e destacar as contribuições do seu estudo. É também o momento de abordar possíveis limitações do estudo e oferecer sugestões para pesquisas futuras, indicando caminhos para expandir o conhecimento sobre o tema.
 
 # Plágio
   utter_plagio/definicao:

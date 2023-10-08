@@ -202,7 +202,7 @@ stories:
 - story: fontes_confiaveis
   steps:
   - intent: fontes_confiaveis
-  - action: action_utter_fontes_confiaveis
+  - action: utter_fontes_confiaveis
 
 - story: exploracao_Inicial
   steps:
