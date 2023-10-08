@@ -1,5 +1,4 @@
 from typing import Any, Text, Dict, List
-
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import (
@@ -12,7 +11,7 @@ from rasa_sdk.events import (
 )
 
 
-#Ações Padrão
+# Ações Padrão
 class ActionSessionStart(Action):
     def name(self) -> Text:
         return "action_session_start"
@@ -50,6 +49,7 @@ class ActionDefaultFallback(Action):
         dispatcher.utter_message(template="utter_core_fallback")
         return [UserUtteranceReverted()]
 
+# Ações Personalizadas
 class ActionUtterFontesConfiaveis(Action):
     def name(self) -> Text:
         return "action_utter_fontes_confiaveis"

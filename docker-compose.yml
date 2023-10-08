@@ -3,8 +3,8 @@ version: "3.9"
 services:
   # ============================ Telegram Bot =================================
   # Container que executará o módulo principal do rasa.
-  bot-telegram:
-    container_name: bot-telegram
+  bot:
+    container_name: bot
     build:
       context: .
       dockerfile: ./docker/bot.Dockerfile
@@ -17,6 +17,7 @@ services:
     depends_on:
       - actions
       - consumer
+      - postgres
     networks:
       - bot
     command: rasa run --enable-api -m models/ --cors '*' --port 80
@@ -102,6 +103,23 @@ services:
     networks:
       - bot
 
+  # ================================= Postgres =================================
+  # Persistência de dados 
+  postgres:
+    container_name: postgres
+    image: postgres:13
+    environment:
+      POSTGRES_DB: ${PG_DB}
+      POSTGRES_USER: ${PG_USERNAME}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./utils/init-pg.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - bot
+
 
 networks:
   bot:
@@ -112,3 +130,5 @@ networks:
 volumes:
   elsdata:
     name: elsdata
+  pgdata:
+    name: pgdata

@@ -1,7 +1,10 @@
 # Rasa
 bot/models/
-.rasa/
 bot/results/
+.rasa/
 
 # Environment variables
 .env
+
+# Actions
+bot/actions/__pycache__/
