@@ -17,7 +17,6 @@ services:
     depends_on:
       - actions
       - consumer
-      - postgres
     networks:
       - bot
     command: rasa run --enable-api -m models/ --cors '*' --port 80
@@ -35,6 +34,8 @@ services:
       - 5055:5055
     volumes:
       - ./bot:/bot
+    depends_on:
+      - postgres
     networks:
       - bot
     command: python -m rasa_sdk --actions actions -p 5055

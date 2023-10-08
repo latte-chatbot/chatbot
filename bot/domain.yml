@@ -60,7 +60,6 @@ intents:
 
 actions:
   - action_session_start
-  - action_restart
   - action_default_fallback
 
 session_config:
