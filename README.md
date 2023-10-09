@@ -10,7 +10,7 @@ O Latte é chatbot gamificado par auxílio na produção de artigos científicos
 | [Victor Eduardo](https://github.com/victorear05) | [Luiz Henrique](https://github.com/luiz-hfz) | [Arthur Temporim](https://github.com/arthurTemporim) | [Sérgio Freitas](https://github.com/sergioaafreitas) |
 
 ## Arquitetura
-O projeto baseia-se em 6 contêineres Docker orquestrado pelo Docker compose, são eles:
+O projeto baseia-se em 7 contêineres Docker orquestrado pelo Docker compose, são eles:
 - **Rasa Core:** Framework que fornece a interface inicial para o chatbot.
 - **Rasa Actions:** Extensão do Rasa Core para criação e uso de funções em Pyhton personalizadas.
 - **PostgresSQL:** Banco de dados para armazenar dados do usuários.

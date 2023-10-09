@@ -42,13 +42,18 @@ responses:
   utter_apresentacao:
   - text: |
       Olá, eu sou o Latte Chatbot! A minha missão é ser seu aliado na busca pelo conhecimento, a ferramenta mais poderosa do mundo. Estou aqui para auxiliar pesquisadores como você a aprimorar suas habilidades e a excelência em produção científica.
-      
+  
+# Menu (mostrar funcionalidades)
+  utter_menu:
+  - text: |
       Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
         - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
         - Estruturação de artigos (/estruturacao_artigos)
         - Dicas de estruturação de textos, normas gerais da ABNT, orginalidade de texto e revisão (Não há um comando específico, basta me perguntar sobre!)
       
+      Ah, e a qualquer momento basta me pedir que te envio novamente minhas funcionalidades!
+
       Como posso contribuir para o seu progresso hoje?
 
 # Dúvidas sobre ABNT
@@ -730,9 +735,8 @@ responses:
       - Verifique se o texto está coeso, ou seja, se as partes estão interligadas de forma harmoniosa.
 
 # Fallbacks
-  utter_nlu_fallback:
+  utter_fallback:
   - text: |
       Hmmm, não entendi. Poderia me explicar melhor?
-  utter_core_fallback:
   - text: |
       Não entendi o que você falou. Me explica melhor o que precisa?

@@ -46,6 +46,19 @@ nlu:
     - Vc foi criado por qm?
     - Vc foi inventado por qm?
 
+# Funcionalidades do chatbot
+- intent: menu
+  examples: |
+    - O que você sabe fazer?
+    - Quais são suas funcionalidade?
+    - Menu
+    - Mostrar menu
+    - exibir menu
+    - suas funções
+    - funções
+    - suas opções
+    - quais suas opções
+
 # Saiba mais
 - intent: saiba_mais
   examples: |

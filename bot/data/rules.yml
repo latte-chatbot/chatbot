@@ -4,7 +4,7 @@ rules:
   - rule: Pedir para reformular a mensagem caso NLU não entenda
     steps:
       - intent: nlu_fallback
-      - action: utter_nlu_fallback
+      - action: utter_fallback
 
   - rule: Cumprimentar a qualquer momento da conversa
     steps:
@@ -35,3 +35,8 @@ rules:
     steps:
       - intent: revisao
       - action: utter_revisao
+  
+  - rule: Responder sobre perguntas de revisão
+    steps:
+      - intent: menu
+      - action: utter_menu

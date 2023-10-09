@@ -7,7 +7,7 @@ stories:
     - user: |
         asdgbalksdbalksudub
       intent: nlu_fallback
-    - action: utter_nlu_fallback
+    - action: utter_fallback
 
 - story: Cumprimentar a qualquer momento da conversa
   steps:
