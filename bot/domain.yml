@@ -2,12 +2,12 @@ version: '3.1'
 
 
 intents:
+  - menu
   - cumprimentar
   - despedir
   - saiba_mais
   - criacao
   - abnt
-  - estruturacao
   - plagio
   - originalidade
   - revisao
@@ -52,7 +52,6 @@ intents:
   - pubmed
   - arxiv
   - nature_research_journals
-  - estruturacao_artigo
   - estruturacao_artigos
   - pesquisa_empirica
   - revisao_bibliografica
@@ -62,10 +61,8 @@ intents:
 
 actions:
   - action_session_start
-  - action_restart
   - action_default_fallback
-  - action_utter_fontes_confiaveis
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
