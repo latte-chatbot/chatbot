@@ -171,3 +171,54 @@ nlu:
     - Como posso verificar se meu texto está claro e coeso?
     - Quais são as estratégias para tornar meu texto mais claro e coeso?
     - O que devo considerar ao revisar a clareza e coesão do meu trabalho?
+
+# Desenvolvimento de artigo
+- intent: inciar_artigo
+  examples: |
+    - Vamos começar um novo artigo
+    - Quero iniciar meu artigo
+    - Começar a criação de artigos
+    - Fazer um artigo
+    - Quero criar um artigo
+    - Vamos dar o pontapé inicial no meu artigo
+    - Estou pronto para começar a escrever
+    - Vamos começar a escrever o artigo
+    - Estou animado para começar meu artigo
+    - Iniciar meu projeto de artigo
+
+- intent: avancar_estagio_artigo
+  examples: |
+    - Completei a introdução
+    - Terminei a introdução
+    - Revisão da literatura finalizada
+    - Finalizei a metodologia
+    - Acabei a parte de resultados
+    - Terminei o estágio de discussão dos resultados
+    - Concluí a conclusão
+    - Finalizei as referências
+    - Acabei as referências bibliográficas
+    - Passei para a próxima seção
+    - Avancei uma etapa no artigo
+    - Já finalizei essa seção, e agora?
+    - Pode me ajudar na próxima parte?
+    - Vamos para o próximo passo do artigo
+    - Concluí essa fase, qual é a próxima?
+    - Próximo estágio
+
+- intent: checar_progresso_artigo
+  examples: |
+    - Qual é o meu progresso?
+    - Quanto falta para concluir?
+    - Em que estágio do artigo estou?
+    - Status do artigo
+    - Em qual fase estou do artigo?
+    - Como está indo meu artigo?
+    - O que ainda preciso fazer no artigo?
+    - Ainda tenho muito a fazer?
+    - Qual é o próximo passo do meu artigo?
+    - Como está meu progresso na escrita?
+
+#- intent: start
+#  examples: |
+#    - start
+#    - /start

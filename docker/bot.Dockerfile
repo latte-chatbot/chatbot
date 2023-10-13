@@ -4,8 +4,6 @@ WORKDIR /bot
 
 COPY ./bot /bot
 
-COPY ./utils/requirements.txt /bot
-
 USER root
 
 RUN pip install --upgrade pip && pip install -r requirements.txt

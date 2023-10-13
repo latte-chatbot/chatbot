@@ -50,6 +50,7 @@ responses:
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
         - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
         - Estruturação de artigos (/estruturacao_artigos)
+        - Assistente de criação de artigos (Não há um comando específico, basta me dizer que quer iniciar um artigo!)
         - Dicas de estruturação de textos, normas gerais da ABNT, orginalidade de texto e revisão (Não há um comando específico, basta me perguntar sobre!)
       
       Ah, e a qualquer momento basta me pedir que te envio novamente minhas funcionalidades!

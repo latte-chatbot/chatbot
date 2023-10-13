@@ -1,3 +1,0 @@
-rasa==3.4.2
-rasa-model-report==1.4.1
-pika==1.2.0

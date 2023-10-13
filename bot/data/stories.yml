@@ -1,7 +1,8 @@
 version: "3.1"
 
-# Cumprimentar
 stories:
+
+# Cumprimentar
 - story: cumprimentar
   steps:
   - intent: cumprimentar
@@ -263,3 +264,19 @@ stories:
   steps:
   - intent: nature_research_journals
   - action: utter_nature_research_journals
+
+# Desenvolvimento de artigo
+- story: Iniciar ou reiniciar artigo
+  steps:
+  - intent: inciar_artigo
+  - action: action_iniciar_artigo
+
+- story: Avançar estágio do artigo 
+  steps:
+  - intent: avancar_estagio_artigo
+  - action: action_avancar_estagio_artigo
+
+- story: Checar progresso do artigo
+  steps:
+  - intent: checar_progresso_artigo
+  - action: action_reportar_estagio_artigo

@@ -14,7 +14,8 @@ Base = declarative_base()
 
 class UserInfo(Base):
     __tablename__ = "usuario_info"
-    id = Column(String, primary_key=True)
+    id = Column(Integer, primary_key=True)
+    progresso_artigo = Column(Integer)
 
 
 print("[INFO] Connecting to Postgres...")

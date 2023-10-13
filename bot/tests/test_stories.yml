@@ -492,3 +492,24 @@ stories:
         /revisao_sistematica  
       intent: revisao_sistematica
     - action: utter_revisao_sistematica
+
+- story: Iniciar progresso de criar artigo
+  steps:
+    - user: |
+        Quero criar um artigo
+      intent: inciar_artigo
+    - action: action_iniciar_artigo
+
+- story: Avançar progresso de criar artigo
+  steps:
+    - user: |
+        Terminei a introdução
+      intent: avancar_estagio_artigo
+    - action: action_avancar_estagio_artigo
+
+- story: Informar progresso de criar artigo
+  steps:
+    - user: |
+        Qual o meu status do artigo?
+      intent: checar_progresso_artigo
+    - action: action_reportar_estagio_artigo

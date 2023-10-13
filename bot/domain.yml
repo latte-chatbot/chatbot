@@ -58,10 +58,16 @@ intents:
   - pesquisa_experimental
   - pesquisa_qualitativa
   - revisao_sistematica
+  - inciar_artigo
+  - avancar_estagio_artigo
+  - checar_progresso_artigo
 
 actions:
   - action_session_start
   - action_default_fallback
+  - action_iniciar_artigo
+  - action_avancar_estagio_artigo
+  - action_reportar_estagio_artigo
 
 session_config:
   session_expiration_time: 60
