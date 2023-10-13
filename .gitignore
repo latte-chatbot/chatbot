@@ -2,6 +2,7 @@
 bot/models/
 bot/results/
 .rasa/
+bot/model_report.md
 
 # Environment variables
 .env
