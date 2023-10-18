@@ -6,6 +6,6 @@ RUN pip install pika
 
 RUN pip install elasticsearch
 
-COPY utils/consumer.py /consumer.py
+COPY modules/consumer/consumer.py /consumer.py
 
 CMD ["python", "/consumer.py"]

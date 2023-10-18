@@ -1,5 +1,5 @@
 import os
-from sqlalchemy import create_engine, Column, String, Integer, MetaData
+from sqlalchemy import create_engine, Column, BigInteger, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
@@ -14,7 +14,8 @@ Base = declarative_base()
 
 class UserInfo(Base):
     __tablename__ = "usuario_info"
-    id = Column(String, primary_key=True)
+    id = Column(BigInteger, primary_key=True)
+    progresso_artigo = Column(Integer)
 
 
 print("[INFO] Connecting to Postgres...")

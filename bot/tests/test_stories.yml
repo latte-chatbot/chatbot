@@ -23,20 +23,42 @@ stories:
       intent: despedir
     - action: utter_despedir
 
-- story: Responder sobre perguntas sobre a ABNT
+- story: Mostrar menu de funcionalidades
+  steps:
+    - user: |
+        O que você sabe fazer?
+      intent: menu
+    - action: utter_menu
+
+- story: Responder sobre perguntas sobre a ABNT (geral)
   steps:
     - user: |
         Onde posso ver as normas da abnt?
       intent: abnt
     - action: utter_abnt
     - user: |
-        Qual a medida das margens no padrão ABNT?
+        Padrão de margem da ABNT
       intent: abnt
     - action: utter_abnt
     - user: |
         O que é ABNT?
       intent: abnt
     - action: utter_abnt
+
+- story: Responder sobre perguntas sobre a ABNT (específico)
+  steps:
+    - user: |
+        Onde posso consultar as normas da abnt?
+      intent: abnt/consultar
+    - action: utter_abnt/consultar
+    - user: |
+        Padrão de margem da ABNT
+      intent: abnt/margens
+    - action: utter_abnt/margens
+    - user: |
+        O que é a ABNT?
+      intent: abnt/conceito
+    - action: utter_abnt/conceito
 
 - story: saiba_mais
   steps:
@@ -52,7 +74,7 @@ stories:
       intent: criacao
     - action: utter_criacao
 
-- story: Responder perguntas sobre plagio
+- story: Responder perguntas sobre plagio (geral)
   steps:
     - user: |
         O que é plágio?
@@ -71,7 +93,26 @@ stories:
       intent: plagio
     - action: utter_plagio
 
-- story: Responder perguntas sobre originalidade
+- story: Responder perguntas sobre plagio (específico)
+  steps:
+    - user: |
+        Qual é a definição de plágio?
+      intent: plagio/definicao
+    - action: utter_plagio/definicao 
+    - user: |
+        Quais são as consequências do plágio em um trabalho acadêmico?
+      intent: plagio/consequencias
+    - action: utter_plagio/consequencias
+    - user: |
+        Quais são as estratégias para evitar o plágio na escrita acadêmica?
+      intent: plagio/evitar
+    - action: utter_plagio/evitar
+    - user: |
+        Quais métodos posso usar para verificar se meu trabalho contém plágio?
+      intent: plagio/detectar
+    - action: utter_plagio/detectar
+
+- story: Responder perguntas sobre originalidade (geral)
   steps:
     - user: |
         Como posso garantir que meu trabalho tenha originalidade?
@@ -82,7 +123,18 @@ stories:
       intent: originalidade
     - action: utter_originalidade
 
-- story: Responder perguntas sobre revisao
+- story: Responder perguntas sobre originalidade (específico)
+  steps:
+    - user: |
+        Como posso garantir que meu trabalho tenha originalidade?
+      intent: originalidade/definicao_importancia
+    - action: utter_originalidade/definicao_importancia
+    - user: |
+        Dicas para deixar meu trabalho mais original
+      intent: originalidade/dicas
+    - action: utter_originalidade/dicas
+
+- story: Responder perguntas sobre revisao (geral)
   steps:
     - user: |
         Como posso garantir que meu texto não tenha erros de ortografia?
@@ -96,6 +148,21 @@ stories:
         Como posso verificar se meu texto está claro e coeso?
       intent: revisao
     - action: utter_revisao
+
+- story: Responder perguntas sobre revisao (específico)
+  steps:
+    - user: |
+        Como posso garantir que meu texto não tenha erros de ortografia?
+      intent: revisao/revisao_ortografia
+    - action: utter_revisao/revisao_ortografia
+    - user: |
+        Como posso revisar a gramática do meu texto?
+      intent: revisao/revisao_gramatica
+    - action: utter_revisao/revisao_gramatica
+    - user: |
+        Como posso verificar se meu texto está claro e coeso?
+      intent: revisao/revisao_coesao
+    - action: utter_revisao/revisao_coesao
 
 - story: biblio_citacoes
   steps:
@@ -425,3 +492,24 @@ stories:
         /revisao_sistematica  
       intent: revisao_sistematica
     - action: utter_revisao_sistematica
+
+- story: Iniciar progresso de criar artigo
+  steps:
+    - user: |
+        Quero criar um artigo
+      intent: inciar_artigo
+    - action: action_iniciar_artigo
+
+- story: Avançar progresso de criar artigo
+  steps:
+    - user: |
+        Terminei a introdução
+      intent: avancar_estagio_artigo
+    - action: action_avancar_estagio_artigo
+
+- story: Informar progresso de criar artigo
+  steps:
+    - user: |
+        Qual o meu status do artigo?
+      intent: checar_progresso_artigo
+    - action: action_reportar_estagio_artigo

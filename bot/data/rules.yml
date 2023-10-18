@@ -1,42 +1,50 @@
 version: "3.1"
 
 rules:
+  # Fallback
   - rule: Pedir para reformular a mensagem caso NLU não entenda
     steps:
       - intent: nlu_fallback
       - action: utter_fallback
 
+  # Cumprimentar
   - rule: Cumprimentar a qualquer momento da conversa
     steps:
       - intent: cumprimentar
       - action: utter_cumprimentar
-
+  
+  # Despedir
   - rule: Se despedir a qualquer momento da conversa
     steps:
       - intent: despedir
       - action: utter_despedir
-  
+
+ # ABNT
   - rule: Responder sobre perguntas sobre a ABNT
     steps:
       - intent: abnt
       - action: utter_abnt
 
+  # Plágio
   - rule: Responder sobre perguntas sobre plagio
     steps:
       - intent: plagio
       - action: utter_plagio
 
+  # Originalidade
   - rule: Responder sobre perguntas de originalidade
     steps:
       - intent: originalidade
       - action: utter_originalidade
 
+ # Revisão
   - rule: Responder sobre perguntas de revisão
     steps:
       - intent: revisao
       - action: utter_revisao
   
-  - rule: Responder sobre perguntas de revisão
+  # Menu de funcionalidades
+  - rule: Menu de funcionalidades
     steps:
       - intent: menu
       - action: utter_menu
