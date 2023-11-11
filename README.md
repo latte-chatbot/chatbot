@@ -18,7 +18,7 @@ O projeto baseia-se em 7 contêineres Docker orquestrado pelo Docker compose, s�
 - **Consumidor Genérico:** Implementação em python que recebe os eventos do RabbitMQ e os trasmite para o Elasticsearch.
 - **Elasticsearch:** Armazena as conversas e disponibiliza ao Kibana.  
 - **Kibana:** Com base nos dados armazenados pelo elasticsearch, fornece uma interface UI para análise das conversas.
-![Arquitetura do Projeto](./utils/arquitecture.jpg)
+![Arquitetura do Projeto](./modules/utils/arquitecture.jpg)
 
 ## Como executar (Ubuntu)
 ### Pré-requisitos

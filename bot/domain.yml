@@ -58,6 +58,8 @@ intents:
   - pesquisa_experimental
   - pesquisa_qualitativa
   - revisao_sistematica
+  - artigo_teorico
+  - artigo_metodologico
   - inciar_artigo
   - avancar_estagio_artigo
   - checar_progresso_artigo

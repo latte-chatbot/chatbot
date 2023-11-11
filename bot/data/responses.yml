@@ -47,13 +47,17 @@ responses:
   utter_menu:
   - text: |
       Estou continuamente evoluindo para oferecer o melhor suporte possível. Atualmente, posso orientar você sobre: 
+        
+      Para essas funcionalidades utilize os comandos especificados (ou basta clicar nas palavras em azul):
         - Identificação de fontes confiáveis (Digite: /fontes_confiaveis)
         - Formatação de Bibliografia e Citações (Digite: /biblio_citacoes)
         - Estruturação de artigos (/estruturacao_artigos)
-        - Assistente de criação de artigos (Não há um comando específico, basta me dizer que quer iniciar um artigo!)
-        - Dicas de estruturação de textos, normas gerais da ABNT, orginalidade de texto e revisão (Não há um comando específico, basta me perguntar sobre!)
+        
+      Já para as funcionalidades abaixo, não há um comando específico, basta me perguntar sobre:
+        - Assistente de criação de artigos
+        - Normas gerais da ABNT, orginalidade de texto e revisão
       
-      Ah, e a qualquer momento basta me pedir que te envio novamente minhas funcionalidades!
+      Ah, e a qualquer momento basta enviar /menu que te envio novamente minhas funcionalidades.
 
       Como posso contribuir para o seu progresso hoje?
 
@@ -395,8 +399,9 @@ responses:
 
   utter_gerador_biblio_citacoes:
   - text: |
-      Para gerar sua citação ou referência bibliográfica facilmente, você pode usar o Mybib com o qual você poderá preencher as informações manualmente ou mesmo enviar um arquivo PDF e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, o aplicaivo suporta diversos outras normas técnicas, então lembre-se de selecionar aquela que você está precisando.
-      Para usá-lo, acesse o link: www.mybib.com
+      Para gerar sua citação ou referência bibliográfica facilmente, vamos te recomendar uma ferramenta online com a qual você poderá preencher as informações e o aplicativo gerará para você. Vale ressaltar que além das normas ABNT, a ferramenta suporta outras técnicas também, então lembre-se de selecionar aquela que você está precisando.
+      
+      Para usá-la, acesse o link: https://referenciabibliografica.net/a/pt-br/ref/abnt
 
 # Fontes Confiáveis
   utter_fontes_confiaveis:
@@ -428,7 +433,11 @@ responses:
       Artigo de Pesquisa Qualitativa: Para explorar fenômenos sociais e humanos complexos, selecione esta opção. (/pesquisa_qualitativa)
       
       Artigo de Revisão Sistemática: Se você deseja resumir e analisar sistematicamente a literatura existente, esta é a escolha. (/revisao_sistematica)
-            
+
+      Artigo Teórico: Se você deseja desenvolver ou discutir teorias em um campo específico, esta é sua opção. (/artigo_teorico)
+      
+      Artigo Metodológico: Se o foco é na discussão e análise de métodos de pesquisa, escolha esta opção. (/artigo_metodologico)
+
       Escolha a opção desejada para mais detalhes!
 
 
@@ -447,7 +456,8 @@ responses:
       Discussão: Interpreta os resultados e discute implicações.
       
       Conclusão: Resume as principais conclusões do estudo.
-
+      
+      Um exemplo: https://www.tandfonline.com/doi/epdf/10.1080/09636412.2023.2262388?needAccess=true
 
   utter_revisao_bibliografica:
   - text: |
@@ -465,6 +475,8 @@ responses:
       
       Conclusão e Implicações: Resume os principais pontos e destaca implicações para futura pesquisa.
 
+      Você pode encontrar vários exemplos aqui: https://www.hindawi.com/journals/edri/2023/9292513/
+
   utter_pesquisa_experimental:
   - text: |
       Artigo de Pesquisa Experimental:Descreve experimentos controlados para testar hipóteses e coletar dados quantitativos, com o objetivo de comunicar procedimentos e resultados para validação e replicação.
@@ -480,6 +492,8 @@ responses:
       Conclusão: Resume as principais conclusões do estudo.
       
       Referências: Citação de fontes utilizadas.
+
+      Um exemplo: https://www.nature.com/articles/s41598-023-47077-w
 
   utter_pesquisa_qualitativa:
   - text: |
@@ -497,6 +511,8 @@ responses:
       
       Conclusão: Resumo das principais conclusões do estudo.
 
+      Aqui está um exemplo: https://journals.sagepub.com/doi/full/10.1177/14687941221096604
+
   utter_revisao_sistematica:
   - text: |
       Artigo de Revisão Sistemática: Realiza uma pesquisa abrangente da literatura existente com critérios definidos para inclusão de estudos, com o objetivo de resumir todas as evidências disponíveis sobre um tópico.
@@ -510,6 +526,43 @@ responses:
       Discussão dos Achados: Examina as implicações e as limitações.
       
       Conclusão e Implicações para Pesquisa Futura: Resume as principais conclusões e destaca as direções para futura pesquisa.
+
+      Um exemplo: https://www.frontiersin.org/articles/10.3389/fmed.2023.1085988/full
+
+  utter_artigo_teorico:
+  - text: |
+      Artigo Teórico: Foca em desenvolver, explorar ou criticar teorias em um campo de estudo específico. Estes artigos não apresentam novos dados empíricos, mas utilizam a literatura existente para construir argumentos teóricos ou conceituais.
+
+      Introdução: Define o tópico ou conceito a ser explorado e estabelece sua relevância no campo de estudo. Pode também identificar lacunas na literatura existente que o artigo procura abordar.
+
+      Revisão da Literatura: Examina e resume pesquisas e teorias anteriores relevantes para o tópico. Esta seção é fundamental para estabelecer o contexto teórico e conceitual no qual o artigo se insere.
+
+      Desenvolvimento Teórico: O núcleo do artigo, onde novas teorias são propostas ou teorias existentes são expandidas, reformuladas ou criticadas. Esta seção se baseia na revisão da literatura e utiliza raciocínio lógico e argumentação para desenvolver as ideias teóricas.
+
+      Discussão: Analisa as implicações das teorias propostas ou revisadas, considerando como elas se relacionam com o conhecimento existente e quais as potenciais aplicações ou impactos na prática.
+
+      Conclusão: Resume os principais pontos teóricos apresentados, reitera a importância do trabalho e sugere direções futuras para pesquisa nesse campo teórico.
+
+      Um exemplo de um artigo teórico pode ser encontrado no seguinte link: https://www.nature.com/articles/s44159-023-00234-4
+
+  utter_artigo_metodologico:
+  - text: |
+      Artigo Metodológico: Concentra-se na discussão e análise de métodos de pesquisa. Tais artigos são essenciais para o desenvolvimento e aprimoramento de técnicas e procedimentos em pesquisa acadêmica.
+
+      Introdução: Apresenta o contexto do método de pesquisa em foco, destacando sua relevância e aplicabilidade em diferentes campos de estudo. Também pode identificar desafios ou lacunas nos métodos existentes que o artigo visa abordar.
+
+      Revisão da Literatura: Fornece um panorama das abordagens metodológicas previamente utilizadas no campo de estudo, incluindo uma avaliação crítica de suas forças e limitações. Esta seção estabelece a base para a introdução de novas metodologias ou aperfeiçoamento das existentes.
+
+      Descrição Metodológica: Detalha o novo método ou a modificação de um método existente. Inclui a justificativa para sua adoção, os princípios teóricos que o embasam, e uma descrição detalhada de como ele deve ser implementado na prática.
+
+      Validação do Método: Apresenta estudos de caso, experimentos ou análises que demonstram a eficácia e aplicabilidade do método proposto. Esta seção é crucial para estabelecer a credibilidade da metodologia.
+
+      Discussão: Explora as implicações do novo método, incluindo suas vantagens, limitações, e potenciais campos de aplicação. Pode também discutir como o método se compara ou se integra a abordagens existentes.
+
+      Conclusão: Resume as principais contribuições do artigo para o avanço dos métodos de pesquisa, reiterando a importância do novo método e sugerindo possíveis direções futuras para pesquisa metodológica.
+
+      Um exemplo de um artigo metodológico pode ser encontrado no seguinte link: https://www.nature.com/articles/d41586-023-03486-5
+
 
 # Fontes Confiáveis
   utter_exploracao_inicial:
@@ -540,7 +593,7 @@ responses:
 
   utter_google_scholar:
   - text: |
-      Você pode acessar o Google Scholar através do seguinte link: [Google Scholar](https://scholar.google.com/)
+      Você pode acessar o Google Scholar através do seguinte link: https://scholar.google.com/
 
       Quando você visitar o site, você terá acesso a uma barra de pesquisa onde pode digitar palavras-chave, tópicos ou frases relacionados à sua pesquisa. O Google Scholar irá então mostrar resultados que incluem artigos acadêmicos, teses, livros e outras fontes de literatura acadêmica relevantes para sua consulta.
 
@@ -550,7 +603,7 @@ responses:
 
   utter_doaj:
   - text: |
-      Você pode acessar o Directory of Open Access Journals (DOAJ), através do seguinte link:  [DOAJ](https://doaj.org/).
+      Você pode acessar o Directory of Open Access Journals (DOAJ), através do seguinte link: https://doaj.org/
 
       No site inicial do DOAJ, você verá uma barra de pesquisa onde pode começar a pesquisa inserindo palavras-chave, tópicos ou frases relacionadas à sua pesquisa.
 
@@ -564,7 +617,7 @@ responses:
 
   utter_open_stax:
   - text: |
-      Você pode acessar o OpenStax , através do seguinte link: [OpenStax](https://openstax.org/).
+      Você pode acessar o OpenStax , através do seguinte link: https://openstax.org/
 
       No site inicial do OpenStax, você verá um menu de navegação onde pode explorar as diferentes disciplinas acadêmicas. Clique na disciplina que corresponde ao livro didático que você deseja acessar.
       
@@ -578,7 +631,7 @@ responses:
 
   utter_scopus:
   - text: |
-      Você pode acessar a Scopus, através do seguinte link:  [Scopus](https://www.scopus.com/home.ur)
+      Você pode acessar a Scopus, através do seguinte link: https://www.scopus.com/home.ur
 
       No site inicial da Scopus, você pode ver opções como "Login" ou "Register" (Entrar ou Registrar-se). Dependendo de sua filiação institucional, você pode ter acesso direto por meio de sua universidade, instituição de pesquisa ou biblioteca. Se você tiver credenciais de acesso, clique em "Login" para inserir suas informações de login e acessar a plataforma.
       
@@ -592,7 +645,7 @@ responses:
 
   utter_science_direct:
   - text: |
-      Você pode acessar a ScienceDirect, através do seguinte link: [ScienceDirect](https://www.sciencedirect.com/).
+      Você pode acessar a ScienceDirect, através do seguinte link: https://www.sciencedirect.com/
 
       No site inicial do ScienceDirect, você pode usar a barra de pesquisa na parte superior da página para pesquisar por palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
       
@@ -610,7 +663,7 @@ responses:
      
   utter_web_of_science:
   - text: |
-      Você pode acessar a Web of Science, através do seguinte link: [Science](https://www.webofscience.com/).
+      Você pode acessar a Web of Science, através do seguinte link: https://www.webofscience.com/
 
       No site inicial da Web of Science, você pode ver opções como "Sign In" (Entrar) ou "Register" (Registrar-se). Dependendo da sua afiliação institucional, você pode ter acesso direto por meio de sua universidade, instituição de pesquisa ou biblioteca. Se você tiver credenciais de acesso, clique em "Sign In" para inserir suas informações de login e acessar a plataforma.
       
@@ -625,7 +678,7 @@ responses:
 
   utter_pubmed:
   - text: |
-      Você pode acessar a PubMed, através do seguinte link: [PubMed](https://pubmed.ncbi.nlm.nih.gov/).
+      Você pode acessar a PubMed, através do seguinte link: https://pubmed.ncbi.nlm.nih.gov/
 
       No site inicial do PubMed, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
       
@@ -643,7 +696,7 @@ responses:
 
   utter_arxiv:
   - text: |
-      Você pode acessar a arXiv, através do seguinte link: arXiv: [arXiv](https://arxiv.org/).
+      Você pode acessar a arXiv, através do seguinte link: arXiv: https://arxiv.org/
 
       No site inicial do arXiv, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos, autores ou outros termos relacionados à sua pesquisa.
       
@@ -661,7 +714,7 @@ responses:
 
   utter_nature_research_journals:
   - text: |
-      Você pode acessar a Nature Research, através do seguinte link: [Nature Research](https://www.nature.com/).
+      Você pode acessar a Nature Research, através do seguinte link: https://www.nature.com/
 
       No site inicial da Nature Research, você verá uma barra de pesquisa onde pode inserir palavras-chave, tópicos ou autores relacionados à sua pesquisa. Você também pode navegar pelas revistas disponíveis na parte superior do site.
       

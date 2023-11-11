@@ -199,6 +199,16 @@ stories:
   - intent: revisao_sistematica
   - action: utter_revisao_sistematica  
 
+- story: artigo_teorico
+  steps:
+  - intent: artigo_teorico
+  - action: utter_artigo_teorico  
+
+- story: artigo_metodologico
+  steps:
+  - intent: artigo_metodologico
+  - action: utter_artigo_metodologico  
+
 # Fontes confiáveis
 - story: fontes_confiaveis
   steps:

@@ -493,6 +493,20 @@ stories:
       intent: revisao_sistematica
     - action: utter_revisao_sistematica
 
+- story: artigo_teorico
+  steps:
+    - user: |
+        /artigo_teorico
+      intent: artigo_teorico
+    - action: utter_artigo_teorico
+
+- story: artigo_teorico
+  steps:
+    - user: |
+        /artigo_teorico
+      intent: artigo_teorico
+    - action: utter_artigo_teorico
+
 - story: Iniciar progresso de criar artigo
   steps:
     - user: |
