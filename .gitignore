@@ -1,6 +1,5 @@
 # Rasa
 bot/models/
-bot/results/
 .rasa/
 
 # Environment variables

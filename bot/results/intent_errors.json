@@ -1,0 +1,170 @@
+[
+  {
+    "text": "Explicar sobre citações diretas de revistas",
+    "intent": "citacao_direta_revista",
+    "intent_prediction": {
+      "name": "citacao_indireta_revista",
+      "confidence": 0.18502478301525116
+    }
+  },
+  {
+    "text": "Como fazer citações diretas de revistas",
+    "intent": "citacao_direta_revista",
+    "intent_prediction": {
+      "name": "citacao_indireta_revista",
+      "confidence": 0.19495590031147003
+    }
+  },
+  {
+    "text": "Explicar sobre citações diretas de páginas da internet",
+    "intent": "citacao_direta_internet",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.11306367069482803
+    }
+  },
+  {
+    "text": "Como fazer citações diretas da internet",
+    "intent": "citacao_direta_internet",
+    "intent_prediction": {
+      "name": "citacao_indireta_internet",
+      "confidence": 0.07240404188632965
+    }
+  },
+  {
+    "text": "Explicar sobre citações diretas de entrevistas",
+    "intent": "citacao_direta_entrevista",
+    "intent_prediction": {
+      "name": "citacao_indireta_revista",
+      "confidence": 0.15622948110103607
+    }
+  },
+  {
+    "text": "Explicar sobre citações diretas de um documento legal",
+    "intent": "citacao_direta_doc_legal",
+    "intent_prediction": {
+      "name": "citacao_indireta_doc_legal",
+      "confidence": 0.17297720909118652
+    }
+  },
+  {
+    "text": "Como fazer citações diretas de documentos legais",
+    "intent": "citacao_direta_doc_legal",
+    "intent_prediction": {
+      "name": "citacao_indireta_doc_legal",
+      "confidence": 0.1831495612859726
+    }
+  },
+  {
+    "text": "Explicar sobre citações indiretas",
+    "intent": "explicar_citacao_indireta",
+    "intent_prediction": {
+      "name": "explicar_citacao_direta",
+      "confidence": 0.20103232562541962
+    }
+  },
+  {
+    "text": "Como fazer citações indiretas",
+    "intent": "explicar_citacao_indireta",
+    "intent_prediction": {
+      "name": "explicar_citacao_direta",
+      "confidence": 0.19297412037849426
+    }
+  },
+  {
+    "text": "Explicar sobre citações indiretas de livros",
+    "intent": "citacao_indireta_livro",
+    "intent_prediction": {
+      "name": "citacao_direta_livro",
+      "confidence": 0.18566244840621948
+    }
+  },
+  {
+    "text": "Como fazer citações indiretas de livros",
+    "intent": "citacao_indireta_livro",
+    "intent_prediction": {
+      "name": "citacao_direta_livro",
+      "confidence": 0.21521568298339844
+    }
+  },
+  {
+    "text": "Explicar sobre citações indiretas de jornal",
+    "intent": "citacao_indireta_jornal",
+    "intent_prediction": {
+      "name": "citacao_direta_jornal",
+      "confidence": 0.18900904059410095
+    }
+  },
+  {
+    "text": "Como fazer citações indiretas de jornal",
+    "intent": "citacao_indireta_jornal",
+    "intent_prediction": {
+      "name": "citacao_direta_jornal",
+      "confidence": 0.1943541318178177
+    }
+  },
+  {
+    "text": "Explicar sobre citações indiretas de entrevistas",
+    "intent": "citacao_indireta_entrevista",
+    "intent_prediction": {
+      "name": "citacao_indireta_revista",
+      "confidence": 0.19412223994731903
+    }
+  },
+  {
+    "text": "Como fazer citações indiretas de um entrevista",
+    "intent": "citacao_indireta_entrevista",
+    "intent_prediction": {
+      "name": "citacao_direta_entrevista",
+      "confidence": 0.1607060432434082
+    }
+  },
+  {
+    "text": "Explicar sobre referências bibliográficas de revistas",
+    "intent": "referencia_revista",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.17030642926692963
+    }
+  },
+  {
+    "text": "Como fazer referências bibliográficas de revistas",
+    "intent": "referencia_revista",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.15069852769374847
+    }
+  },
+  {
+    "text": "Explicar sobre referências bibliográficas de jornal",
+    "intent": "referencia_jornal",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.1814178228378296
+    }
+  },
+  {
+    "text": "Como fazer referências bibliográficas de jornal",
+    "intent": "referencia_jornal",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.17425788938999176
+    }
+  },
+  {
+    "text": "Explicar sobre referências bibliográficas de entrevistas",
+    "intent": "referencia_entrevista",
+    "intent_prediction": {
+      "name": "referencia_internet",
+      "confidence": 0.08921762555837631
+    }
+  },
+  {
+    "text": "artigo_pesquisa_empirica",
+    "intent": "pesquisa_empirica",
+    "intent_prediction": {
+      "name": "revisao_sistematica",
+      "confidence": 0.5472182631492615
+    }
+  }
+]
