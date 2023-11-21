@@ -1,0 +1,12 @@
+{
+    "project": "My project",
+    "version": null,
+    "updated_at": "21/11/23 06:40:38",
+    "intent": 0.8492346938775509,
+    "entity": null,
+    "core": 1.0,
+    "nlu": null,
+    "e2e_coverage": 0.8951612903225806,
+    "overall": 0.8710458262891323,
+    "created_at": "21/11/23 06:40:32"
+}

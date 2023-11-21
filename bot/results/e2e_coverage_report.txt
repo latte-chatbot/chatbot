@@ -1,0 +1,27 @@
+-------------------------------------------------
+End-to-end tests coverage report
+-------------------------------------------------
+Elements that aren't covered:
+ + Intents
+   - menu
+ + Entities
+   - (no elements not covered)
+ + Actions
+   - utter_abnt/consultar
+   - utter_abnt/margens
+   - utter_abnt/conceito
+   - utter_plagio/definicao
+   - utter_plagio/consequencias
+   - utter_plagio/evitar
+   - utter_plagio/detectar
+   - utter_originalidade/definicao_importancia
+   - utter_originalidade/dicas
+   - utter_revisao/revisao_ortografia
+   - utter_revisao/revisao_gramatica
+   - utter_revisao/revisao_coesao
+
+Total number of elements: 124
+Total number of not covered elements: 13
+Total number of excluded elements: 0
+Coverage rate: 89.5%
+-------------------------------------------------
