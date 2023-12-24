@@ -1,25 +1,4 @@
 {
-  "plagio/detectar": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "revisao/revisao_ortografia": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3,
-    "confused_with": {}
-  },
-  "revisao/revisao_coesao": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3,
-    "confused_with": {}
-  },
   "plagio/consequencias": {
     "precision": 1.0,
     "recall": 1.0,
@@ -27,21 +6,14 @@
     "support": 4,
     "confused_with": {}
   },
-  "originalidade/dicas": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 9,
-    "confused_with": {}
-  },
-  "plagio/definicao": {
+  "plagio/detectar": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 4,
     "confused_with": {}
   },
-  "abnt/conceito": {
+  "revisao/revisao_coesao": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -55,18 +27,11 @@
     "support": 7,
     "confused_with": {}
   },
-  "abnt/margens": {
+  "plagio/definicao": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "revisao/revisao_gramatica": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 3,
+    "support": 4,
     "confused_with": {}
   },
   "plagio/evitar": {
@@ -76,11 +41,46 @@
     "support": 4,
     "confused_with": {}
   },
+  "originalidade/dicas": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "revisao/revisao_gramatica": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "abnt/conceito": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "abnt/margens": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
   "abnt/consultar": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 6,
+    "confused_with": {}
+  },
+  "revisao/revisao_ortografia": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
     "confused_with": {}
   },
   "accuracy": 1.0,
